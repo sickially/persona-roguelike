@@ -177,3 +177,35 @@
     border-color: rgba(227, 234, 255, 0.2);
     background: transparent;
 }
+
+/* ── MULTI-SELECT COMPANION STYLES ── */
+.selecao-contador {
+    color: #E3EAFF;
+    font-size: 0.8em;
+    margin-left: 1rem;
+    opacity: 0.8;
+}
+
+.selecao-dica-multi {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(227, 234, 255, 0.5);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.selecao-grid--6 {
+    max-width: 900px;
+}
+
+.selecao-card--bloqueado {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(0.8);
+}
+
+.selecao-card--bloqueado:hover {
+    background: rgba(227, 234, 255, 0.02);
+    border-color: rgba(227, 234, 255, 0.1);
+    transform: none;
+}

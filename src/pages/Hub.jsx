@@ -1,13 +1,7 @@
+import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { useGame } from '../context/GameContext'
 import './Hub.css'
-
-/* Dados mockados para a Etapa 1 (apenas visual, sem lógica) */
-const EQUIPE_MOCK = [
-    { id: 1, nome: 'Protagonista', persona: 'Arsène', hp: 100, hpMax: 100, sp: 80, spMax: 100, avatar: '🃏' },
-    { id: 2, nome: 'Ryuji',        persona: 'Captain Kidd', hp: 90, hpMax: 120, sp: 50, spMax: 80, avatar: '⚡' },
-    { id: 3, nome: 'Ann',          persona: 'Carmen',  hp: 75, hpMax: 90,  sp: 95, spMax: 110, avatar: '🔥' },
-    { id: 4, nome: 'Yusuke',       persona: 'Goemon',  hp: 60, hpMax: 100, sp: 70, spMax: 90,  avatar: '❄️' },
-]
 
 const DICAS = [
     'Personas acima do seu nível não podem ser fundidas na Velvet Room.',
@@ -20,6 +14,19 @@ const DICAS = [
 function Hub() {
     const navigate = useNavigate()
     const location = useLocation()
+    const { equipe, yen, jogoIniciado, inicializarJogo } = useGame()
+
+    useEffect(() => {
+        if (!jogoIniciado) {
+            const { persona, companheiros, companheiro } = location.state || {}
+            // Suporta tanto o novo formato (companheiros[]) quanto o legado (companheiro string)
+            inicializarJogo(persona, companheiros ?? companheiro)
+        }
+    }, [jogoIniciado, inicializarJogo, location.state])
+
+    // Se a equipe ainda estiver nula (carregando/inicializando), evita renderizar a página vazia
+    if (!equipe) return null
+
 
     /* Recebe o caminho escolhido via state da navegação */
     const caminho = location.state?.caminho || 'rebellion'
@@ -54,13 +61,17 @@ function Hub() {
                 <aside className="hub-painel-equipe">
                     <p className="hub-painel-titulo">Equipe</p>
 
-                    {EQUIPE_MOCK.map((membro) => (
-                        <div className="hub-membro-card" key={membro.id}>
-                            <div className="hub-membro-avatar">{membro.avatar}</div>
+                {equipe.map((membro) => {
+                        const hpPct = membro.hpMax ? (membro.hp / membro.hpMax) * 100 : 100
+                        const spPct = membro.spMax ? (membro.sp / membro.spMax) * 100 : 100
+                        const isKO  = membro.hp <= 0
+                        return (
+                        <div className={`hub-membro-card ${isKO ? 'hub-membro-card--ko' : ''}`} key={membro.id}>
+                            <div className="hub-membro-avatar">{membro.icone}</div>
 
                             <div className="hub-membro-info">
-                                <p className="hub-membro-nome">{membro.nome}</p>
-                                <p className="hub-membro-persona">{membro.persona}</p>
+                                <p className="hub-membro-nome">{membro.nome}{isKO && <span className="hub-ko-badge"> K.O.</span>}</p>
+                                <p className="hub-membro-persona">{membro.personaEquipada}</p>
                             </div>
 
                             <div className="hub-membro-hp">
@@ -68,19 +79,20 @@ function Hub() {
                                 <div className="hub-barra">
                                     <div
                                         className="hub-barra-fill hub-barra-fill--hp"
-                                        style={{ width: `${(membro.hp / membro.hpMax) * 100}%` }}
-                                    ></div>
+                                        style={{ width: `${hpPct}%`, background: hpPct > 50 ? undefined : hpPct > 20 ? '#F39C12' : '#E74C3C' }}
+                                    />
                                 </div>
                                 <span className="hub-membro-hp-valor">SP</span>
                                 <div className="hub-barra">
                                     <div
                                         className="hub-barra-fill hub-barra-fill--sp"
-                                        style={{ width: `${(membro.sp / membro.spMax) * 100}%` }}
-                                    ></div>
+                                        style={{ width: `${spPct}%` }}
+                                    />
                                 </div>
                             </div>
                         </div>
-                    ))}
+                        )
+                    })}
                 </aside>
 
                 {/* Centro — Ações */}
@@ -178,7 +190,7 @@ function Hub() {
                                 <span className="hub-moeda-label">
                                     <span className="hub-moeda-icone">💴</span> Yen
                                 </span>
-                                <span className="hub-moeda-valor">¥ 0</span>
+                                <span className="hub-moeda-valor">¥ {yen.toLocaleString('pt-BR')}</span>
                             </div>
                             <div className="hub-moeda-item">
                                 <span className="hub-moeda-label">

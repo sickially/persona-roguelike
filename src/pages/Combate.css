@@ -342,3 +342,281 @@
 .combate-vitoria-btn:hover {
     transform: scale(1.1);
 }
+
+/* ── DERROTA ── */
+.combate-derrota-overlay {
+    background: rgba(100, 0, 0, 0.95) !important;
+}
+
+.combate-derrota-titulo {
+    color: #E74C3C !important;
+    text-shadow: 4px 4px 0 #000 !important;
+}
+
+/* ── ALIADO K.O. ── */
+.combate-aliado-card--ko {
+    opacity: 0.4;
+    filter: grayscale(1);
+    border-color: rgba(227, 234, 255, 0.05) !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.combate-ko-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #E74C3C;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+    pointer-events: none;
+}
+
+/* ── ALIADO ESTADOS ── */
+.combate-aliado-card--clicavel {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.combate-aliado-card--clicavel:hover {
+    background: rgba(227, 234, 255, 0.05);
+    border-color: rgba(227, 234, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(227, 234, 255, 0.1);
+}
+
+.combate-aliado-card--agiu {
+    opacity: 0.6;
+    filter: brightness(0.8);
+    transform: scale(0.98);
+}
+
+.combate-agiu-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #2ECC71;
+    color: #1a1a1a;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+    z-index: 2;
+}
+
+/* ── ALIADO HIT FLASH ── */
+.combate-aliado-card--hit {
+    animation: aliado-hit 0.4s ease-out;
+}
+
+@keyframes aliado-hit {
+    0%  { background: rgba(231, 76, 60, 0.6); transform: translateX(-8px); }
+    50% { background: rgba(231, 76, 60, 0.3); transform: translateX(4px); }
+    100% { background: rgba(192, 57, 43, 0.1); transform: translateX(20px); }
+}
+
+/* ── PERSONA TAG ── */
+.combate-persona-tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(227, 234, 255, 0.45);
+    letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+}
+
+/* ── VALOR HP/SP ── */
+.combate-barra-valor {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(227, 234, 255, 0.5);
+    width: 60px;
+    text-align: right;
+}
+
+/* ── INIMIGO HP TEXT ── */
+.combate-inimigo-hp-texto {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(227, 234, 255, 0.4);
+    text-align: right;
+    margin-top: 0.2rem;
+}
+
+/* ── INIMIGO MORTO / ESTADOS ── */
+.combate-inimigo-card--morto {
+    opacity: 0.15;
+    filter: grayscale(1);
+    animation: none !important;
+    pointer-events: none;
+}
+
+.combate-inimigo-card--clicavel {
+    cursor: crosshair;
+    transition: all 0.2s ease;
+}
+
+.combate-inimigo-card--clicavel:hover {
+    background: rgba(227, 234, 255, 0.05);
+    border-color: #E74C3C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+/* ══════════════════════════════════════════
+   MENU DE SKILLS E SELECAO
+══════════════════════════════════════════ */
+.combate-menu-selecao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    animation: fadeInUp 0.2s ease;
+}
+
+.combate-menu-skills {
+    width: 100%;
+    animation: fadeInUp 0.2s ease;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.combate-menu-skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.combate-menu-skills-header h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: rgba(227, 234, 255, 0.7);
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.combate-btn-voltar {
+    background: transparent;
+    border: 1px solid rgba(227, 234, 255, 0.2);
+    color: rgba(227, 234, 255, 0.5);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.combate-btn-voltar:hover {
+    border-color: rgba(227, 234, 255, 0.5);
+    color: #E3EAFF;
+}
+
+.combate-skills-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+}
+
+.combate-skill-item {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(227, 234, 255, 0.12);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.combate-skill-item:nth-child(4) {
+    border-color: rgba(26, 188, 156, 0.3);
+}
+
+.combate-skill-item:nth-child(4)::before {
+    content: '✦ SUPORTE';
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 0.55rem;
+    color: #1ABC9C;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.combate-skill-item:hover {
+    background: rgba(192, 57, 43, 0.15);
+    border-color: rgba(192, 57, 43, 0.5);
+    transform: translateY(-2px);
+}
+
+.combate-skill-item:nth-child(4):hover {
+    background: rgba(26, 188, 156, 0.1);
+    border-color: rgba(26, 188, 156, 0.5);
+}
+
+.combate-skill-info {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.combate-skill-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.15rem;
+    color: #E3EAFF;
+    letter-spacing: 0.05em;
+}
+
+.combate-skill-tipo {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(227, 234, 255, 0.4);
+    border: 1px solid rgba(227, 234, 255, 0.15);
+    padding: 0 0.4rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.combate-skill-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.combate-skill-custo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: #3498DB;
+    letter-spacing: 0.05em;
+}
+
+.combate-skill-item:nth-child(4) .combate-skill-custo {
+    color: #1ABC9C;
+}
+
+.combate-skill-desc {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.78rem;
+    color: rgba(227, 234, 255, 0.45);
+    line-height: 1.3;
+}
+
+
+ 

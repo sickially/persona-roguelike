@@ -270,3 +270,117 @@
 .equipe-btn-trocar:hover {
     background: #E74C3C;
 }
+
+/* ── MINI HP BAR ── */
+.equipe-mini-hp-bg {
+    height: 4px;
+    background: rgba(227, 234, 255, 0.08);
+    border-radius: 2px;
+    margin-top: 0.4rem;
+    overflow: hidden;
+}
+
+.equipe-mini-hp-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+/* ── CARD K.O. ── */
+.equipe-membro-card--ko {
+    opacity: 0.45;
+    filter: grayscale(0.8);
+}
+
+.equipe-ko-tag {
+    font-size: 0.65rem;
+    color: #E74C3C;
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+/* ── TAG PROTAGONISTA ── */
+.equipe-tag-proto {
+    color: #F1C40F;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+/* ── PERSONA STATS GRID ── */
+.equipe-persona-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.equipe-persona-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(192, 57, 43, 0.08);
+    border: 1px solid rgba(192, 57, 43, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    min-width: 48px;
+}
+
+.equipe-persona-stat-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    color: rgba(227, 234, 255, 0.5);
+    letter-spacing: 0.1em;
+}
+
+.equipe-persona-stat-val {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #C0392B;
+}
+
+/* ── INVENTÁRIO DE PERSONAS ── */
+.equipe-inventario-personas {
+    padding: 1rem;
+    border: 1px solid rgba(227, 234, 255, 0.08);
+    background: rgba(227, 234, 255, 0.02);
+}
+
+.equipe-inventario-personas h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(227, 234, 255, 0.5);
+    margin-bottom: 0.8rem;
+}
+
+.equipe-personas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.equipe-persona-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(227, 234, 255, 0.05);
+    border: 1px solid rgba(227, 234, 255, 0.12);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    cursor: default;
+}
+
+.equipe-persona-chip--equipada {
+    border-color: #C0392B;
+    background: rgba(192, 57, 43, 0.1);
+    color: #C0392B;
+}
+
+.equipe-persona-chip-lv {
+    font-size: 0.7rem;
+    color: rgba(227, 234, 255, 0.4);
+}
+

@@ -139,8 +139,10 @@ function Dungeon() {
                         {eventoAtivo.tipo === 'BOSS' && <p>O guardião deste segmento o aguarda. Não há escapatória.</p>}
                         
                         <button className="dungeon-modal-btn" onClick={() => {
-                            if (eventoAtivo.tipo === 'BATALHA') {
-                                navigate('/combate', { state: { caminho } })
+                            if (eventoAtivo.tipo === 'BATALHA' || eventoAtivo.tipo === 'RARA') {
+                                navigate('/combate', { state: { caminho, tipoInimigo: eventoAtivo.tipo } })
+                            } else if (eventoAtivo.tipo === 'BOSS') {
+                                navigate('/combate', { state: { caminho, tipoInimigo: 'BOSS' } })
                             } else {
                                 fecharEvento()
                             }

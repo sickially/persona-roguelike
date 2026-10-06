@@ -512,3 +512,17 @@
         padding: 1.5rem 1rem;
     }
 }
+
+/* ── K.O. no painel de equipe do Hub ── */
+.hub-membro-card--ko {
+    opacity: 0.4;
+    filter: grayscale(0.9);
+}
+
+.hub-ko-badge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    color: #E74C3C;
+    margin-left: 0.3rem;
+}
+
