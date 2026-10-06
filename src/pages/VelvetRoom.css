@@ -1,245 +1,1424 @@
 /* ============================
-   VELVETROOM.CSS
+   VELVETROOM.CSS — Reescrito
    ID único: #tela-velvet
    ============================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+/* ── Variáveis ── */
+:root {
+    --vr-azul-fundo:    #040d1e;
+    --vr-azul-escuro:   #06152e;
+    --vr-azul-medio:    #0d2756;
+    --vr-azul-brilho:   #1034a6;
+    --vr-azul-glow:     #3d6ef0;
+    --vr-azul-texto:    #8ba7ff;
+    --vr-branco:        #e3eaff;
+    --vr-branco-apagado:rgba(227, 234, 255, 0.55);
+    --vr-borda:         rgba(100, 140, 255, 0.2);
+    --vr-borda-brilho:  rgba(100, 140, 255, 0.7);
+    --vr-success:       #4dff91;
+    --vr-erro:          #ff5555;
+    --vr-ouro:          #ffd700;
+}
+
+/* ── Base ── */
 #tela-velvet {
     min-height: 100vh;
-    background-color: #051024;
-    color: #E3EAFF;
+    background-color: var(--vr-azul-fundo);
+    color: var(--vr-branco);
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    font-family: 'Rajdhani', sans-serif;
 }
 
-/* Fundo azul característico da Velvet Room */
+/* Gradiente radial de fundo */
 #tela-velvet::before {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(16, 52, 166, 0.4) 0%, rgba(5, 16, 36, 1) 100%);
+    background:
+        radial-gradient(ellipse at 30% 20%, rgba(16, 52, 166, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 80%, rgba(61, 110, 240, 0.2) 0%, transparent 50%),
+        var(--vr-azul-fundo);
     z-index: 0;
     pointer-events: none;
 }
 
+/* Grid de fundo */
 #tela-velvet::after {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(100, 140, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(100, 140, 255, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px;
+        linear-gradient(rgba(100, 140, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 140, 255, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
     z-index: 0;
     pointer-events: none;
 }
 
-/* HEADER */
+/* ── Partículas ── */
+.vr-particles {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.vr-particle {
+    position: absolute;
+    bottom: -10px;
+    width: 2px;
+    height: 2px;
+    background: var(--vr-azul-glow);
+    border-radius: 50%;
+    animation: vr-float linear infinite;
+    opacity: 0;
+}
+
+@keyframes vr-float {
+    0%   { transform: translateY(0) scale(1);    opacity: 0; }
+    10%  { opacity: 0.8; }
+    90%  { opacity: 0.4; }
+    100% { transform: translateY(-100vh) scale(0.3); opacity: 0; }
+}
+
+/* ── Header ── */
 .velvet-header {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
-    background: rgba(5, 16, 36, 0.8);
-    border-bottom: 1px solid rgba(100, 140, 255, 0.2);
+    gap: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    background: rgba(4, 13, 30, 0.85);
+    border-bottom: 1px solid var(--vr-borda);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
 }
 
 .velvet-titulo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    color: #8BA7FF;
-    text-shadow: 0 0 15px rgba(100, 140, 255, 0.5);
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+    color: var(--vr-azul-texto);
+    text-shadow: 0 0 20px rgba(100, 140, 255, 0.6), 0 0 60px rgba(100, 140, 255, 0.2);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.velvet-titulo-icon {
+    filter: drop-shadow(0 0 10px rgba(100, 140, 255, 0.8));
+    animation: vr-pulse-icon 3s ease-in-out infinite;
+}
+
+@keyframes vr-pulse-icon {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(100, 140, 255, 0.8)); }
+    50%       { filter: drop-shadow(0 0 25px rgba(100, 140, 255, 1)); }
+}
+
+.velvet-subtitulo {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    color: var(--vr-branco-apagado);
+    font-style: italic;
+    letter-spacing: 0.05em;
+    flex: 1;
+    margin: 0;
 }
 
 .velvet-btn-voltar {
     background: transparent;
-    border: 1px solid rgba(100, 140, 255, 0.4);
-    color: #8BA7FF;
+    border: 1px solid var(--vr-borda);
+    color: var(--vr-azul-texto);
     font-family: 'Orbitron', sans-serif;
-    font-size: 0.8rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+    padding: 0.6rem 1.4rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
+    letter-spacing: 0.1em;
 }
 
 .velvet-btn-voltar:hover {
-    background: rgba(100, 140, 255, 0.2);
-    color: #FFF;
-    box-shadow: 0 0 15px rgba(100, 140, 255, 0.3);
+    background: rgba(100, 140, 255, 0.15);
+    border-color: var(--vr-borda-brilho);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(100, 140, 255, 0.25);
 }
 
-/* CONTEÚDO PRINCIPAL */
-.velvet-corpo {
+/* ── Corpo Principal ── */
+.vr-corpo {
     position: relative;
     z-index: 1;
     flex: 1;
     display: flex;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 0;
+    min-height: 0;
+    overflow: hidden;
 }
 
-/* MENU LATERAL */
-.velvet-menu {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.velvet-btn-menu {
-    background: rgba(5, 16, 36, 0.6);
-    border: 1px solid rgba(100, 140, 255, 0.2);
-    padding: 1.5rem;
-    text-align: left;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.velvet-btn-menu:hover, .velvet-btn-menu--ativo {
-    background: rgba(16, 52, 166, 0.3);
-    border-color: #8BA7FF;
-    transform: translateX(10px);
-}
-
-.velvet-btn-menu--ativo {
-    box-shadow: 0 0 20px rgba(100, 140, 255, 0.3);
-    border-left: 4px solid #8BA7FF;
-}
-
-.velvet-btn-titulo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #E3EAFF;
-    letter-spacing: 0.1em;
-}
-
-.velvet-btn-desc {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 0.85rem;
-    color: rgba(227, 234, 255, 0.6);
-}
-
-/* ÁREA DE CONTEÚDO DA OPÇÃO */
-.velvet-conteudo {
-    flex: 1;
-    background: rgba(5, 16, 36, 0.5);
-    border: 1px solid rgba(100, 140, 255, 0.1);
-    border-radius: 4px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.velvet-secao-titulo {
+/* ── Seção Título ── */
+.vr-secao-titulo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    color: #8BA7FF;
+    font-size: 1.6rem;
+    color: var(--vr-azul-texto);
     letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+}
+
+.vr-secao-desc {
+    font-size: 0.85rem;
+    color: var(--vr-branco-apagado);
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(100, 140, 255, 0.2);
-    padding-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
-/* LISTA DE PERSONAS */
-.velvet-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+/* ── Painel Seleção (esquerdo) ── */
+.vr-painel-selecao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
     overflow-y: auto;
-    padding-right: 0.5rem;
+    background: rgba(6, 21, 46, 0.5);
+    border-right: 1px solid var(--vr-borda);
 }
 
-.velvet-persona-card {
-    background: rgba(16, 52, 166, 0.1);
-    border: 1px solid rgba(100, 140, 255, 0.2);
-    padding: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
+/* ── Slots ── */
+.vr-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.vr-slot {
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    padding: 1.2rem;
+    transition: all 0.25s ease;
     position: relative;
+    overflow: hidden;
 }
 
-.velvet-persona-card:hover {
-    background: rgba(16, 52, 166, 0.3);
-    border-color: #8BA7FF;
-}
-
-.velvet-persona-card--bloqueado {
-    opacity: 0.5;
-    cursor: not-allowed;
-    filter: grayscale(100%);
-}
-
-.velvet-persona-card--bloqueado::after {
-    content: 'NÍVEL INSUFICIENTE';
+.vr-slot::before {
+    content: '';
     position: absolute;
-    inset: 0;
-    background: rgba(192, 57, 43, 0.8);
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(100, 140, 255, 0.07), transparent);
+    transition: left 0.4s ease;
+}
+
+.vr-slot:hover::before {
+    left: 100%;
+}
+
+.vr-slot--vazio {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+.vr-slot--vazio:hover {
+    background: rgba(16, 52, 166, 0.25);
+    border-color: var(--vr-azul-texto);
+}
+
+.vr-slot--clicavel { cursor: pointer; }
+
+.vr-slot-icon {
+    font-size: 2rem;
+    color: var(--vr-azul-texto);
+    opacity: 0.5;
+}
+
+.vr-slot-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.1em;
+}
+
+.vr-slot--preenchido {
+    cursor: pointer;
+    border-color: var(--vr-azul-brilho);
+    background: rgba(13, 39, 86, 0.6);
+}
+
+.vr-slot--preenchido:hover {
+    border-color: var(--vr-azul-glow);
+    background: rgba(16, 52, 166, 0.3);
+    box-shadow: 0 0 20px rgba(61, 110, 240, 0.2);
+}
+
+.vr-slot--selecionado {
+    border-color: var(--vr-azul-texto);
+    box-shadow: 0 0 25px rgba(100, 140, 255, 0.3), inset 0 0 30px rgba(100, 140, 255, 0.05);
+}
+
+.vr-slot-arcana {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.vr-slot-arcana-icon { font-size: 1rem; }
+
+.vr-slot-arcana-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.vr-slot-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--vr-branco);
+    letter-spacing: 0.05em;
+    margin: 0 0 0.4rem;
+}
+
+.vr-slot-nivel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    color: var(--vr-azul-texto);
+    margin-bottom: 0.6rem;
+}
+
+.vr-slot-stats {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+
+.vr-stat-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(100, 140, 255, 0.1);
+    border: 1px solid rgba(100, 140, 255, 0.15);
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    min-width: 36px;
+}
+
+.vr-stat-label {
+    font-size: 0.55rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.1em;
+}
+
+.vr-stat-val {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--vr-azul-texto);
+}
+
+.vr-resistencias {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.vr-res-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.vr-res-weak  { background: rgba(255, 85, 85, 0.1); color: #ff8888; }
+.vr-res-null  { background: rgba(100, 216, 255, 0.1); color: #64d8ff; }
+.vr-res-repel { background: rgba(77, 255, 145, 0.1); color: #4dff91; }
+
+.vr-slot-remover {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    color: rgba(255, 85, 85, 0.5);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    transition: color 0.2s;
+    z-index: 2;
+}
+.vr-slot-remover:hover { color: var(--vr-erro); }
+
+/* ── Operador de fusão ── */
+.vr-fusion-operador {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    opacity: 0;
-    transition: opacity 0.2s;
+    padding: 0.3rem 0;
 }
 
-.velvet-persona-card--bloqueado:hover::after {
-    opacity: 1;
+.vr-fusion-plus {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--vr-azul-glow);
+    text-shadow: 0 0 15px rgba(61, 110, 240, 0.8);
+    animation: vr-pulse-plus 2s ease-in-out infinite;
 }
 
-.velvet-persona-nome {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #E3EAFF;
-    margin-bottom: 0.25rem;
+@keyframes vr-pulse-plus {
+    0%, 100% { opacity: 0.7; }
+    50%       { opacity: 1; text-shadow: 0 0 30px rgba(61, 110, 240, 1); }
 }
 
-.velvet-persona-info {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 0.8rem;
-    color: rgba(227, 234, 255, 0.6);
+/* ── Botão Fundir ── */
+.vr-btn-fundir {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    border: 1px solid var(--vr-borda);
+    background: rgba(13, 39, 86, 0.4);
+    color: var(--vr-branco-apagado);
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vr-btn-fundir--ativo {
+    border-color: var(--vr-azul-glow);
+    background: linear-gradient(135deg, rgba(13, 39, 86, 0.8), rgba(61, 110, 240, 0.3));
+    color: var(--vr-branco);
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(61, 110, 240, 0.4), 0 0 80px rgba(61, 110, 240, 0.15);
+    animation: vr-glow-btn 2s ease-in-out infinite alternate;
+}
+
+.vr-btn-fundir--ativo:hover {
+    background: linear-gradient(135deg, rgba(16, 52, 166, 0.9), rgba(61, 110, 240, 0.5));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 40px rgba(61, 110, 240, 0.6), 0 0 100px rgba(61, 110, 240, 0.2);
+}
+
+@keyframes vr-glow-btn {
+    from { box-shadow: 0 0 20px rgba(61, 110, 240, 0.3); }
+    to   { box-shadow: 0 0 40px rgba(61, 110, 240, 0.6), 0 0 80px rgba(100, 140, 255, 0.2); }
+}
+
+/* ── Divisor central ── */
+.vr-divisor {
     display: flex;
-    justify-content: space-between;
-}
-
-/* FOOTER */
-.velvet-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
     position: relative;
     z-index: 1;
-    padding: 1rem 2rem;
-    background: rgba(5, 16, 36, 0.9);
-    border-top: 1px solid rgba(100, 140, 255, 0.2);
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Rajdhani', sans-serif;
-    color: rgba(227, 234, 255, 0.5);
 }
 
-/* SCROLLBAR CUSTOMIZADA */
-.velvet-grid::-webkit-scrollbar {
-    width: 6px;
+.vr-divisor-linha {
+    width: 1px;
+    flex: 1;
+    background: var(--vr-borda);
 }
-.velvet-grid::-webkit-scrollbar-track {
-    background: rgba(5, 16, 36, 0.5);
+
+.vr-divisor-icon {
+    font-size: 1.5rem;
+    color: var(--vr-azul-glow);
+    text-shadow: 0 0 10px rgba(61, 110, 240, 0.8);
 }
-.velvet-grid::-webkit-scrollbar-thumb {
-    background: rgba(100, 140, 255, 0.3);
-    border-radius: 3px;
+
+/* ── Painel Resultado (direito) ── */
+.vr-painel-resultado {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-y: auto;
 }
-.velvet-grid::-webkit-scrollbar-thumb:hover {
-    background: rgba(100, 140, 255, 0.6);
+
+/* ── Estado vazio ── */
+.vr-resultado-vazio,
+.vr-resultado-erro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 3rem;
+    border: 1px dashed var(--vr-borda);
+    background: rgba(13, 39, 86, 0.2);
+    animation: vr-fade-in 0.3s ease;
 }
+
+.vr-resultado-vazio-icon { font-size: 3rem; opacity: 0.4; }
+.vr-resultado-vazio p    { color: var(--vr-branco-apagado); font-size: 0.95rem; }
+
+.vr-resultado-erro {
+    border-color: rgba(255, 85, 85, 0.3);
+    background: rgba(255, 85, 85, 0.05);
+}
+.vr-resultado-erro-icon { font-size: 2.5rem; }
+.vr-resultado-erro p {
+    color: #ff8888;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ── Meta do resultado ── */
+.vr-resultado-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    border-left: 3px solid var(--vr-azul-glow);
+}
+
+.vr-resultado-formula {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: var(--vr-azul-texto);
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vr-resultado-seta {
+    color: var(--vr-azul-glow);
+    font-size: 1.1rem;
+}
+
+.vr-resultado-nivel-calc {
+    font-size: 0.75rem;
+    color: var(--vr-branco-apagado);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* ── Card de Resultado ── */
+.vr-resultado-card {
+    background: rgba(13, 39, 86, 0.5);
+    border: 1px solid var(--vr-azul-brilho);
+    padding: 1.5rem;
+    animation: vr-resultado-aparece 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 40px rgba(61, 110, 240, 0.2), inset 0 0 50px rgba(100, 140, 255, 0.03);
+}
+
+@keyframes vr-resultado-aparece {
+    from { opacity: 0; transform: translateY(10px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.vr-resultado-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--vr-borda);
+}
+
+.vr-resultado-arcana-icon { font-size: 2.5rem; }
+
+.vr-resultado-arcana-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.15em;
+}
+
+.vr-resultado-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: var(--vr-branco);
+    letter-spacing: 0.05em;
+    margin: 0.2rem 0 0;
+    text-shadow: 0 0 20px rgba(100, 140, 255, 0.4);
+}
+
+.vr-resultado-nivel {
+    margin-left: auto;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: var(--vr-azul-texto);
+    font-weight: 700;
+    background: rgba(61, 110, 240, 0.15);
+    border: 1px solid rgba(61, 110, 240, 0.3);
+    padding: 0.4rem 0.8rem;
+    align-self: center;
+}
+
+.vr-resultado-stats {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+    justify-content: space-around;
+}
+
+.vr-resultado-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 0.6rem;
+    background: rgba(100, 140, 255, 0.07);
+    border: 1px solid var(--vr-borda);
+}
+
+.vr-resultado-stat-label {
+    font-size: 0.6rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.2rem;
+}
+
+.vr-resultado-stat-val {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    color: var(--vr-azul-texto);
+    text-shadow: 0 0 10px rgba(100, 140, 255, 0.5);
+}
+
+/* ── Resistências ── */
+.vr-resultado-res {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    background: rgba(4, 13, 30, 0.4);
+    border: 1px solid var(--vr-borda);
+}
+
+.vr-res-grupo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.vr-res-grupo-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    min-width: 55px;
+}
+
+.vr-res-grupo--weak    .vr-res-grupo-label { color: #ff8888; }
+.vr-res-grupo--resist  .vr-res-grupo-label { color: #88ccff; }
+.vr-res-grupo--null    .vr-res-grupo-label { color: #64d8ff; }
+.vr-res-grupo--drain   .vr-res-grupo-label { color: var(--vr-success); }
+.vr-res-grupo--repel   .vr-res-grupo-label { color: var(--vr-ouro); }
+
+.vr-res-grupo-lista { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+.vr-res-el {
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0.1rem 0.5rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 2px;
+}
+
+/* ── Skills ── */
+.vr-resultado-skills {
+    padding: 0.8rem;
+    background: rgba(13, 39, 86, 0.3);
+    border: 1px solid var(--vr-borda);
+}
+
+.vr-resultado-skills-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.6rem;
+}
+
+.vr-resultado-skills-lista { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+.vr-skill-chip {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.7rem;
+    background: rgba(61, 110, 240, 0.15);
+    border: 1px solid rgba(61, 110, 240, 0.3);
+    color: var(--vr-azul-texto);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+/* ── Fusão Confirmada ── */
+.vr-fusao-confirmada { animation: vr-fade-in 0.4s ease; }
+
+.vr-fusao-confirmada-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    color: var(--vr-success);
+    text-shadow: 0 0 20px rgba(77, 255, 145, 0.6);
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(77, 255, 145, 0.3);
+    background: rgba(77, 255, 145, 0.08);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ── Histórico ── */
+.vr-historico {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--vr-borda);
+}
+
+.vr-historico-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.8rem;
+}
+
+.vr-historico-lista { display: flex; flex-direction: column; gap: 0.3rem; }
+
+.vr-historico-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    background: rgba(13, 39, 86, 0.3);
+    border: 1px solid var(--vr-borda);
+    font-size: 0.85rem;
+}
+
+.vr-historico-nome { flex: 1; color: var(--vr-branco); font-weight: 600; }
+.vr-historico-nivel { color: var(--vr-azul-texto); font-family: 'Orbitron', sans-serif; font-size: 0.7rem; }
+
+/* ── Inventário (footer) ── */
+.vr-inventario {
+    position: relative;
+    z-index: 10;
+    padding: 0.8rem 2rem;
+    background: rgba(4, 13, 30, 0.9);
+    border-top: 1px solid var(--vr-borda);
+    backdrop-filter: blur(10px);
+}
+
+.vr-inventario-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.5rem;
+}
+
+.vr-inventario-lista {
+    display: flex;
+    gap: 0.6rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+}
+
+.vr-inventario-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    white-space: nowrap;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.vr-inventario-item:hover {
+    border-color: var(--vr-azul-texto);
+    background: rgba(61, 110, 240, 0.15);
+}
+
+.vr-inventario-nome { font-weight: 600; color: var(--vr-branco); }
+.vr-inventario-nivel { color: var(--vr-azul-texto); font-family: 'Orbitron', sans-serif; font-size: 0.65rem; }
+
+/* ── Modal ── */
+.vr-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 13, 30, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: vr-fade-in 0.2s ease;
+}
+
+.vr-modal {
+    background: var(--vr-azul-escuro);
+    border: 1px solid var(--vr-borda-brilho);
+    width: 100%;
+    max-width: 600px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 80px rgba(61, 110, 240, 0.3), 0 0 200px rgba(61, 110, 240, 0.1);
+    animation: vr-modal-aparece 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes vr-modal-aparece {
+    from { opacity: 0; transform: scale(0.92) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.vr-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid var(--vr-borda);
+    background: rgba(13, 39, 86, 0.4);
+}
+
+.vr-modal-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--vr-azul-texto);
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.vr-modal-fechar {
+    background: transparent;
+    border: 1px solid rgba(255, 85, 85, 0.3);
+    color: rgba(255, 85, 85, 0.7);
+    width: 30px; height: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center;
+}
+.vr-modal-fechar:hover { background: rgba(255, 85, 85, 0.1); color: var(--vr-erro); }
+
+.vr-modal-filtros {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--vr-borda);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: rgba(4, 13, 30, 0.5);
+}
+
+.vr-modal-busca {
+    background: rgba(13, 39, 86, 0.5);
+    border: 1px solid var(--vr-borda);
+    color: var(--vr-branco);
+    padding: 0.6rem 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.vr-modal-busca:focus { border-color: var(--vr-azul-texto); }
+.vr-modal-busca::placeholder { color: var(--vr-branco-apagado); }
+
+.vr-modal-arcanas {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.vr-arcana-btn {
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    color: var(--vr-branco-apagado);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vr-arcana-btn:hover {
+    border-color: var(--vr-azul-texto);
+    color: var(--vr-branco);
+}
+
+.vr-arcana-btn--ativo {
+    background: rgba(61, 110, 240, 0.25);
+    border-color: var(--vr-azul-glow);
+    color: var(--vr-branco);
+}
+
+.vr-modal-lista {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: rgba(4, 13, 30, 0.3);
+    padding: 0.5rem;
+}
+
+.vr-modal-lista::-webkit-scrollbar { width: 5px; }
+.vr-modal-lista::-webkit-scrollbar-track { background: rgba(4, 13, 30, 0.5); }
+.vr-modal-lista::-webkit-scrollbar-thumb { background: rgba(61, 110, 240, 0.4); border-radius: 2px; }
+.vr-modal-lista::-webkit-scrollbar-thumb:hover { background: rgba(61, 110, 240, 0.7); }
+
+.vr-modal-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1rem;
+    background: rgba(13, 39, 86, 0.3);
+    border: none;
+    border-left: 2px solid transparent;
+    color: var(--vr-branco);
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.15s;
+    width: 100%;
+}
+
+.vr-modal-item:hover {
+    background: rgba(61, 110, 240, 0.2);
+    border-left-color: var(--vr-azul-glow);
+}
+
+.vr-modal-item-arcana {
+    font-size: 0.75rem;
+    color: var(--vr-branco-apagado);
+    min-width: 120px;
+}
+
+.vr-modal-item-nome {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.vr-modal-item-nivel {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: var(--vr-azul-texto);
+}
+
+.vr-modal-vazio {
+    text-align: center;
+    color: var(--vr-branco-apagado);
+    padding: 2rem;
+}
+
+/* ── Animações gerais ── */
+@keyframes vr-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ── Scrollbars globais ── */
+.vr-painel-selecao::-webkit-scrollbar,
+.vr-painel-resultado::-webkit-scrollbar { width: 4px; }
+.vr-painel-selecao::-webkit-scrollbar-track,
+.vr-painel-resultado::-webkit-scrollbar-track { background: transparent; }
+.vr-painel-selecao::-webkit-scrollbar-thumb,
+.vr-painel-resultado::-webkit-scrollbar-thumb { background: rgba(61, 110, 240, 0.35); border-radius: 2px; }
+
+/* ── Inventário scrollbar ── */
+.vr-inventario-lista::-webkit-scrollbar { height: 3px; }
+.vr-inventario-lista::-webkit-scrollbar-track { background: transparent; }
+.vr-inventario-lista::-webkit-scrollbar-thumb { background: rgba(61, 110, 240, 0.35); border-radius: 2px; }
+
+/* ── Responsividade ── */
+@media (max-width: 900px) {
+    .vr-corpo {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .vr-painel-selecao,
+    .vr-painel-resultado {
+        overflow-y: visible;
+    }
+    .vr-divisor {
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+    }
+    .vr-divisor-linha { height: 1px; width: auto; flex: 1; }
+    .vr-divisor-icon { transform: rotate(90deg); }
+}
+
+/* ═══════════════════════════════════════════
+   NOVOS ESTILOS — Header atualizado, Abas,
+   Aviso equipe, Compêndio, etc.
+   ═══════════════════════════════════════════ */
+
+/* ── Header info (Yen + count) ── */
+.velvet-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+}
+
+.velvet-header-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.velvet-yen {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: var(--vr-ouro);
+    letter-spacing: 0.08em;
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 0.35rem 0.9rem;
+}
+
+.velvet-inventario-count {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: var(--vr-azul-texto);
+    letter-spacing: 0.05em;
+    background: rgba(100, 140, 255, 0.08);
+    border: 1px solid var(--vr-borda);
+    padding: 0.35rem 0.9rem;
+}
+
+/* ── Tabs de navegação ── */
+.vr-tabs {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    background: rgba(4, 13, 30, 0.8);
+    border-bottom: 1px solid var(--vr-borda);
+    backdrop-filter: blur(6px);
+    padding: 0 2rem;
+    gap: 0.5rem;
+}
+
+.vr-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--vr-branco-apagado);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.vr-tab:hover {
+    color: var(--vr-branco);
+    border-bottom-color: rgba(100, 140, 255, 0.3);
+}
+
+.vr-tab--ativo {
+    color: var(--vr-branco);
+    border-bottom-color: var(--vr-azul-glow);
+}
+
+.vr-tab-icon { font-size: 1.2rem; }
+
+.vr-tab-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vr-tab-texto > span:first-child {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.vr-tab-desc {
+    font-size: 0.7rem;
+    color: var(--vr-branco-apagado);
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 0.1rem;
+}
+
+.vr-tab-badge {
+    background: var(--vr-azul-glow);
+    color: #fff;
+    font-size: 0.65rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 99px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* ── Aviso personas equipadas ── */
+.vr-equipe-aviso {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0.6rem 2rem;
+    background: rgba(255, 215, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+    font-size: 0.8rem;
+    color: rgba(255, 215, 0, 0.8);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.vr-equipe-aviso-membro {
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 0.2rem 0.6rem;
+    color: rgba(255, 215, 0, 0.9);
+}
+
+.vr-equipe-aviso-membro strong {
+    color: var(--vr-ouro);
+}
+
+/* ── Aviso de inventário insuficiente ── */
+.vr-aviso {
+    padding: 0.7rem 1rem;
+    background: rgba(255, 153, 0, 0.1);
+    border: 1px solid rgba(255, 153, 0, 0.3);
+    border-left: 3px solid #ff9900;
+    color: #ffbb55;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+/* ── Inventário resumo (dentro da aba de fusão) ── */
+.vr-inventario-resumo {
+    margin-top: auto;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--vr-borda);
+}
+
+.vr-inventario-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.62rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.vr-inventario-lista {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+}
+
+.vr-inventario-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    white-space: nowrap;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.vr-inventario-item--equipado {
+    opacity: 0.5;
+    border-color: rgba(255, 215, 0, 0.2);
+    background: rgba(255, 215, 0, 0.04);
+}
+
+.vr-inventario-nome { font-weight: 600; color: var(--vr-branco); }
+.vr-inventario-nivel { color: var(--vr-azul-texto); font-family: 'Orbitron', sans-serif; font-size: 0.65rem; }
+.vr-inventario-lock { font-size: 0.75rem; color: var(--vr-ouro); opacity: 0.7; }
+
+/* ── Modal: item bloqueado ── */
+.vr-modal-item--bloqueado {
+    opacity: 0.45;
+    cursor: not-allowed;
+    border-left-color: rgba(255, 215, 0, 0.3) !important;
+}
+
+.vr-modal-item-equipada {
+    font-size: 0.7rem;
+    color: var(--vr-ouro);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* ══════════════════════════════════
+   COMPÊNDIO
+   ══════════════════════════════════ */
+
+.vr-compendio {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+}
+
+.vr-compendio-tabs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.vr-compendio-tab {
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    color: var(--vr-branco-apagado);
+    padding: 0.6rem 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vr-compendio-tab:hover {
+    border-color: var(--vr-azul-texto);
+    color: var(--vr-branco);
+}
+
+.vr-compendio-tab--ativo {
+    background: rgba(61, 110, 240, 0.2);
+    border-color: var(--vr-azul-glow);
+    color: var(--vr-branco);
+    box-shadow: 0 0 15px rgba(61, 110, 240, 0.2);
+}
+
+/* Busca dentro do compêndio */
+.vr-compendio-busca {
+    width: 100%;
+}
+
+/* ── Feedback ── */
+.vr-feedback {
+    padding: 0.7rem 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    animation: vr-fade-in 0.2s ease;
+    border-left: 3px solid;
+}
+
+.vr-feedback--ok {
+    background: rgba(77, 255, 145, 0.08);
+    border-color: var(--vr-success);
+    color: var(--vr-success);
+}
+
+.vr-feedback--erro {
+    background: rgba(255, 85, 85, 0.08);
+    border-color: var(--vr-erro);
+    color: #ff8888;
+}
+
+/* ── Conteúdo do compêndio ── */
+.vr-compendio-conteudo {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vr-compendio-conteudo::-webkit-scrollbar { width: 4px; }
+.vr-compendio-conteudo::-webkit-scrollbar-track { background: transparent; }
+.vr-compendio-conteudo::-webkit-scrollbar-thumb { background: rgba(61, 110, 240, 0.35); border-radius: 2px; }
+
+/* ── Grid de personas do compêndio ── */
+.vr-compendio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.8rem;
+}
+
+.vr-compendio-card {
+    background: rgba(13, 39, 86, 0.4);
+    border: 1px solid var(--vr-borda);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.vr-compendio-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(100, 140, 255, 0.05), transparent);
+    transition: left 0.4s ease;
+}
+
+.vr-compendio-card:hover::before { left: 100%; }
+
+.vr-compendio-card:hover {
+    border-color: var(--vr-azul-texto);
+    background: rgba(13, 39, 86, 0.6);
+}
+
+.vr-compendio-card--bloqueado {
+    opacity: 0.5;
+    border-color: rgba(255, 215, 0, 0.15);
+}
+
+.vr-compendio-card--registrado {
+    border-color: rgba(77, 255, 145, 0.3);
+    background: rgba(77, 255, 145, 0.03);
+}
+
+.vr-compendio-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.vr-compendio-arcana-icon { font-size: 1.8rem; }
+
+.vr-compendio-arcana-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.vr-compendio-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--vr-branco);
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+.vr-compendio-nivel {
+    margin-left: auto;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    color: var(--vr-azul-texto);
+    font-weight: 700;
+}
+
+.vr-compendio-stats {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+/* Custo de invocação */
+.vr-compendio-custo {
+    font-size: 0.85rem;
+    color: var(--vr-branco-apagado);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.vr-custo-ok   { color: var(--vr-ouro); font-weight: 700; }
+.vr-custo-insuf { color: var(--vr-erro); font-weight: 700; }
+
+/* Botão do card do compêndio */
+.vr-compendio-btn {
+    width: 100%;
+    padding: 0.6rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    border: 1px solid var(--vr-azul-glow);
+    background: rgba(61, 110, 240, 0.2);
+    color: var(--vr-branco);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vr-compendio-btn:hover:not(:disabled) {
+    background: rgba(61, 110, 240, 0.4);
+    box-shadow: 0 0 15px rgba(61, 110, 240, 0.3);
+}
+
+.vr-compendio-btn--registrado {
+    border-color: rgba(77, 255, 145, 0.4);
+    background: rgba(77, 255, 145, 0.08);
+    color: var(--vr-success);
+    cursor: default;
+}
+
+.vr-compendio-btn--disabled {
+    border-color: rgba(100, 140, 255, 0.1);
+    background: rgba(13, 39, 86, 0.2);
+    color: rgba(227, 234, 255, 0.3);
+    cursor: not-allowed;
+}
+
+/* Yen no compêndio */
+.vr-compendio-yen {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(255, 215, 0, 0.06);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.vr-compendio-yen-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: var(--vr-branco-apagado);
+    letter-spacing: 0.1em;
+}
+
+.vr-compendio-yen-valor {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    color: var(--vr-ouro);
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
