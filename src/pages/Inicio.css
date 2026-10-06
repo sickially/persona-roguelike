@@ -1,7 +1,494 @@
+/* ============================
+   INICIO.CSS — Tela de Início
+   ID único: #tela-inicio
+   ============================ */
 
-.caminhos{
+#tela-inicio {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    padding: 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #070A14;
+}
+
+/* Fundo com grade estilizada */
+#tela-inicio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(192, 57, 43, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(192, 57, 43, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Brilho central de fundo */
+#tela-inicio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(192, 57, 43, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===== LOGO ===== */
+.inicio-logo {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inicio-logo-subtitulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    color: #C0392B;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.inicio-logo-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: 0.05em;
+    color: #E3EAFF;
+    text-shadow:
+        0 0 30px rgba(192, 57, 43, 0.4),
+        0 0 60px rgba(192, 57, 43, 0.15);
+}
+
+.inicio-logo-titulo span {
+    color: #C0392B;
+    display: block;
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 0.25em;
+}
+
+/* Linha decorativa abaixo do logo */
+.inicio-separador {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+}
+
+.inicio-separador-linha {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(192, 57, 43, 0.6), transparent);
+}
+
+.inicio-separador-icone {
+    width: 8px;
+    height: 8px;
+    background: #C0392B;
+    transform: rotate(45deg);
+    box-shadow: 0 0 12px rgba(192, 57, 43, 0.8);
+}
+
+/* ===== INSTRUÇÃO ===== */
+.inicio-instrucao {
+    position: relative;
+    z-index: 1;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(227, 234, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+/* ===== CARDS DE CAMINHO ===== */
+.inicio-caminhos {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.caminho-card {
+    position: relative;
+    width: 220px;
+    min-height: 320px;
+    border-radius: 4px;
+    overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(227, 234, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.caminho-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* Imagem de fundo do card */
+.caminho-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    filter: brightness(0.5) saturate(0.8);
+}
+
+.caminho-card:hover .caminho-card-bg {
+    transform: scale(1.06);
+    filter: brightness(0.65) saturate(1);
+}
+
+/* Overlay escuro na parte de baixo */
+.caminho-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(7, 10, 20, 0.95) 0%, rgba(7, 10, 20, 0.3) 60%, transparent 100%);
+    z-index: 1;
+}
+
+/* Conteúdo do card */
+.caminho-card-conteudo {
+    position: relative;
+    z-index: 2;
+    padding: 1.25rem 1rem;
+}
+
+.caminho-card-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    color: #E3EAFF;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.caminho-card-origem {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 0.6rem;
+}
+
+.caminho-card-desc {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(227, 234, 255, 0.7);
+    line-height: 1.4;
+}
+
+/* Borda lateral colorida por caminho */
+.caminho-card--mortality {
+    box-shadow: 0 0 0 1px rgba(100, 140, 255, 0.15), 0 0 30px rgba(80, 110, 200, 0.1);
+}
+.caminho-card--mortality .caminho-card-bg {
+    background: linear-gradient(160deg, #0D1B3E 0%, #1A0A2E 60%, #070A14 100%);
+}
+.caminho-card--mortality:hover {
+    box-shadow: 0 20px 60px rgba(80, 110, 220, 0.3), 0 0 0 1px rgba(100, 140, 255, 0.4);
+}
+.caminho-card--mortality .caminho-card-nome {
+    color: #8BA7FF;
+    text-shadow: 0 0 20px rgba(100, 140, 255, 0.5);
+}
+
+.caminho-card--truth {
+    box-shadow: 0 0 0 1px rgba(220, 180, 50, 0.15), 0 0 30px rgba(200, 160, 30, 0.08);
+}
+.caminho-card--truth .caminho-card-bg {
+    background: linear-gradient(160deg, #1C1200 0%, #2A1E00 50%, #070A14 100%);
+}
+.caminho-card--truth:hover {
+    box-shadow: 0 20px 60px rgba(200, 160, 30, 0.25), 0 0 0 1px rgba(220, 180, 50, 0.4);
+}
+.caminho-card--truth .caminho-card-nome {
+    color: #F0C040;
+    text-shadow: 0 0 20px rgba(220, 180, 50, 0.5);
+}
+
+.caminho-card--rebellion {
+    box-shadow: 0 0 0 1px rgba(192, 57, 43, 0.25), 0 0 30px rgba(192, 57, 43, 0.1);
+}
+.caminho-card--rebellion .caminho-card-bg {
+    background: linear-gradient(160deg, #1A0000 0%, #2E0A0A 50%, #070A14 100%);
+}
+.caminho-card--rebellion:hover {
+    box-shadow: 0 20px 60px rgba(192, 57, 43, 0.35), 0 0 0 1px rgba(192, 57, 43, 0.5);
+}
+.caminho-card--rebellion .caminho-card-nome {
+    color: #E74C3C;
+    text-shadow: 0 0 20px rgba(192, 57, 43, 0.6);
+}
+
+/* Cantos decorativos nos cards */
+.caminho-card::before,
+.caminho-card::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+    opacity: 0.4;
+}
+.caminho-card::before {
+    top: 6px;
+    left: 6px;
+    border-top: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+}
+.caminho-card::after {
+    bottom: 6px;
+    right: 6px;
+    border-bottom: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+}
+.caminho-card:hover::before,
+.caminho-card:hover::after {
+    opacity: 1;
+}
+.caminho-card--mortality::before,
+.caminho-card--mortality::after { color: #8BA7FF; }
+.caminho-card--truth::before,
+.caminho-card--truth::after { color: #F0C040; }
+.caminho-card--rebellion::before,
+.caminho-card--rebellion::after { color: #E74C3C; }
+
+/* ===== CARD SELECIONADO ===== */
+.caminho-card--ativo {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.caminho-card--mortality.caminho-card--ativo {
+    box-shadow: 0 20px 60px rgba(80, 110, 220, 0.35), 0 0 0 2px rgba(100, 140, 255, 0.6);
+}
+.caminho-card--truth.caminho-card--ativo {
+    box-shadow: 0 20px 60px rgba(200, 160, 30, 0.3), 0 0 0 2px rgba(220, 180, 50, 0.6);
+}
+.caminho-card--rebellion.caminho-card--ativo {
+    box-shadow: 0 20px 60px rgba(192, 57, 43, 0.4), 0 0 0 2px rgba(192, 57, 43, 0.7);
+}
+
+.caminho-card--ativo::before,
+.caminho-card--ativo::after {
+    opacity: 1;
+}
+
+/* Checkmark de selecionado */
+.caminho-card-selecionado {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 4;
+    width: 22px;
+    height: 22px;
+    background: #C0392B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(192, 57, 43, 0.7);
+    animation: inicio-pop 0.2s ease;
+}
+
+@keyframes inicio-pop {
+    from { transform: scale(0); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+/* ===== BOTÃO JOGAR ===== */
+.inicio-btn-jogar {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border: 1px solid rgba(192, 57, 43, 0.6);
+    color: #E3EAFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 0.85rem 3.5rem;
+    cursor: pointer;
+    clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.inicio-btn-jogar:hover {
+    background: rgba(192, 57, 43, 0.2);
+    box-shadow: 0 0 30px rgba(192, 57, 43, 0.3);
+    color: #ffffff;
+}
+
+/* Botão desativado (nenhum caminho selecionado) */
+.inicio-btn-jogar--desativado {
+    opacity: 0.35;
+    cursor: not-allowed;
+    border-color: rgba(227, 234, 255, 0.2);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+}
+
+.inicio-btn-jogar--desativado:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #E3EAFF;
+}
+
+/* ===== ÍCONES SVG NOS CARDS ===== */
+.caminho-card-icone {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.caminho-card:hover .caminho-card-icone {
+    opacity: 0.8;
+}
+
+/* ===== RODAPÉ ===== */
+.inicio-rodape {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: rgba(227, 234, 255, 0.2);
+    text-align: center;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 700px) {
+    .inicio-caminhos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caminho-card {
+        width: 100%;
+        max-width: 340px;
+        min-height: 200px;
+    }
+}
+
+/* ===== LOADING & SETUP TELA INICIAL ===== */
+.inicio-centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.inicio-loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(227, 234, 255, 0.1);
+    border-left-color: #C0392B;
+    border-radius: 50%;
+    animation: inicio-spin 1s linear infinite;
+    margin-bottom: 2rem;
+}
+
+@keyframes inicio-spin {
+    to { transform: rotate(360deg); }
+}
+
+.inicio-loading-texto {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    color: #E3EAFF;
+}
+
+.inicio-loading-subtexto {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(227, 234, 255, 0.5);
+    letter-spacing: 0.2em;
+    margin-top: 0.5rem;
+}
+
+.inicio-setup-box {
+    background: rgba(227, 234, 255, 0.02);
+    border: 1px solid rgba(192, 57, 43, 0.4);
+    padding: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(192, 57, 43, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+.inicio-setup-box h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #8BA7FF;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.inicio-setup-box p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(227, 234, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.inicio-input-nome {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(227, 234, 255, 0.3);
+    color: #E3EAFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.inicio-input-nome:focus {
+    border-color: #C0392B;
+}
+
+.inicio-input-nome::placeholder {
+    color: rgba(227, 234, 255, 0.2);
 }

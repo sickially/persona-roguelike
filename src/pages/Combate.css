@@ -1,0 +1,344 @@
+/* ============================
+   COMBATE.CSS
+   ID único: #tela-combate
+   ============================ */
+
+#tela-combate {
+    min-height: 100vh;
+    background-color: #020202;
+    color: #E3EAFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fundo da batalha com grid vermelho distorcido */
+#tela-combate::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(192, 57, 43, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(192, 57, 43, 0.08) 1px, transparent 1px);
+    background-size: 80px 80px;
+    transform: perspective(500px) rotateX(60deg) translateY(-100px) scale(2);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+/* HEADER - Turno */
+.combate-header {
+    position: relative;
+    z-index: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(192, 57, 43, 0.2);
+    background: rgba(2, 2, 2, 0.8);
+}
+
+.combate-turno-indicador {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #E3EAFF;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.combate-turno-indicador span {
+    color: #C0392B;
+}
+
+/* CAMPO DE BATALHA */
+.combate-campo {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+}
+
+/* LADO ESQUERDO - ALIADOS */
+.combate-aliados {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 250px;
+}
+
+.combate-aliado-card {
+    background: rgba(227, 234, 255, 0.05);
+    border: 1px solid rgba(227, 234, 255, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.combate-aliado-card--ativo {
+    background: rgba(192, 57, 43, 0.1);
+    border-color: #C0392B;
+    transform: translateX(20px);
+    box-shadow: 0 0 20px rgba(192, 57, 43, 0.3);
+}
+
+.combate-aliado-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.combate-aliado-icone {
+    font-size: 1.2rem;
+}
+
+.combate-barras {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.combate-barra-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.combate-barra-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    width: 20px;
+}
+
+.combate-barra-bg {
+    flex: 1;
+    height: 6px;
+    background: rgba(227, 234, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.combate-barra-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.combate-barra-fill--hp { background: #2ECC71; }
+.combate-barra-fill--sp { background: #3498DB; }
+
+/* LADO DIREITO - INIMIGOS */
+.combate-inimigos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 250px;
+    align-items: flex-end;
+}
+
+.combate-inimigo-card {
+    background: rgba(2, 2, 2, 0.8);
+    border: 1px solid rgba(192, 57, 43, 0.4);
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: right;
+    position: relative;
+    animation: inimigo-flutuar 3s infinite ease-in-out alternate;
+}
+
+/* Adicionando atraso para cada inimigo flutuar diferente */
+.combate-inimigo-card:nth-child(2) { animation-delay: -1s; }
+.combate-inimigo-card:nth-child(3) { animation-delay: -2s; }
+
+@keyframes inimigo-flutuar {
+    from { transform: translateY(-5px); }
+    to { transform: translateY(5px); }
+}
+
+.combate-inimigo-card--ativo {
+    border-color: #E3EAFF;
+    box-shadow: 0 0 20px rgba(227, 234, 255, 0.2);
+}
+
+.combate-inimigo-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #C0392B;
+    margin-bottom: 0.5rem;
+}
+
+.combate-inimigo-hp {
+    width: 150px;
+    height: 4px;
+    background: rgba(227, 234, 255, 0.1);
+    margin-left: auto;
+}
+
+.combate-inimigo-hp-fill {
+    height: 100%;
+    background: #E74C3C;
+    width: 100%; /* Mock */
+}
+
+/* Efeito visual de ataque sobre o inimigo */
+.combate-efeito-ataque {
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.combate-efeito-ataque.animar {
+    animation: flash-ataque 0.4s ease-out;
+}
+
+@keyframes flash-ataque {
+    0% { opacity: 1; transform: scale(0.5); }
+    100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* MENU DE AÇÕES (FOOTER) */
+.combate-acoes {
+    position: relative;
+    z-index: 1;
+    background: rgba(2, 2, 2, 0.9);
+    border-top: 1px solid rgba(192, 57, 43, 0.3);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.combate-btn-acao {
+    background: transparent;
+    border: 1px solid rgba(227, 234, 255, 0.2);
+    color: #E3EAFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.combate-btn-acao::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #C0392B;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.combate-btn-acao:hover {
+    border-color: #C0392B;
+    transform: scale(1.05);
+}
+
+.combate-btn-acao:hover::before {
+    transform: translateX(0);
+}
+
+.combate-btn-acao:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.combate-btn-acao:disabled:hover {
+    transform: none;
+    border-color: rgba(227, 234, 255, 0.2);
+}
+
+.combate-btn-acao:disabled::before {
+    display: none;
+}
+
+/* LOG DE COMBATE / NOTIFICAÇÃO */
+.combate-log {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(2, 2, 2, 0.8);
+    border: 1px solid #C0392B;
+    padding: 1rem 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+}
+
+.combate-log.mostrar {
+    animation: show-log 2s ease-in-out forwards;
+}
+
+@keyframes show-log {
+    0% { opacity: 0; transform: translate(-50%, 0); }
+    10% { opacity: 1; transform: translate(-50%, -50%); }
+    80% { opacity: 1; transform: translate(-50%, -50%); }
+    100% { opacity: 0; transform: translate(-50%, -100%); }
+}
+
+/* TELA DE RESULTADO (VITÓRIA) */
+.combate-vitoria-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.combate-vitoria-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: #E3EAFF;
+    text-shadow: 4px 4px 0 #C0392B;
+    letter-spacing: 0.1em;
+    transform: rotate(-2deg);
+}
+
+.combate-vitoria-dados {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    color: #2ECC71;
+}
+
+.combate-vitoria-btn {
+    background: #C0392B;
+    color: #FFF;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform 0.2s;
+}
+
+.combate-vitoria-btn:hover {
+    transform: scale(1.1);
+}

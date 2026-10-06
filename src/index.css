@@ -1,5 +1,34 @@
-body{
-    background-color: #070A14;
-    color: #E3EAFF;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #070A14;
+    --cor-texto: #E3EAFF;
+    --cor-vermelho: #C0392B;
+    --cor-vermelho-glow: #E74C3C;
+    --cor-azul-escuro: #0D1B2A;
+    --cor-borda: rgba(227, 234, 255, 0.15);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
 }

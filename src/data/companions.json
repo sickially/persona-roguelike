@@ -1,0 +1,979 @@
+[
+  {
+    "nome": "Morgana",
+    "personaInicial": "Diego",
+    "arcana": "Magician",
+    "nivel": 1,
+    "game": "p5",
+    "stats": {
+      "st": 2,
+      "vi": 1,
+      "ma": 3,
+      "ag": 3,
+      "lu": 1
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [
+        "Wind"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Garu",
+      "Dia"
+    ]
+  },
+  {
+    "nome": "Junpei Iori",
+    "personaInicial": "Hermes",
+    "arcana": "Magician",
+    "nivel": 1,
+    "game": "p3",
+    "stats": {
+      "st": 3,
+      "vi": 2,
+      "ma": 2,
+      "ag": 2,
+      "lu": 1
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Cleave"
+    ]
+  },
+  {
+    "nome": "Yukari Takeba",
+    "personaInicial": "Io",
+    "arcana": "Lovers",
+    "nivel": 1,
+    "game": "p3",
+    "stats": {
+      "st": 1,
+      "vi": 2,
+      "ma": 3,
+      "ag": 1,
+      "lu": 3
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Dia"
+    ]
+  },
+  {
+    "nome": "Sophia",
+    "personaInicial": "Pandora",
+    "arcana": "Hope",
+    "nivel": 1,
+    "game": "p5",
+    "stats": {
+      "st": 2,
+      "vi": 4,
+      "ma": 5,
+      "ag": 6,
+      "lu": 4
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Hama",
+      "Rakunda"
+    ]
+  },
+  {
+    "nome": "Ryuji Sakamoto",
+    "personaInicial": "Captain Kidd",
+    "arcana": "Chariot",
+    "nivel": 4,
+    "game": "p5",
+    "stats": {
+      "st": 5,
+      "vi": 5,
+      "ma": 3,
+      "ag": 3,
+      "lu": 3
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Zio"
+    ]
+  },
+  {
+    "nome": "Chie Satonaka",
+    "personaInicial": "Haraedo-no-Okami",
+    "arcana": "Chariot",
+    "nivel": 4,
+    "game": "p4",
+    "stats": {
+      "st": 4,
+      "vi": 4,
+      "ma": 4,
+      "ag": 2,
+      "lu": 3
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [
+        "Ice"
+      ],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Skewer",
+      "Tarukaja"
+    ]
+  },
+  {
+    "nome": "Yosuke Hanamura",
+    "personaInicial": "Jiraiya",
+    "arcana": "Magician",
+    "nivel": 4,
+    "game": "p4",
+    "stats": {
+      "st": 5,
+      "vi": 3,
+      "ma": 3,
+      "ag": 5,
+      "lu": 4
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Garu",
+      "Lunge",
+      "Dia"
+    ]
+  },
+  {
+    "nome": "Ann Takamaki",
+    "personaInicial": "Carmen",
+    "arcana": "Lovers",
+    "nivel": 5,
+    "game": "p5",
+    "stats": {
+      "st": 3,
+      "vi": 4,
+      "ma": 6,
+      "ag": 4,
+      "lu": 5
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Agi",
+      "Dia"
+    ]
+  },
+  {
+    "nome": "Akihiko Sanada",
+    "personaInicial": "Caesar",
+    "arcana": "Emperor",
+    "nivel": 12,
+    "game": "p3",
+    "stats": {
+      "st": 9,
+      "vi": 8,
+      "ma": 10,
+      "ag": 9,
+      "lu": 7
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Sonic Punch",
+      "Zio",
+      "Dia"
+    ]
+  },
+  {
+    "nome": "Yukiko Amagi",
+    "personaInicial": "Amaterasu",
+    "arcana": "Priestess",
+    "nivel": 15,
+    "game": "p4",
+    "stats": {
+      "st": 8,
+      "vi": 11,
+      "ma": 15,
+      "ag": 8,
+      "lu": 10
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Dia",
+      "Agi",
+      "Me Patra",
+      "Maragi"
+    ]
+  },
+  {
+    "nome": "Yusuke Kitagawa",
+    "personaInicial": "Goemon",
+    "arcana": "Emperor",
+    "nivel": 15,
+    "game": "p5",
+    "stats": {
+      "st": 13,
+      "vi": 11,
+      "ma": 10,
+      "ag": 10,
+      "lu": 8
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Bufu",
+      "Giant Slice",
+      "Sukukaja"
+    ]
+  },
+  {
+    "nome": "Marie",
+    "personaInicial": "Kaguya",
+    "arcana": "Moon",
+    "nivel": 16,
+    "game": "p5",
+    "stats": {
+      "st": 11,
+      "vi": 12,
+      "ma": 15,
+      "ag": 11,
+      "lu": 6
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [
+        "Light",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Shining Arrows",
+      "Mediarama",
+      "Counterstrike"
+    ]
+  },
+  {
+    "nome": "Fuuka Yamagishi",
+    "personaInicial": "Juno",
+    "arcana": "Priestess",
+    "nivel": 17,
+    "game": "p3",
+    "stats": {
+      "st": 8,
+      "vi": 12,
+      "ma": 14,
+      "ag": 9,
+      "lu": 12
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Full Analysis"
+    ]
+  },
+  {
+    "nome": "Mitsuru Kirijo",
+    "personaInicial": "Artemisia",
+    "arcana": "Empress",
+    "nivel": 18,
+    "game": "p3",
+    "stats": {
+      "st": 11,
+      "vi": 11,
+      "ma": 16,
+      "ag": 12,
+      "lu": 11
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Analysis",
+      "Bufu",
+      "Mabufu",
+      "Dia",
+      "Marin Karin"
+    ]
+  },
+  {
+    "nome": "Makoto Niijima",
+    "personaInicial": "Agnes",
+    "arcana": "Priestess",
+    "nivel": 21,
+    "game": "p5",
+    "stats": {
+      "st": 15,
+      "vi": 14,
+      "ma": 15,
+      "ag": 15,
+      "lu": 11
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Psy"
+      ],
+      "resist": [
+        "Dark"
+      ],
+      "null": [
+        "Nuke"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Frei",
+      "Mafrei",
+      "Vajra Blast",
+      "Diarama",
+      "Rakukaja"
+    ]
+  },
+  {
+    "nome": "Metis",
+    "personaInicial": "Psyche",
+    "arcana": "Hierophant",
+    "nivel": 25,
+    "game": "p3",
+    "stats": {
+      "st": 18,
+      "vi": 20,
+      "ma": 13,
+      "ag": 18,
+      "lu": 13
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Fatal End",
+      "Garula",
+      "Dekaja"
+    ]
+  },
+  {
+    "nome": "Kanji Tatsumi",
+    "personaInicial": "Rokuten Maoh",
+    "arcana": "Emperor",
+    "nivel": 25,
+    "game": "p4",
+    "stats": {
+      "st": 20,
+      "vi": 17,
+      "ma": 11,
+      "ag": 15,
+      "lu": 14
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Mazio",
+      "Zionga",
+      "Rakukaja",
+      "Kill Rush",
+      "Regenerate 1"
+    ]
+  },
+  {
+    "nome": "Aigis",
+    "personaInicial": "Palladion",
+    "arcana": "Chariot",
+    "nivel": 29,
+    "game": "p3",
+    "stats": {
+      "st": 19,
+      "vi": 25,
+      "ma": 13,
+      "ag": 18,
+      "lu": 14
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Kill Rush",
+      "Swift Strike",
+      "Sukukaja"
+    ]
+  },
+  {
+    "nome": "Futaba Sakura",
+    "personaInicial": "Al Azif",
+    "arcana": "Justice",
+    "nivel": 31,
+    "game": "p5",
+    "stats": {
+      "st": 17,
+      "vi": 20,
+      "ma": 23,
+      "ag": 21,
+      "lu": 35
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Analysis"
+    ]
+  },
+  {
+    "nome": "Koromaru",
+    "personaInicial": "Cerberus - P3",
+    "arcana": "Strength",
+    "nivel": 34,
+    "game": "p3",
+    "stats": {
+      "st": 20,
+      "vi": 21,
+      "ma": 20,
+      "ag": 29,
+      "lu": 19
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [],
+      "null": [
+        "Fire",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Agilao",
+      "Mudo",
+      "Sukukaja"
+    ]
+  },
+  {
+    "nome": "Rise Kujikawa",
+    "personaInicial": "Himiko",
+    "arcana": "Lovers",
+    "nivel": 34,
+    "game": "p4",
+    "stats": {
+      "st": 15,
+      "vi": 20,
+      "ma": 25,
+      "ag": 21,
+      "lu": 24
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Analysis",
+      "Weakness Scan",
+      "Full Analysis",
+      "Third Eye",
+      "Healing Wave",
+      "Stamina Song"
+    ]
+  },
+  {
+    "nome": "Teddie",
+    "personaInicial": "Kamui",
+    "arcana": "Star",
+    "nivel": 35,
+    "game": "p4",
+    "stats": {
+      "st": 24,
+      "vi": 20,
+      "ma": 25,
+      "ag": 22,
+      "lu": 16
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind",
+        "Dark"
+      ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Mediarama",
+      "Bufula",
+      "Energy Shower",
+      "Poison Skewer",
+      "Re Patra"
+    ]
+  },
+  {
+    "nome": "Haru Okumura",
+    "personaInicial": "Astarte",
+    "arcana": "Empress",
+    "nivel": 36,
+    "game": "p5",
+    "stats": {
+      "st": 27,
+      "vi": 22,
+      "ma": 25,
+      "ag": 22,
+      "lu": 21
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [
+        "Psy"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Psio",
+      "Mapsio",
+      "Triple Down",
+      "Patra",
+      "Fast Heal",
+      "Psy Break",
+      "Tentarafoo"
+    ]
+  },
+  {
+    "nome": "Ken Amada",
+    "personaInicial": "Kala-Nemi",
+    "arcana": "Justice",
+    "nivel": 36,
+    "game": "p3",
+    "stats": {
+      "st": 21,
+      "vi": 23,
+      "ma": 25,
+      "ag": 26,
+      "lu": 20
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Hama",
+      "Cruel Attack",
+      "Zionga",
+      "Diarama"
+    ]
+  },
+  {
+    "nome": "Shinjiro Aragaki",
+    "personaInicial": "Castor",
+    "arcana": "Hierophant",
+    "nivel": 37,
+    "game": "p3",
+    "stats": {
+      "st": 32,
+      "vi": 27,
+      "ma": 20,
+      "ag": 22,
+      "lu": 17
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Regenerate 1",
+      "Counter - Persona",
+      "Fatal End"
+    ]
+  },
+  {
+    "nome": "Zenkichi Hasegawa",
+    "personaInicial": "Valjean",
+    "arcana": "Apostle",
+    "nivel": 40,
+    "game": "p5",
+    "stats": {
+      "st": 34,
+      "vi": 32,
+      "ma": 26,
+      "ag": 25,
+      "lu": 22
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Tarukaja",
+      "Rakukaja",
+      "Sukukaja",
+      "Megido",
+      "Triple Down",
+      "Gun Boost"
+    ]
+  },
+  {
+    "nome": "Tohru Adachi",
+    "personaInicial": "Magatsu-Izanagi",
+    "arcana": "Tower",
+    "nivel": 44,
+    "game": "p5",
+    "stats": {
+      "st": 37,
+      "vi": 32,
+      "ma": 35,
+      "ag": 25,
+      "lu": 10
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Gun"
+      ],
+      "null": [
+        "Light",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Magatsu Mandala",
+      "Megidola",
+      "Ghastly Wail"
+    ]
+  },
+  {
+    "nome": "Goro Akechi",
+    "personaInicial": "Robin Hood",
+    "arcana": "Justice",
+    "nivel": 45,
+    "game": "p5",
+    "stats": {
+      "st": 32,
+      "vi": 28,
+      "ma": 29,
+      "ag": 29,
+      "lu": 24
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Megidola",
+      "Megaton Raid",
+      "Hamaon",
+      "Mudoon",
+      "Fortify Spirit"
+    ]
+  },
+  {
+    "nome": "Naoto Shirogane",
+    "personaInicial": "Sukuna-Hikona - P4",
+    "arcana": "Fortune",
+    "nivel": 55,
+    "game": "p4",
+    "stats": {
+      "st": 32,
+      "vi": 32,
+      "ma": 38,
+      "ag": 40,
+      "lu": 31
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Light",
+        "Dark"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Tempest Slash",
+      "Agidyne",
+      "Garudyne",
+      "Mudoon",
+      "Hamaon",
+      "Megidola",
+      "Deathbound"
+    ]
+  },
+  {
+    "nome": "Elizabeth",
+    "personaInicial": "Thanatos",
+    "arcana": "Death",
+    "nivel": 65,
+    "game": "p5",
+    "stats": {
+      "st": 43,
+      "vi": 41,
+      "ma": 49,
+      "ag": 38,
+      "lu": 31
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": [
+        "Dark"
+      ]
+    },
+    "learnsetInicial": [
+      "Door of Hades",
+      "Mamudobarion",
+      "Mamudoon"
+    ]
+  },
+  {
+    "nome": "Sumire Yoshizawa",
+    "personaInicial": "Cendrillon",
+    "arcana": "Faith",
+    "nivel": 75,
+    "game": "p5",
+    "stats": {
+      "st": 55,
+      "vi": 36,
+      "ma": 46,
+      "ag": 51,
+      "lu": 44
+    },
+    "resistencias": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnsetInicial": [
+      "Apt Pupil",
+      "Vorpal Blade",
+      "Hamabarion",
+      "Sword Dance",
+      "Mahamabarion",
+      "Diarahan",
+      "Light Amp",
+      "Ali Dance"
+    ]
+  }
+]

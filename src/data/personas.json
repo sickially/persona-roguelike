@@ -1,0 +1,7081 @@
+[
+  {
+    "name": "Agnes",
+    "arcana": "Priestess",
+    "level": 21,
+    "stats": {
+      "st": 15,
+      "vi": 14,
+      "ma": 15,
+      "ag": 15,
+      "lu": 11
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Psy"
+      ],
+      "resist": [
+        "Dark"
+      ],
+      "null": [
+        "Nuke"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Frei",
+        "level": 0
+      },
+      {
+        "name": "Mafrei",
+        "level": 0
+      },
+      {
+        "name": "Vajra Blast",
+        "level": 0
+      },
+      {
+        "name": "Diarama",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Freila",
+        "level": 24
+      },
+      {
+        "name": "Energy Shower",
+        "level": 27
+      },
+      {
+        "name": "Flash Bomb",
+        "level": 31
+      },
+      {
+        "name": "Dekunda",
+        "level": 34
+      },
+      {
+        "name": "Defense Master",
+        "level": 36
+      },
+      {
+        "name": "Mafreila",
+        "level": 38
+      },
+      {
+        "name": "Mediarama",
+        "level": 41
+      },
+      {
+        "name": "Nuke Break",
+        "level": 43
+      },
+      {
+        "name": "Nuke Boost",
+        "level": 45
+      },
+      {
+        "name": "Marakukaja",
+        "level": 48
+      },
+      {
+        "name": "Freidyne",
+        "level": 50
+      },
+      {
+        "name": "Diarahan",
+        "level": 54
+      },
+      {
+        "name": "Mafreidyne",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Nuke Amp",
+        "level": 71
+      },
+      {
+        "name": "Atomic Flare",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Al Azif",
+    "arcana": "Justice",
+    "level": 31,
+    "stats": {
+      "st": 17,
+      "vi": 20,
+      "ma": 23,
+      "ag": 21,
+      "lu": 35
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Subrecover HP",
+        "level": 38
+      },
+      {
+        "name": "Subrecover MP",
+        "level": 49
+      },
+      {
+        "name": "Subrecover HP EX",
+        "level": 58
+      },
+      {
+        "name": "Subrecover MP EX",
+        "level": 67
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Amaterasu",
+    "arcana": "Priestess",
+    "level": 15,
+    "stats": {
+      "st": 8,
+      "vi": 11,
+      "ma": 15,
+      "ag": 8,
+      "lu": 10
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Me Patra",
+        "level": 0
+      },
+      {
+        "name": "Maragi",
+        "level": 0
+      },
+      {
+        "name": "Media",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 21
+      },
+      {
+        "name": "Recarm",
+        "level": 26
+      },
+      {
+        "name": "Fire Break",
+        "level": 30
+      },
+      {
+        "name": "Diarama",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 39
+      },
+      {
+        "name": "Mediarama",
+        "level": 43
+      },
+      {
+        "name": "Fire Boost",
+        "level": 45
+      },
+      {
+        "name": "Agidyne",
+        "level": 51
+      },
+      {
+        "name": "Diarahan",
+        "level": 55
+      },
+      {
+        "name": "Samarecarm",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Maragidyne",
+        "level": 68
+      },
+      {
+        "name": "Salvation",
+        "level": 74
+      },
+      {
+        "name": "Fire Amp",
+        "level": 76
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Anat",
+    "arcana": "Priestess",
+    "level": 21,
+    "stats": {
+      "st": 15,
+      "vi": 14,
+      "ma": 15,
+      "ag": 15,
+      "lu": 11
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Psy"
+      ],
+      "resist": [
+        "Dark"
+      ],
+      "null": [
+        "Nuke"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Frei",
+        "level": 0
+      },
+      {
+        "name": "Mafrei",
+        "level": 0
+      },
+      {
+        "name": "Vajra Blast",
+        "level": 0
+      },
+      {
+        "name": "Diarama",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Freila",
+        "level": 24
+      },
+      {
+        "name": "Energy Shower",
+        "level": 27
+      },
+      {
+        "name": "Flash Bomb",
+        "level": 31
+      },
+      {
+        "name": "Dekunda",
+        "level": 34
+      },
+      {
+        "name": "Defense Master",
+        "level": 36
+      },
+      {
+        "name": "Mafreila",
+        "level": 38
+      },
+      {
+        "name": "Mediarama",
+        "level": 41
+      },
+      {
+        "name": "Nuke Break",
+        "level": 43
+      },
+      {
+        "name": "Nuke Boost",
+        "level": 45
+      },
+      {
+        "name": "Marakukaja",
+        "level": 48
+      },
+      {
+        "name": "Freidyne",
+        "level": 50
+      },
+      {
+        "name": "Diarahan",
+        "level": 54
+      },
+      {
+        "name": "Mafreidyne",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Nuke Amp",
+        "level": 71
+      },
+      {
+        "name": "Atomic Flare",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Ariadne",
+    "arcana": "Fortune",
+    "level": 30,
+    "stats": {
+      "st": 23,
+      "vi": 20,
+      "ma": 19,
+      "ag": 17,
+      "lu": 18
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Psy"
+      ],
+      "resist": [
+        "Gun",
+        "Light"
+      ],
+      "null": [
+        "Nuke"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Beast Weaver",
+        "level": 0
+      },
+      {
+        "name": "Apt Pupil",
+        "level": 0
+      },
+      {
+        "name": "Miracle Punch",
+        "level": 0
+      },
+      {
+        "name": "Attack Master",
+        "level": 31
+      },
+      {
+        "name": "Fortified Moxy",
+        "level": 32
+      },
+      {
+        "name": "Evade Phys",
+        "level": 34
+      },
+      {
+        "name": "Charge",
+        "level": 36
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Arsène",
+    "arcana": "Fool",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 2,
+      "ma": 2,
+      "ag": 3,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice",
+        "Light"
+      ],
+      "resist": [
+        "Dark"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mudo",
+        "level": 0
+      },
+      {
+        "name": "Cleave",
+        "level": 2
+      },
+      {
+        "name": "Sukunda",
+        "level": 4
+      },
+      {
+        "name": "Dream Needle",
+        "level": 5
+      },
+      {
+        "name": "Adverse Resolve",
+        "level": 7
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Artemisia",
+    "arcana": "Empress",
+    "level": 18,
+    "stats": {
+      "st": 11,
+      "vi": 11,
+      "ma": 16,
+      "ag": 12,
+      "lu": 11
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Bufu",
+        "level": 0
+      },
+      {
+        "name": "Mabufu",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Marin Karin",
+        "level": 0
+      },
+      {
+        "name": "Bufula",
+        "level": 21
+      },
+      {
+        "name": "Diarama",
+        "level": 25
+      },
+      {
+        "name": "Spirit Drain",
+        "level": 27
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 32
+      },
+      {
+        "name": "Mabufula",
+        "level": 42
+      },
+      {
+        "name": "Ice Boost",
+        "level": 45
+      },
+      {
+        "name": "Concentrate",
+        "level": 50
+      },
+      {
+        "name": "Bufudyne",
+        "level": 55
+      },
+      {
+        "name": "Diarahan",
+        "level": 58
+      },
+      {
+        "name": "Ice Break",
+        "level": 61
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 71
+      },
+      {
+        "name": "Ice Amp",
+        "level": 76
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Astarte",
+    "arcana": "Empress",
+    "level": 36,
+    "stats": {
+      "st": 27,
+      "vi": 22,
+      "ma": 25,
+      "ag": 22,
+      "lu": 21
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [
+        "Psy"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Psio",
+        "level": 0
+      },
+      {
+        "name": "Mapsio",
+        "level": 0
+      },
+      {
+        "name": "Triple Down",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 0
+      },
+      {
+        "name": "Fast Heal",
+        "level": 0
+      },
+      {
+        "name": "Psy Break",
+        "level": 0
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 38
+      },
+      {
+        "name": "Psy Boost",
+        "level": 42
+      },
+      {
+        "name": "Makarakarn",
+        "level": 44
+      },
+      {
+        "name": "Climate Decorum",
+        "level": 48
+      },
+      {
+        "name": "Psiodyne",
+        "level": 52
+      },
+      {
+        "name": "Gun Boost",
+        "level": 54
+      },
+      {
+        "name": "One-shot Kill",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 60
+      },
+      {
+        "name": "Mapsiodyne",
+        "level": 64
+      },
+      {
+        "name": "Gun Amp",
+        "level": 68
+      },
+      {
+        "name": "Psy Amp",
+        "level": 73
+      },
+      {
+        "name": "Heat Riser",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Asterius",
+    "arcana": "Fortune",
+    "level": 56,
+    "stats": {
+      "st": 43,
+      "vi": 32,
+      "ma": 43,
+      "ag": 32,
+      "lu": 25
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Fire",
+        "Psy"
+      ],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Titanomachia - Persona",
+        "level": 0
+      },
+      {
+        "name": "Maragidyne",
+        "level": 0
+      },
+      {
+        "name": "Burn Boost",
+        "level": 0
+      },
+      {
+        "name": "Auto-Mataru",
+        "level": 57
+      },
+      {
+        "name": "Fire Amp",
+        "level": 59
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 60
+      },
+      {
+        "name": "Gigantomachia",
+        "level": 62
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Athena",
+    "arcana": "Chariot",
+    "level": 46,
+    "stats": {
+      "st": 33,
+      "vi": 29,
+      "ma": 27,
+      "ag": 29,
+      "lu": 27
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [
+        "Gun"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Akashic Arts",
+        "level": 0
+      },
+      {
+        "name": "Rising Slash",
+        "level": 0
+      },
+      {
+        "name": "Marakukaja",
+        "level": 0
+      },
+      {
+        "name": "Diarahan",
+        "level": 47
+      },
+      {
+        "name": "Matarukaja",
+        "level": 48
+      },
+      {
+        "name": "Auto-Maraku",
+        "level": 50
+      },
+      {
+        "name": "Samarecarm",
+        "level": 51
+      },
+      {
+        "name": "Megaton Raid",
+        "level": 52
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Caesar",
+    "arcana": "Emperor",
+    "level": 12,
+    "stats": {
+      "st": 9,
+      "vi": 8,
+      "ma": 10,
+      "ag": 9,
+      "lu": 7
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Sonic Punch",
+        "level": 0
+      },
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Tarunda",
+        "level": 16
+      },
+      {
+        "name": "Mazio",
+        "level": 21
+      },
+      {
+        "name": "Rakunda",
+        "level": 25
+      },
+      {
+        "name": "Zionga",
+        "level": 29
+      },
+      {
+        "name": "Sukunda",
+        "level": 33
+      },
+      {
+        "name": "Elec Boost",
+        "level": 37
+      },
+      {
+        "name": "Diarama",
+        "level": 38
+      },
+      {
+        "name": "Mazionga",
+        "level": 41
+      },
+      {
+        "name": "Matarunda",
+        "level": 47
+      },
+      {
+        "name": "Arms Master",
+        "level": 50
+      },
+      {
+        "name": "Ziodyne",
+        "level": 53
+      },
+      {
+        "name": "Marakunda",
+        "level": 57
+      },
+      {
+        "name": "Diarahan",
+        "level": 65
+      },
+      {
+        "name": "Masukunda",
+        "level": 66
+      },
+      {
+        "name": "Maziodyne",
+        "level": 74
+      },
+      {
+        "name": "Elec Amp",
+        "level": 76
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Captain Kidd",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 5,
+      "ma": 3,
+      "ag": 3,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 5
+      },
+      {
+        "name": "Tarukaja",
+        "level": 9
+      },
+      {
+        "name": "Headbutt",
+        "level": 11
+      },
+      {
+        "name": "Adverse Resolve",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 17
+      },
+      {
+        "name": "Mazio",
+        "level": 21
+      },
+      {
+        "name": "Memory Blow",
+        "level": 24
+      },
+      {
+        "name": "Assault Dive",
+        "level": 26
+      },
+      {
+        "name": "Zionga",
+        "level": 28
+      },
+      {
+        "name": "Swift Strike",
+        "level": 32
+      },
+      {
+        "name": "Shock Boost",
+        "level": 35
+      },
+      {
+        "name": "Elec Break",
+        "level": 39
+      },
+      {
+        "name": "Mazionga",
+        "level": 43
+      },
+      {
+        "name": "Deathbound",
+        "level": 47
+      },
+      {
+        "name": "Elec Boost",
+        "level": 49
+      },
+      {
+        "name": "Megaton Raid",
+        "level": 53
+      },
+      {
+        "name": "Ziodyne",
+        "level": 55
+      },
+      {
+        "name": "Matarukaja",
+        "level": 58
+      },
+      {
+        "name": "Charge",
+        "level": 63
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Agneyastra",
+        "level": 71
+      },
+      {
+        "name": "God's Hand",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Carmen",
+    "arcana": "Lovers",
+    "level": 5,
+    "stats": {
+      "st": 3,
+      "vi": 4,
+      "ma": 6,
+      "ag": 4,
+      "lu": 5
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Dormina",
+        "level": 7
+      },
+      {
+        "name": "Tarunda",
+        "level": 11
+      },
+      {
+        "name": "Maragi",
+        "level": 13
+      },
+      {
+        "name": "Dekaja",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 22
+      },
+      {
+        "name": "Fire Break",
+        "level": 25
+      },
+      {
+        "name": "Diarama",
+        "level": 28
+      },
+      {
+        "name": "Lullaby",
+        "level": 30
+      },
+      {
+        "name": "Ambient Aid",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 35
+      },
+      {
+        "name": "Fire Boost",
+        "level": 38
+      },
+      {
+        "name": "Matarunda",
+        "level": 41
+      },
+      {
+        "name": "Agidyne",
+        "level": 46
+      },
+      {
+        "name": "Burn Boost",
+        "level": 50
+      },
+      {
+        "name": "Maragidyne",
+        "level": 54
+      },
+      {
+        "name": "Diarahan",
+        "level": 57
+      },
+      {
+        "name": "Concentrate",
+        "level": 62
+      },
+      {
+        "name": "Fire Amp",
+        "level": 68
+      },
+      {
+        "name": "Maragibarion",
+        "level": 74
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Castor",
+    "arcana": "Hierophant",
+    "level": 37,
+    "stats": {
+      "st": 32,
+      "vi": 27,
+      "ma": 20,
+      "ag": 22,
+      "lu": 17
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Regenerate 1",
+        "level": 0
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 0
+      },
+      {
+        "name": "Fatal End",
+        "level": 0
+      },
+      {
+        "name": "Evil Smile",
+        "level": 39
+      },
+      {
+        "name": "Counterstrike",
+        "level": 42
+      },
+      {
+        "name": "Charge",
+        "level": 50
+      },
+      {
+        "name": "Blade of Fury",
+        "level": 52
+      },
+      {
+        "name": "Heat Wave",
+        "level": 53
+      },
+      {
+        "name": "High Counter",
+        "level": 55
+      },
+      {
+        "name": "Deathbound",
+        "level": 60
+      },
+      {
+        "name": "Regenerate 2",
+        "level": 65
+      },
+      {
+        "name": "Akashic Arts",
+        "level": 72
+      },
+      {
+        "name": "God's Hand",
+        "level": 77
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Célestine",
+    "arcana": "Lovers",
+    "level": 5,
+    "stats": {
+      "st": 3,
+      "vi": 4,
+      "ma": 6,
+      "ag": 4,
+      "lu": 5
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Dormina",
+        "level": 7
+      },
+      {
+        "name": "Tarunda",
+        "level": 11
+      },
+      {
+        "name": "Maragi",
+        "level": 13
+      },
+      {
+        "name": "Dekaja",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 22
+      },
+      {
+        "name": "Fire Break",
+        "level": 25
+      },
+      {
+        "name": "Diarama",
+        "level": 28
+      },
+      {
+        "name": "Lullaby",
+        "level": 30
+      },
+      {
+        "name": "Ambient Aid",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 35
+      },
+      {
+        "name": "Fire Boost",
+        "level": 38
+      },
+      {
+        "name": "Matarunda",
+        "level": 41
+      },
+      {
+        "name": "Agidyne",
+        "level": 46
+      },
+      {
+        "name": "Burn Boost",
+        "level": 50
+      },
+      {
+        "name": "Maragidyne",
+        "level": 54
+      },
+      {
+        "name": "Diarahan",
+        "level": 57
+      },
+      {
+        "name": "Concentrate",
+        "level": 62
+      },
+      {
+        "name": "Fire Amp",
+        "level": 68
+      },
+      {
+        "name": "Maragibarion",
+        "level": 74
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Cendrillon",
+    "arcana": "Faith",
+    "level": 75,
+    "stats": {
+      "st": 55,
+      "vi": 36,
+      "ma": 46,
+      "ag": 51,
+      "lu": 44
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Apt Pupil",
+        "level": 0
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 0
+      },
+      {
+        "name": "Hamabarion",
+        "level": 0
+      },
+      {
+        "name": "Sword Dance",
+        "level": 0
+      },
+      {
+        "name": "Mahamabarion",
+        "level": 0
+      },
+      {
+        "name": "Diarahan",
+        "level": 0
+      },
+      {
+        "name": "Light Amp",
+        "level": 0
+      },
+      {
+        "name": "Ali Dance",
+        "level": 0
+      },
+      {
+        "name": "Brave Step",
+        "level": 80
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Cerberus - P3",
+    "arcana": "Strength",
+    "level": 34,
+    "stats": {
+      "st": 20,
+      "vi": 21,
+      "ma": 20,
+      "ag": 29,
+      "lu": 19
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [],
+      "null": [
+        "Fire",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Agilao",
+        "level": 0
+      },
+      {
+        "name": "Mudo",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Maragion",
+        "level": 38
+      },
+      {
+        "name": "Counterstrike",
+        "level": 40
+      },
+      {
+        "name": "Mamudo",
+        "level": 42
+      },
+      {
+        "name": "Agidyne",
+        "level": 45
+      },
+      {
+        "name": "Fire Boost",
+        "level": 48
+      },
+      {
+        "name": "Masukukaja",
+        "level": 50
+      },
+      {
+        "name": "High Counter",
+        "level": 52
+      },
+      {
+        "name": "Mudoon",
+        "level": 56
+      },
+      {
+        "name": "Mudo Boost",
+        "level": 60
+      },
+      {
+        "name": "Maragidyne",
+        "level": 67
+      },
+      {
+        "name": "Mamudoon",
+        "level": 71
+      },
+      {
+        "name": "Fire Amp",
+        "level": 77
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Diego",
+    "arcana": "Magician",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 1,
+      "ma": 3,
+      "ag": 3,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [
+        "Wind"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 5
+      },
+      {
+        "name": "Media",
+        "level": 11
+      },
+      {
+        "name": "Lucky Punch",
+        "level": 13
+      },
+      {
+        "name": "Magaru",
+        "level": 16
+      },
+      {
+        "name": "Pulinpa",
+        "level": 19
+      },
+      {
+        "name": "Me Patra",
+        "level": 21
+      },
+      {
+        "name": "Diarama",
+        "level": 24
+      },
+      {
+        "name": "Garula",
+        "level": 26
+      },
+      {
+        "name": "Recarm",
+        "level": 28
+      },
+      {
+        "name": "Wind Break",
+        "level": 32
+      },
+      {
+        "name": "Mediarama",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 37
+      },
+      {
+        "name": "Miracle Punch",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 43
+      },
+      {
+        "name": "Samarecarm",
+        "level": 45
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 52
+      },
+      {
+        "name": "Masukunda",
+        "level": 55
+      },
+      {
+        "name": "Mediarahan",
+        "level": 58
+      },
+      {
+        "name": "Magarudyne",
+        "level": 62
+      },
+      {
+        "name": "Wind Amp",
+        "level": 69
+      },
+      {
+        "name": "Salvation",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Ella",
+    "arcana": "Faith",
+    "level": 75,
+    "stats": {
+      "st": 55,
+      "vi": 36,
+      "ma": 46,
+      "ag": 51,
+      "lu": 44
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Nuke"
+      ],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Apt Pupil",
+        "level": 0
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 0
+      },
+      {
+        "name": "Hamabarion",
+        "level": 0
+      },
+      {
+        "name": "Sword Dance",
+        "level": 0
+      },
+      {
+        "name": "Mahamabarion",
+        "level": 0
+      },
+      {
+        "name": "Diarahan",
+        "level": 0
+      },
+      {
+        "name": "Light Amp",
+        "level": 0
+      },
+      {
+        "name": "Ali Dance",
+        "level": 0
+      },
+      {
+        "name": "Brave Step",
+        "level": 80
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Goemon",
+    "arcana": "Emperor",
+    "level": 15,
+    "stats": {
+      "st": 13,
+      "vi": 11,
+      "ma": 10,
+      "ag": 10,
+      "lu": 8
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Bufu",
+        "level": 0
+      },
+      {
+        "name": "Giant Slice",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Vicious Strike",
+        "level": 18
+      },
+      {
+        "name": "Mabufu",
+        "level": 20
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 22
+      },
+      {
+        "name": "Rising Slash",
+        "level": 23
+      },
+      {
+        "name": "Dormin Rush",
+        "level": 27
+      },
+      {
+        "name": "Bufula",
+        "level": 29
+      },
+      {
+        "name": "Speed Master",
+        "level": 31
+      },
+      {
+        "name": "Tempest Slash",
+        "level": 34
+      },
+      {
+        "name": "Counterstrike",
+        "level": 37
+      },
+      {
+        "name": "Mabufula",
+        "level": 40
+      },
+      {
+        "name": "Heat Wave",
+        "level": 43
+      },
+      {
+        "name": "Deadly Fury",
+        "level": 47
+      },
+      {
+        "name": "Masukukaja",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 53
+      },
+      {
+        "name": "High Counter",
+        "level": 58
+      },
+      {
+        "name": "Myriad Slashes",
+        "level": 62
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 65
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 69
+      },
+      {
+        "name": "Brave Blade",
+        "level": 73
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Gorokichi",
+    "arcana": "Emperor",
+    "level": 15,
+    "stats": {
+      "st": 13,
+      "vi": 11,
+      "ma": 10,
+      "ag": 10,
+      "lu": 8
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Bufu",
+        "level": 0
+      },
+      {
+        "name": "Giant Slice",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Vicious Strike",
+        "level": 18
+      },
+      {
+        "name": "Mabufu",
+        "level": 20
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 22
+      },
+      {
+        "name": "Rising Slash",
+        "level": 23
+      },
+      {
+        "name": "Dormin Rush",
+        "level": 27
+      },
+      {
+        "name": "Bufula",
+        "level": 29
+      },
+      {
+        "name": "Speed Master",
+        "level": 31
+      },
+      {
+        "name": "Tempest Slash",
+        "level": 34
+      },
+      {
+        "name": "Counterstrike",
+        "level": 37
+      },
+      {
+        "name": "Mabufula",
+        "level": 40
+      },
+      {
+        "name": "Heat Wave",
+        "level": 43
+      },
+      {
+        "name": "Deadly Fury",
+        "level": 47
+      },
+      {
+        "name": "Masukukaja",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 53
+      },
+      {
+        "name": "High Counter",
+        "level": 58
+      },
+      {
+        "name": "Myriad Slashes",
+        "level": 62
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 65
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 69
+      },
+      {
+        "name": "Brave Blade",
+        "level": 73
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Haraedo-no-Okami",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 4,
+      "vi": 4,
+      "ma": 4,
+      "ag": 2,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [
+        "Ice"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Skewer",
+        "level": 0
+      },
+      {
+        "name": "Tarukaja",
+        "level": 0
+      },
+      {
+        "name": "Bufu",
+        "level": 6
+      },
+      {
+        "name": "Skull Cracker",
+        "level": 11
+      },
+      {
+        "name": "Mabufu",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 20
+      },
+      {
+        "name": "Assault Dive",
+        "level": 22
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 24
+      },
+      {
+        "name": "Gale Slash",
+        "level": 29
+      },
+      {
+        "name": "Apt Pupil",
+        "level": 33
+      },
+      {
+        "name": "Attack Master",
+        "level": 36
+      },
+      {
+        "name": "Black Spot",
+        "level": 38
+      },
+      {
+        "name": "Counterstrike",
+        "level": 43
+      },
+      {
+        "name": "Heat Wave",
+        "level": 46
+      },
+      {
+        "name": "Charge",
+        "level": 52
+      },
+      {
+        "name": "High Counter",
+        "level": 61
+      },
+      {
+        "name": "Rainy Death",
+        "level": 67
+      },
+      {
+        "name": "God's Hand",
+        "level": 70
+      },
+      {
+        "name": "Agneyastra",
+        "level": 74
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Hecate",
+    "arcana": "Lovers",
+    "level": 5,
+    "stats": {
+      "st": 3,
+      "vi": 4,
+      "ma": 6,
+      "ag": 4,
+      "lu": 5
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Dormina",
+        "level": 7
+      },
+      {
+        "name": "Tarunda",
+        "level": 11
+      },
+      {
+        "name": "Maragi",
+        "level": 13
+      },
+      {
+        "name": "Dekaja",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 22
+      },
+      {
+        "name": "Fire Break",
+        "level": 25
+      },
+      {
+        "name": "Diarama",
+        "level": 28
+      },
+      {
+        "name": "Lullaby",
+        "level": 30
+      },
+      {
+        "name": "Ambient Aid",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 35
+      },
+      {
+        "name": "Fire Boost",
+        "level": 38
+      },
+      {
+        "name": "Matarunda",
+        "level": 41
+      },
+      {
+        "name": "Agidyne",
+        "level": 46
+      },
+      {
+        "name": "Burn Boost",
+        "level": 50
+      },
+      {
+        "name": "Maragidyne",
+        "level": 54
+      },
+      {
+        "name": "Diarahan",
+        "level": 57
+      },
+      {
+        "name": "Concentrate",
+        "level": 62
+      },
+      {
+        "name": "Fire Amp",
+        "level": 68
+      },
+      {
+        "name": "Maragibarion",
+        "level": 74
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Hereward",
+    "arcana": "Justice",
+    "level": 75,
+    "stats": {
+      "st": 53,
+      "vi": 46,
+      "ma": 47,
+      "ag": 47,
+      "lu": 39
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [
+        "Psy"
+      ],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Fortify Spirit",
+        "level": 0
+      },
+      {
+        "name": "Laevateinn",
+        "level": 0
+      },
+      {
+        "name": "Megidolaon",
+        "level": 0
+      },
+      {
+        "name": "Debilitate",
+        "level": 0
+      },
+      {
+        "name": "Riot Gun",
+        "level": 0
+      },
+      {
+        "name": "Mudobarion",
+        "level": 0
+      },
+      {
+        "name": "Attack Master",
+        "level": 0
+      },
+      {
+        "name": "Evade Light",
+        "level": 0
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Hermes",
+    "arcana": "Magician",
+    "level": 1,
+    "stats": {
+      "st": 3,
+      "vi": 2,
+      "ma": 2,
+      "ag": 2,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Cleave",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 5
+      },
+      {
+        "name": "Re Patra",
+        "level": 7
+      },
+      {
+        "name": "Rakukaja",
+        "level": 9
+      },
+      {
+        "name": "Assault Dive",
+        "level": 18
+      },
+      {
+        "name": "Double Fangs",
+        "level": 20
+      },
+      {
+        "name": "Kill Rush",
+        "level": 25
+      },
+      {
+        "name": "Agilao",
+        "level": 32
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 35
+      },
+      {
+        "name": "Torrent Shot",
+        "level": 40
+      },
+      {
+        "name": "Marakukaja",
+        "level": 44
+      },
+      {
+        "name": "Counterstrike",
+        "level": 45
+      },
+      {
+        "name": "Blade of Fury",
+        "level": 50
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 55
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Himiko",
+    "arcana": "Lovers",
+    "level": 34,
+    "stats": {
+      "st": 15,
+      "vi": 20,
+      "ma": 25,
+      "ag": 21,
+      "lu": 24
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Weakness Scan",
+        "level": 0
+      },
+      {
+        "name": "Full Analysis",
+        "level": 0
+      },
+      {
+        "name": "Third Eye",
+        "level": 0
+      },
+      {
+        "name": "Healing Wave",
+        "level": 0
+      },
+      {
+        "name": "Stamina Song",
+        "level": 0
+      },
+      {
+        "name": "Treasure Radar",
+        "level": 43
+      },
+      {
+        "name": "Enemy Radar",
+        "level": 52
+      },
+      {
+        "name": "Relaxing Wave",
+        "level": 61
+      },
+      {
+        "name": "Certain Escape",
+        "level": 70
+      },
+      {
+        "name": "Vigor Song",
+        "level": 79
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Io",
+    "arcana": "Lovers",
+    "level": 1,
+    "stats": {
+      "st": 1,
+      "vi": 2,
+      "ma": 3,
+      "ag": 1,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 4
+      },
+      {
+        "name": "Garu",
+        "level": 5
+      },
+      {
+        "name": "Charmdi",
+        "level": 16
+      },
+      {
+        "name": "Magaru",
+        "level": 21
+      },
+      {
+        "name": "Media",
+        "level": 22
+      },
+      {
+        "name": "Diarama",
+        "level": 25
+      },
+      {
+        "name": "Recarm",
+        "level": 28
+      },
+      {
+        "name": "Garula",
+        "level": 32
+      },
+      {
+        "name": "Me Patra",
+        "level": 36
+      },
+      {
+        "name": "Mediarama",
+        "level": 43
+      },
+      {
+        "name": "Magarula",
+        "level": 46
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Isis - P3",
+    "arcana": "Lovers",
+    "level": 1,
+    "stats": {
+      "st": 1,
+      "vi": 3,
+      "ma": 2,
+      "ag": 1,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [],
+      "null": [
+        "Wind"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 4
+      },
+      {
+        "name": "Garu",
+        "level": 5
+      },
+      {
+        "name": "Charmdi",
+        "level": 16
+      },
+      {
+        "name": "Magaru",
+        "level": 21
+      },
+      {
+        "name": "Media",
+        "level": 22
+      },
+      {
+        "name": "Diarama",
+        "level": 25
+      },
+      {
+        "name": "Recarm",
+        "level": 28
+      },
+      {
+        "name": "Garula",
+        "level": 32
+      },
+      {
+        "name": "Me Patra",
+        "level": 36
+      },
+      {
+        "name": "Mediarama",
+        "level": 43
+      },
+      {
+        "name": "Magarula",
+        "level": 46
+      },
+      {
+        "name": "Diarahan",
+        "level": 52
+      },
+      {
+        "name": "Garudyne",
+        "level": 57
+      },
+      {
+        "name": "Wind Break",
+        "level": 60
+      },
+      {
+        "name": "Magarudyne",
+        "level": 65
+      },
+      {
+        "name": "Samarecarm",
+        "level": 68
+      },
+      {
+        "name": "Mediarahan",
+        "level": 74
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Izanagi",
+    "arcana": "Fool",
+    "level": 1,
+    "stats": {
+      "st": 3,
+      "vi": 2,
+      "ma": 2,
+      "ag": 3,
+      "lu": 2
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Cleave",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Rakunda",
+        "level": 3
+      },
+      {
+        "name": "Tarukaja",
+        "level": 5
+      },
+      {
+        "name": "Cross Slash",
+        "level": 20
+      },
+      {
+        "name": "Zionga",
+        "level": 20
+      },
+      {
+        "name": "Rising Slash",
+        "level": 21
+      },
+      {
+        "name": "Dodge Phys",
+        "level": 22
+      },
+      {
+        "name": "Mazionga",
+        "level": 24
+      },
+      {
+        "name": "Growth 3",
+        "level": 25
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Izanagi-no-Okami",
+    "arcana": "World",
+    "level": 80,
+    "stats": {
+      "st": 52,
+      "vi": 46,
+      "ma": 56,
+      "ag": 48,
+      "lu": 45
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Phys",
+        "Gun",
+        "Fire",
+        "Ice",
+        "Wind",
+        "Elec",
+        "Psy",
+        "Nuke"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Myriad Truths",
+        "level": 0
+      },
+      {
+        "name": "Victory Cry",
+        "level": 0
+      },
+      {
+        "name": "Angelic Grace",
+        "level": 0
+      },
+      {
+        "name": "Concentrate",
+        "level": 81
+      },
+      {
+        "name": "Heat Riser",
+        "level": 82
+      },
+      {
+        "name": "Heat Up",
+        "level": 83
+      },
+      {
+        "name": "Salvation",
+        "level": 84
+      },
+      {
+        "name": "Almighty Boost",
+        "level": 85
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Jiraiya",
+    "arcana": "Magician",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 3,
+      "ma": 3,
+      "ag": 5,
+      "lu": 4
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 6
+      },
+      {
+        "name": "Makajama",
+        "level": 10
+      },
+      {
+        "name": "Sonic Punch",
+        "level": 14
+      },
+      {
+        "name": "Magaru",
+        "level": 18
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 23
+      },
+      {
+        "name": "Garula",
+        "level": 29
+      },
+      {
+        "name": "Power Slash",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 44
+      },
+      {
+        "name": "Wind Break",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 53
+      },
+      {
+        "name": "Masukukaja",
+        "level": 60
+      },
+      {
+        "name": "Magarudyne",
+        "level": 64
+      },
+      {
+        "name": "Brave Blade",
+        "level": 69
+      },
+      {
+        "name": "Wind Amp",
+        "level": 73
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Johanna",
+    "arcana": "Priestess",
+    "level": 21,
+    "stats": {
+      "st": 15,
+      "vi": 14,
+      "ma": 15,
+      "ag": 15,
+      "lu": 11
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Psy"
+      ],
+      "resist": [
+        "Nuke"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Frei",
+        "level": 0
+      },
+      {
+        "name": "Mafrei",
+        "level": 0
+      },
+      {
+        "name": "Vajra Blast",
+        "level": 0
+      },
+      {
+        "name": "Diarama",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Freila",
+        "level": 24
+      },
+      {
+        "name": "Energy Shower",
+        "level": 27
+      },
+      {
+        "name": "Flash Bomb",
+        "level": 31
+      },
+      {
+        "name": "Dekunda",
+        "level": 34
+      },
+      {
+        "name": "Defense Master",
+        "level": 36
+      },
+      {
+        "name": "Mafreila",
+        "level": 38
+      },
+      {
+        "name": "Mediarama",
+        "level": 41
+      },
+      {
+        "name": "Nuke Break",
+        "level": 43
+      },
+      {
+        "name": "Nuke Boost",
+        "level": 45
+      },
+      {
+        "name": "Marakukaja",
+        "level": 48
+      },
+      {
+        "name": "Freidyne",
+        "level": 50
+      },
+      {
+        "name": "Diarahan",
+        "level": 54
+      },
+      {
+        "name": "Mafreidyne",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Nuke Amp",
+        "level": 71
+      },
+      {
+        "name": "Atomic Flare",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Juno",
+    "arcana": "Priestess",
+    "level": 17,
+    "stats": {
+      "st": 8,
+      "vi": 12,
+      "ma": 14,
+      "ag": 9,
+      "lu": 12
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Full Analysis",
+        "level": 0
+      },
+      {
+        "name": "Support Scan",
+        "level": 23
+      },
+      {
+        "name": "Third Eye",
+        "level": 32
+      },
+      {
+        "name": "Healing Wave",
+        "level": 41
+      },
+      {
+        "name": "Oracle",
+        "level": 50
+      },
+      {
+        "name": "Escape Route",
+        "level": 72
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Kaguya",
+    "arcana": "Moon",
+    "level": 16,
+    "stats": {
+      "st": 11,
+      "vi": 12,
+      "ma": 15,
+      "ag": 11,
+      "lu": 6
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [
+        "Light",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Shining Arrows",
+        "level": 0
+      },
+      {
+        "name": "Mediarama",
+        "level": 0
+      },
+      {
+        "name": "Counterstrike",
+        "level": 0
+      },
+      {
+        "name": "Divine Grace",
+        "level": 17
+      },
+      {
+        "name": "Me Patra",
+        "level": 18
+      },
+      {
+        "name": "Diarahan",
+        "level": 21
+      },
+      {
+        "name": "Repel Phys",
+        "level": 22
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Kala-Nemi",
+    "arcana": "Justice",
+    "level": 36,
+    "stats": {
+      "st": 21,
+      "vi": 23,
+      "ma": 25,
+      "ag": 26,
+      "lu": 20
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Hama",
+        "level": 0
+      },
+      {
+        "name": "Cruel Attack",
+        "level": 0
+      },
+      {
+        "name": "Zionga",
+        "level": 0
+      },
+      {
+        "name": "Diarama",
+        "level": 0
+      },
+      {
+        "name": "Mediarama",
+        "level": 37
+      },
+      {
+        "name": "Hamaon",
+        "level": 41
+      },
+      {
+        "name": "Recarm",
+        "level": 42
+      },
+      {
+        "name": "Arms Master",
+        "level": 54
+      },
+      {
+        "name": "Ziodyne",
+        "level": 55
+      },
+      {
+        "name": "Vile Assault",
+        "level": 59
+      },
+      {
+        "name": "Diarahan",
+        "level": 62
+      },
+      {
+        "name": "Primal Force",
+        "level": 65
+      },
+      {
+        "name": "Samarecarm",
+        "level": 73
+      },
+      {
+        "name": "Mediarahan",
+        "level": 78
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Kamui",
+    "arcana": "Star",
+    "level": 35,
+    "stats": {
+      "st": 24,
+      "vi": 20,
+      "ma": 25,
+      "ag": 22,
+      "lu": 16
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind",
+        "Dark"
+      ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mediarama",
+        "level": 0
+      },
+      {
+        "name": "Bufula",
+        "level": 0
+      },
+      {
+        "name": "Energy Shower",
+        "level": 0
+      },
+      {
+        "name": "Poison Skewer",
+        "level": 0
+      },
+      {
+        "name": "Re Patra",
+        "level": 0
+      },
+      {
+        "name": "Traesto",
+        "level": 36
+      },
+      {
+        "name": "Mabufula",
+        "level": 38
+      },
+      {
+        "name": "Ice Boost",
+        "level": 40
+      },
+      {
+        "name": "Matarukaja",
+        "level": 42
+      },
+      {
+        "name": "Ice Break",
+        "level": 44
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 54
+      },
+      {
+        "name": "Marakukaja",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 61
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 63
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 67
+      },
+      {
+        "name": "Mediarahan",
+        "level": 70
+      },
+      {
+        "name": "Ice Amp",
+        "level": 72
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Kamui-Moshiri",
+    "arcana": "Star",
+    "level": 35,
+    "stats": {
+      "st": 24,
+      "vi": 20,
+      "ma": 25,
+      "ag": 22,
+      "lu": 16
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [
+        "Wind",
+        "Dark"
+      ],
+      "drain": [
+        "Ice"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mediarama",
+        "level": 0
+      },
+      {
+        "name": "Bufula",
+        "level": 0
+      },
+      {
+        "name": "Energy Shower",
+        "level": 0
+      },
+      {
+        "name": "Poison Skewer",
+        "level": 0
+      },
+      {
+        "name": "Re Patra",
+        "level": 0
+      },
+      {
+        "name": "Traesto",
+        "level": 36
+      },
+      {
+        "name": "Mabufula",
+        "level": 38
+      },
+      {
+        "name": "Ice Boost",
+        "level": 40
+      },
+      {
+        "name": "Matarukaja",
+        "level": 42
+      },
+      {
+        "name": "Ice Break",
+        "level": 44
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 54
+      },
+      {
+        "name": "Marakukaja",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 61
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 63
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 67
+      },
+      {
+        "name": "Mediarahan",
+        "level": 70
+      },
+      {
+        "name": "Ice Amp",
+        "level": 72
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Kamu Susano-o",
+    "arcana": "Emperor",
+    "level": 15,
+    "stats": {
+      "st": 13,
+      "vi": 11,
+      "ma": 10,
+      "ag": 10,
+      "lu": 8
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Bufu",
+        "level": 0
+      },
+      {
+        "name": "Giant Slice",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Vicious Strike",
+        "level": 18
+      },
+      {
+        "name": "Mabufu",
+        "level": 20
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 22
+      },
+      {
+        "name": "Rising Slash",
+        "level": 23
+      },
+      {
+        "name": "Dormin Rush",
+        "level": 27
+      },
+      {
+        "name": "Bufula",
+        "level": 29
+      },
+      {
+        "name": "Speed Master",
+        "level": 31
+      },
+      {
+        "name": "Tempest Slash",
+        "level": 34
+      },
+      {
+        "name": "Counterstrike",
+        "level": 37
+      },
+      {
+        "name": "Mabufula",
+        "level": 40
+      },
+      {
+        "name": "Heat Wave",
+        "level": 43
+      },
+      {
+        "name": "Deadly Fury",
+        "level": 47
+      },
+      {
+        "name": "Masukukaja",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 53
+      },
+      {
+        "name": "High Counter",
+        "level": 58
+      },
+      {
+        "name": "Myriad Slashes",
+        "level": 62
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 65
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 69
+      },
+      {
+        "name": "Brave Blade",
+        "level": 73
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Kanzeon",
+    "arcana": "Lovers",
+    "level": 34,
+    "stats": {
+      "st": 15,
+      "vi": 20,
+      "ma": 25,
+      "ag": 21,
+      "lu": 24
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Weakness Scan",
+        "level": 0
+      },
+      {
+        "name": "Full Analysis",
+        "level": 0
+      },
+      {
+        "name": "Third Eye",
+        "level": 0
+      },
+      {
+        "name": "Healing Wave",
+        "level": 0
+      },
+      {
+        "name": "Stamina Song",
+        "level": 0
+      },
+      {
+        "name": "Treasure Radar",
+        "level": 43
+      },
+      {
+        "name": "Enemy Radar",
+        "level": 52
+      },
+      {
+        "name": "Relaxing Wave",
+        "level": 61
+      },
+      {
+        "name": "Certain Escape",
+        "level": 70
+      },
+      {
+        "name": "Vigor Song",
+        "level": 79
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Kintoki-Douji",
+    "arcana": "Star",
+    "level": 35,
+    "stats": {
+      "st": 24,
+      "vi": 20,
+      "ma": 25,
+      "ag": 22,
+      "lu": 16
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mediarama",
+        "level": 0
+      },
+      {
+        "name": "Bufula",
+        "level": 0
+      },
+      {
+        "name": "Energy Shower",
+        "level": 0
+      },
+      {
+        "name": "Poison Skewer",
+        "level": 0
+      },
+      {
+        "name": "Re Patra",
+        "level": 0
+      },
+      {
+        "name": "Traesto",
+        "level": 36
+      },
+      {
+        "name": "Mabufula",
+        "level": 38
+      },
+      {
+        "name": "Ice Boost",
+        "level": 40
+      },
+      {
+        "name": "Matarukaja",
+        "level": 42
+      },
+      {
+        "name": "Ice Break",
+        "level": 44
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Bufudyne",
+        "level": 54
+      },
+      {
+        "name": "Marakukaja",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 61
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 63
+      },
+      {
+        "name": "Mabufudyne",
+        "level": 67
+      },
+      {
+        "name": "Mediarahan",
+        "level": 70
+      },
+      {
+        "name": "Ice Amp",
+        "level": 72
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Konohana Sakuya",
+    "arcana": "Priestess",
+    "level": 15,
+    "stats": {
+      "st": 8,
+      "vi": 11,
+      "ma": 15,
+      "ag": 8,
+      "lu": 10
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Me Patra",
+        "level": 0
+      },
+      {
+        "name": "Maragi",
+        "level": 0
+      },
+      {
+        "name": "Media",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 21
+      },
+      {
+        "name": "Recarm",
+        "level": 26
+      },
+      {
+        "name": "Fire Break",
+        "level": 30
+      },
+      {
+        "name": "Diarama",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 39
+      },
+      {
+        "name": "Mediarama",
+        "level": 43
+      },
+      {
+        "name": "Fire Boost",
+        "level": 45
+      },
+      {
+        "name": "Agidyne",
+        "level": 51
+      },
+      {
+        "name": "Diarahan",
+        "level": 55
+      },
+      {
+        "name": "Samarecarm",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Maragidyne",
+        "level": 68
+      },
+      {
+        "name": "Salvation",
+        "level": 74
+      },
+      {
+        "name": "Fire Amp",
+        "level": 76
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Kouzeon",
+    "arcana": "Lovers",
+    "level": 34,
+    "stats": {
+      "st": 15,
+      "vi": 20,
+      "ma": 25,
+      "ag": 21,
+      "lu": 24
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Weakness Scan",
+        "level": 0
+      },
+      {
+        "name": "Full Analysis",
+        "level": 0
+      },
+      {
+        "name": "Third Eye",
+        "level": 0
+      },
+      {
+        "name": "Healing Wave",
+        "level": 0
+      },
+      {
+        "name": "Stamina Song",
+        "level": 0
+      },
+      {
+        "name": "Treasure Radar",
+        "level": 43
+      },
+      {
+        "name": "Enemy Radar",
+        "level": 52
+      },
+      {
+        "name": "Relaxing Wave",
+        "level": 61
+      },
+      {
+        "name": "Certain Escape",
+        "level": 70
+      },
+      {
+        "name": "Vigor Song",
+        "level": 79
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Loki - P5",
+    "arcana": "Justice",
+    "level": 75,
+    "stats": {
+      "st": 53,
+      "vi": 46,
+      "ma": 47,
+      "ag": 47,
+      "lu": 39
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Fortify Spirit",
+        "level": 0
+      },
+      {
+        "name": "Laevateinn",
+        "level": 0
+      },
+      {
+        "name": "Megidolaon",
+        "level": 0
+      },
+      {
+        "name": "Debilitate",
+        "level": 0
+      },
+      {
+        "name": "Riot Gun",
+        "level": 0
+      },
+      {
+        "name": "Mudobarion",
+        "level": 0
+      },
+      {
+        "name": "Attack Master",
+        "level": 0
+      },
+      {
+        "name": "Evade Light",
+        "level": 0
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Lucia",
+    "arcana": "Priestess",
+    "level": 17,
+    "stats": {
+      "st": 8,
+      "vi": 12,
+      "ma": 14,
+      "ag": 9,
+      "lu": 12
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Full Analysis",
+        "level": 0
+      },
+      {
+        "name": "Support Scan",
+        "level": 23
+      },
+      {
+        "name": "Third Eye",
+        "level": 32
+      },
+      {
+        "name": "Healing Wave",
+        "level": 41
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Lucy",
+    "arcana": "Empress",
+    "level": 36,
+    "stats": {
+      "st": 27,
+      "vi": 22,
+      "ma": 25,
+      "ag": 22,
+      "lu": 21
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [
+        "Psy"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Psio",
+        "level": 0
+      },
+      {
+        "name": "Mapsio",
+        "level": 0
+      },
+      {
+        "name": "Triple Down",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 0
+      },
+      {
+        "name": "Fast Heal",
+        "level": 0
+      },
+      {
+        "name": "Psy Break",
+        "level": 0
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 38
+      },
+      {
+        "name": "Psy Boost",
+        "level": 42
+      },
+      {
+        "name": "Makarakarn",
+        "level": 44
+      },
+      {
+        "name": "Climate Decorum",
+        "level": 48
+      },
+      {
+        "name": "Psiodyne",
+        "level": 52
+      },
+      {
+        "name": "Gun Boost",
+        "level": 54
+      },
+      {
+        "name": "One-shot Kill",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 60
+      },
+      {
+        "name": "Mapsiodyne",
+        "level": 64
+      },
+      {
+        "name": "Gun Amp",
+        "level": 68
+      },
+      {
+        "name": "Psy Amp",
+        "level": 73
+      },
+      {
+        "name": "Heat Riser",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Magatsu-Izanagi",
+    "arcana": "Tower",
+    "level": 44,
+    "stats": {
+      "st": 37,
+      "vi": 32,
+      "ma": 35,
+      "ag": 25,
+      "lu": 10
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Gun"
+      ],
+      "null": [
+        "Light",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Magatsu Mandala",
+        "level": 0
+      },
+      {
+        "name": "Megidola",
+        "level": 0
+      },
+      {
+        "name": "Ghastly Wail",
+        "level": 0
+      },
+      {
+        "name": "Maziodyne",
+        "level": 45
+      },
+      {
+        "name": "Bloodbath",
+        "level": 46
+      },
+      {
+        "name": "Attack Master",
+        "level": 48
+      },
+      {
+        "name": "Heat Riser",
+        "level": 50
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Mercurius",
+    "arcana": "Magician",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 1,
+      "ma": 3,
+      "ag": 3,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [
+        "Wind"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 5
+      },
+      {
+        "name": "Media",
+        "level": 11
+      },
+      {
+        "name": "Lucky Punch",
+        "level": 13
+      },
+      {
+        "name": "Magaru",
+        "level": 16
+      },
+      {
+        "name": "Pulinpa",
+        "level": 19
+      },
+      {
+        "name": "Me Patra",
+        "level": 21
+      },
+      {
+        "name": "Diarama",
+        "level": 24
+      },
+      {
+        "name": "Garula",
+        "level": 26
+      },
+      {
+        "name": "Recarm",
+        "level": 28
+      },
+      {
+        "name": "Wind Break",
+        "level": 32
+      },
+      {
+        "name": "Mediarama",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 37
+      },
+      {
+        "name": "Miracle Punch",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 43
+      },
+      {
+        "name": "Samarecarm",
+        "level": 45
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 52
+      },
+      {
+        "name": "Masukunda",
+        "level": 55
+      },
+      {
+        "name": "Mediarahan",
+        "level": 58
+      },
+      {
+        "name": "Magarudyne",
+        "level": 62
+      },
+      {
+        "name": "Wind Amp",
+        "level": 69
+      },
+      {
+        "name": "Salvation",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Messiah",
+    "arcana": "Judgement",
+    "level": 81,
+    "stats": {
+      "st": 50,
+      "vi": 50,
+      "ma": 50,
+      "ag": 50,
+      "lu": 50
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Fire",
+        "Ice",
+        "Elec",
+        "Wind",
+        "Psy",
+        "Nuke"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": [
+        "Light"
+      ]
+    },
+    "learnset": [
+      {
+        "name": "Oratorio",
+        "level": 0
+      },
+      {
+        "name": "Megidolaon",
+        "level": 0
+      },
+      {
+        "name": "God's Hand",
+        "level": 0
+      },
+      {
+        "name": "Regenerate 3",
+        "level": 82
+      },
+      {
+        "name": "Enduring Soul",
+        "level": 83
+      },
+      {
+        "name": "Invigorate 3",
+        "level": 84
+      },
+      {
+        "name": "Drain Phys",
+        "level": 85
+      },
+      {
+        "name": "Almighty Boost",
+        "level": 87
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Milady",
+    "arcana": "Empress",
+    "level": 36,
+    "stats": {
+      "st": 27,
+      "vi": 22,
+      "ma": 25,
+      "ag": 22,
+      "lu": 21
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Psy"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Psio",
+        "level": 0
+      },
+      {
+        "name": "Mapsio",
+        "level": 0
+      },
+      {
+        "name": "Triple Down",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 0
+      },
+      {
+        "name": "Fast Heal",
+        "level": 0
+      },
+      {
+        "name": "Psy Break",
+        "level": 0
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 38
+      },
+      {
+        "name": "Psy Boost",
+        "level": 42
+      },
+      {
+        "name": "Makarakarn",
+        "level": 44
+      },
+      {
+        "name": "Climate Decorum",
+        "level": 48
+      },
+      {
+        "name": "Psiodyne",
+        "level": 52
+      },
+      {
+        "name": "Gun Boost",
+        "level": 54
+      },
+      {
+        "name": "One-shot Kill",
+        "level": 58
+      },
+      {
+        "name": "Me Patra",
+        "level": 60
+      },
+      {
+        "name": "Mapsiodyne",
+        "level": 64
+      },
+      {
+        "name": "Gun Amp",
+        "level": 68
+      },
+      {
+        "name": "Psy Amp",
+        "level": 73
+      },
+      {
+        "name": "Heat Riser",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Necronomicon",
+    "arcana": "Justice",
+    "level": 31,
+    "stats": {
+      "st": 17,
+      "vi": 20,
+      "ma": 23,
+      "ag": 21,
+      "lu": 35
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Subrecover HP",
+        "level": 38
+      },
+      {
+        "name": "Subrecover MP",
+        "level": 49
+      },
+      {
+        "name": "Subrecover HP EX",
+        "level": 58
+      },
+      {
+        "name": "Subrecover MP EX",
+        "level": 67
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Nemesis",
+    "arcana": "Justice",
+    "level": 36,
+    "stats": {
+      "st": 21,
+      "vi": 23,
+      "ma": 25,
+      "ag": 26,
+      "lu": 20
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Hama",
+        "level": 0
+      },
+      {
+        "name": "Cruel Attack",
+        "level": 0
+      },
+      {
+        "name": "Zionga",
+        "level": 0
+      },
+      {
+        "name": "Diarama",
+        "level": 0
+      },
+      {
+        "name": "Mediarama",
+        "level": 37
+      },
+      {
+        "name": "Hamaon",
+        "level": 41
+      },
+      {
+        "name": "Recarm",
+        "level": 42
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Orpheus",
+    "arcana": "Fool",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 2,
+      "ma": 2,
+      "ag": 2,
+      "lu": 2
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec",
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Lunge",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 2
+      },
+      {
+        "name": "Tarunda",
+        "level": 6
+      },
+      {
+        "name": "Cadenza",
+        "level": 26
+      },
+      {
+        "name": "Agilao",
+        "level": 26
+      },
+      {
+        "name": "Endure",
+        "level": 27
+      },
+      {
+        "name": "Maragion",
+        "level": 29
+      },
+      {
+        "name": "Marakukaja",
+        "level": 30
+      },
+      {
+        "name": "Fire Boost",
+        "level": 32
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Orpheus F",
+    "arcana": "Fool",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 2,
+      "ma": 2,
+      "ag": 2,
+      "lu": 2
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec",
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Lunge",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 2
+      },
+      {
+        "name": "Tarunda",
+        "level": 6
+      },
+      {
+        "name": "Neo Cadenza",
+        "level": 11
+      },
+      {
+        "name": "Endure",
+        "level": 11
+      },
+      {
+        "name": "Maragion",
+        "level": 12
+      },
+      {
+        "name": "Marakukaja",
+        "level": 14
+      },
+      {
+        "name": "Dodge Dark",
+        "level": 15
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Orpheus Telos",
+    "arcana": "Fool",
+    "level": 90,
+    "stats": {
+      "st": 62,
+      "vi": 62,
+      "ma": 62,
+      "ag": 62,
+      "lu": 62
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Phys",
+        "Gun",
+        "Fire",
+        "Ice",
+        "Elec",
+        "Wind",
+        "Nuke",
+        "Psy",
+        "Light",
+        "Dark"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Victory Cry",
+        "level": 0
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Palladion",
+    "arcana": "Chariot",
+    "level": 29,
+    "stats": {
+      "st": 19,
+      "vi": 25,
+      "ma": 13,
+      "ag": 18,
+      "lu": 14
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Kill Rush",
+        "level": 0
+      },
+      {
+        "name": "Swift Strike",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 32
+      },
+      {
+        "name": "Fatal End",
+        "level": 35
+      },
+      {
+        "name": "Tarukaja",
+        "level": 36
+      },
+      {
+        "name": "Dekunda",
+        "level": 42
+      },
+      {
+        "name": "Masukukaja",
+        "level": 47
+      },
+      {
+        "name": "Heat Wave",
+        "level": 51
+      },
+      {
+        "name": "Marakukaja",
+        "level": 56
+      },
+      {
+        "name": "Diarahan",
+        "level": 59
+      },
+      {
+        "name": "Matarukaja",
+        "level": 60
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Pandora",
+    "arcana": "Hope",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 4,
+      "ma": 5,
+      "ag": 6,
+      "lu": 4
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Hama",
+        "level": 0
+      },
+      {
+        "name": "Rakunda",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 2
+      },
+      {
+        "name": "Mahama",
+        "level": 12
+      },
+      {
+        "name": "Media",
+        "level": 14
+      },
+      {
+        "name": "Light Boost",
+        "level": 16
+      },
+      {
+        "name": "Tetraja",
+        "level": 19
+      },
+      {
+        "name": "Recarm",
+        "level": 21
+      },
+      {
+        "name": "Hamaon",
+        "level": 23
+      },
+      {
+        "name": "Diarama",
+        "level": 26
+      },
+      {
+        "name": "Divine Grace",
+        "level": 32
+      },
+      {
+        "name": "Mediarama",
+        "level": 35
+      },
+      {
+        "name": "Mahamaon",
+        "level": 40
+      },
+      {
+        "name": "Marakunda",
+        "level": 43
+      },
+      {
+        "name": "Light Amp",
+        "level": 46
+      },
+      {
+        "name": "Hamabarion",
+        "level": 48
+      },
+      {
+        "name": "Diarahan",
+        "level": 51
+      },
+      {
+        "name": "Rebel Soul",
+        "level": 52
+      },
+      {
+        "name": "Samarecarm",
+        "level": 55
+      },
+      {
+        "name": "Mediarahan",
+        "level": 60
+      },
+      {
+        "name": "Angelic Grace",
+        "level": 70
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Penthesilea",
+    "arcana": "Empress",
+    "level": 18,
+    "stats": {
+      "st": 11,
+      "vi": 11,
+      "ma": 16,
+      "ag": 12,
+      "lu": 11
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Bufu",
+        "level": 0
+      },
+      {
+        "name": "Mabufu",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Marin Karin",
+        "level": 0
+      },
+      {
+        "name": "Bufula",
+        "level": 21
+      },
+      {
+        "name": "Diarama",
+        "level": 25
+      },
+      {
+        "name": "Spirit Drain",
+        "level": 27
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 32
+      },
+      {
+        "name": "Mabufula",
+        "level": 42
+      },
+      {
+        "name": "Ice Boost",
+        "level": 45
+      },
+      {
+        "name": "Concentrate",
+        "level": 50
+      },
+      {
+        "name": "Bufudyne",
+        "level": 55
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Pithos",
+    "arcana": "Hope",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 4,
+      "ma": 5,
+      "ag": 6,
+      "lu": 4
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Hama",
+        "level": 0
+      },
+      {
+        "name": "Rakunda",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 2
+      },
+      {
+        "name": "Mahama",
+        "level": 12
+      },
+      {
+        "name": "Media",
+        "level": 14
+      },
+      {
+        "name": "Light Boost",
+        "level": 16
+      },
+      {
+        "name": "Tetraja",
+        "level": 19
+      },
+      {
+        "name": "Recarm",
+        "level": 21
+      },
+      {
+        "name": "Hamaon",
+        "level": 23
+      },
+      {
+        "name": "Diarama",
+        "level": 26
+      },
+      {
+        "name": "Divine Grace",
+        "level": 32
+      },
+      {
+        "name": "Mediarama",
+        "level": 35
+      },
+      {
+        "name": "Mahamaon",
+        "level": 40
+      },
+      {
+        "name": "Marakunda",
+        "level": 43
+      },
+      {
+        "name": "Light Amp",
+        "level": 46
+      },
+      {
+        "name": "Hamabarion",
+        "level": 48
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Polydeuces",
+    "arcana": "Emperor",
+    "level": 12,
+    "stats": {
+      "st": 9,
+      "vi": 8,
+      "ma": 10,
+      "ag": 9,
+      "lu": 7
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Sonic Punch",
+        "level": 0
+      },
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Tarunda",
+        "level": 16
+      },
+      {
+        "name": "Mazio",
+        "level": 21
+      },
+      {
+        "name": "Rakunda",
+        "level": 25
+      },
+      {
+        "name": "Zionga",
+        "level": 29
+      },
+      {
+        "name": "Sukunda",
+        "level": 33
+      },
+      {
+        "name": "Elec Boost",
+        "level": 37
+      },
+      {
+        "name": "Diarama",
+        "level": 38
+      },
+      {
+        "name": "Mazionga",
+        "level": 41
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Prometheus",
+    "arcana": "Justice",
+    "level": 31,
+    "stats": {
+      "st": 17,
+      "vi": 20,
+      "ma": 23,
+      "ag": 21,
+      "lu": 35
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Analysis",
+        "level": 0
+      },
+      {
+        "name": "Subrecover HP",
+        "level": 38
+      },
+      {
+        "name": "Subrecover MP",
+        "level": 49
+      },
+      {
+        "name": "Subrecover HP EX",
+        "level": 58
+      },
+      {
+        "name": "Subrecover MP EX",
+        "level": 67
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Psyche",
+    "arcana": "Hierophant",
+    "level": 25,
+    "stats": {
+      "st": 18,
+      "vi": 20,
+      "ma": 13,
+      "ag": 18,
+      "lu": 13
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Fatal End",
+        "level": 0
+      },
+      {
+        "name": "Garula",
+        "level": 0
+      },
+      {
+        "name": "Dekaja",
+        "level": 0
+      },
+      {
+        "name": "Marin Karin",
+        "level": 29
+      },
+      {
+        "name": "Bufula",
+        "level": 34
+      },
+      {
+        "name": "Charge",
+        "level": 40
+      },
+      {
+        "name": "Vajra Blast",
+        "level": 45
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 48
+      },
+      {
+        "name": "Poison Skewer",
+        "level": 53
+      },
+      {
+        "name": "Garudyne",
+        "level": 58
+      },
+      {
+        "name": "Vicious Strike",
+        "level": 60
+      },
+      {
+        "name": "Bufudyne",
+        "level": 62
+      },
+      {
+        "name": "Sexy Dance",
+        "level": 65
+      },
+      {
+        "name": "Akashic Arts",
+        "level": 72
+      },
+      {
+        "name": "Brave Blade",
+        "level": 75
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Raoul",
+    "arcana": "Fool",
+    "level": 76,
+    "stats": {
+      "st": 47,
+      "vi": 43,
+      "ma": 49,
+      "ag": 54,
+      "lu": 42
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [],
+      "null": [
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Phantom Show",
+        "level": 0
+      },
+      {
+        "name": "Mudobarion",
+        "level": 0
+      },
+      {
+        "name": "Ali Dance",
+        "level": 0
+      },
+      {
+        "name": "Mamudobarion",
+        "level": 78
+      },
+      {
+        "name": "Heat Riser",
+        "level": 79
+      },
+      {
+        "name": "Dark Amp",
+        "level": 80
+      },
+      {
+        "name": "Concentrate",
+        "level": 81
+      },
+      {
+        "name": "Light Life Aid",
+        "level": 82
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Robin Hood",
+    "arcana": "Justice",
+    "level": 45,
+    "stats": {
+      "st": 32,
+      "vi": 28,
+      "ma": 29,
+      "ag": 29,
+      "lu": 24
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Megidola",
+        "level": 0
+      },
+      {
+        "name": "Megaton Raid",
+        "level": 0
+      },
+      {
+        "name": "Hamaon",
+        "level": 0
+      },
+      {
+        "name": "Mudoon",
+        "level": 0
+      },
+      {
+        "name": "Fortify Spirit",
+        "level": 0
+      },
+      {
+        "name": "Hamabarion",
+        "level": 47
+      },
+      {
+        "name": "Mudobarion",
+        "level": 48
+      },
+      {
+        "name": "Attack Master",
+        "level": 50
+      },
+      {
+        "name": "Samarecarm",
+        "level": 54
+      },
+      {
+        "name": "Mahamaon",
+        "level": 59
+      },
+      {
+        "name": "Mamudoon",
+        "level": 62
+      },
+      {
+        "name": "Megidolaon",
+        "level": 67
+      },
+      {
+        "name": "Debilitate",
+        "level": 70
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Rokuten Maoh",
+    "arcana": "Emperor",
+    "level": 25,
+    "stats": {
+      "st": 20,
+      "vi": 17,
+      "ma": 11,
+      "ag": 15,
+      "lu": 14
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mazio",
+        "level": 0
+      },
+      {
+        "name": "Zionga",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Kill Rush",
+        "level": 0
+      },
+      {
+        "name": "Regenerate 1",
+        "level": 0
+      },
+      {
+        "name": "Elec Boost",
+        "level": 27
+      },
+      {
+        "name": "Fatal End",
+        "level": 34
+      },
+      {
+        "name": "Cruel Attack",
+        "level": 38
+      },
+      {
+        "name": "Mazionga",
+        "level": 40
+      },
+      {
+        "name": "Torrent Shot",
+        "level": 44
+      },
+      {
+        "name": "Elec Break",
+        "level": 48
+      },
+      {
+        "name": "Ziodyne",
+        "level": 54
+      },
+      {
+        "name": "Vile Assault",
+        "level": 58
+      },
+      {
+        "name": "Matarukaja",
+        "level": 60
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Primal Force",
+        "level": 73
+      },
+      {
+        "name": "Elec Amp",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Satanael",
+    "arcana": "Fool",
+    "level": 95,
+    "stats": {
+      "st": 63,
+      "vi": 57,
+      "ma": 60,
+      "ag": 56,
+      "lu": 56
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Phys",
+        "Gun",
+        "Fire",
+        "Ice",
+        "Elec",
+        "Wind",
+        "Psy",
+        "Nuke"
+      ],
+      "null": [
+        "Light"
+      ],
+      "drain": [
+        "Dark"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mamudobarion",
+        "level": 0
+      },
+      {
+        "name": "Megidolaon",
+        "level": 0
+      },
+      {
+        "name": "Survival Trick",
+        "level": 0
+      },
+      {
+        "name": "Riot Gun",
+        "level": 0
+      },
+      {
+        "name": "Black Viper",
+        "level": 96
+      },
+      {
+        "name": "Heat Riser",
+        "level": 97
+      },
+      {
+        "name": "Tyrant's Mind",
+        "level": 98
+      },
+      {
+        "name": "Victory Cry",
+        "level": 99
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Seiten Taisei - P5",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 5,
+      "ma": 3,
+      "ag": 3,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 5
+      },
+      {
+        "name": "Tarukaja",
+        "level": 9
+      },
+      {
+        "name": "Headbutt",
+        "level": 11
+      },
+      {
+        "name": "Adverse Resolve",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 17
+      },
+      {
+        "name": "Mazio",
+        "level": 21
+      },
+      {
+        "name": "Memory Blow",
+        "level": 24
+      },
+      {
+        "name": "Assault Dive",
+        "level": 26
+      },
+      {
+        "name": "Zionga",
+        "level": 28
+      },
+      {
+        "name": "Swift Strike",
+        "level": 32
+      },
+      {
+        "name": "Shock Boost",
+        "level": 35
+      },
+      {
+        "name": "Elec Break",
+        "level": 39
+      },
+      {
+        "name": "Mazionga",
+        "level": 43
+      },
+      {
+        "name": "Deathbound",
+        "level": 47
+      },
+      {
+        "name": "Elec Boost",
+        "level": 49
+      },
+      {
+        "name": "Megaton Raid",
+        "level": 53
+      },
+      {
+        "name": "Ziodyne",
+        "level": 55
+      },
+      {
+        "name": "Matarukaja",
+        "level": 58
+      },
+      {
+        "name": "Charge",
+        "level": 63
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Agneyastra",
+        "level": 71
+      },
+      {
+        "name": "God's Hand",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Sukuna-Hikona - P4",
+    "arcana": "Fortune",
+    "level": 55,
+    "stats": {
+      "st": 32,
+      "vi": 32,
+      "ma": 38,
+      "ag": 40,
+      "lu": 31
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Light",
+        "Dark"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Tempest Slash",
+        "level": 0
+      },
+      {
+        "name": "Agidyne",
+        "level": 0
+      },
+      {
+        "name": "Garudyne",
+        "level": 0
+      },
+      {
+        "name": "Mudoon",
+        "level": 0
+      },
+      {
+        "name": "Hamaon",
+        "level": 0
+      },
+      {
+        "name": "Megidola",
+        "level": 0
+      },
+      {
+        "name": "Deathbound",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 56
+      },
+      {
+        "name": "Blight",
+        "level": 58
+      },
+      {
+        "name": "Mudo Boost",
+        "level": 60
+      },
+      {
+        "name": "Hama Boost",
+        "level": 62
+      },
+      {
+        "name": "Makarakarn",
+        "level": 64
+      },
+      {
+        "name": "Mamudoon",
+        "level": 68
+      },
+      {
+        "name": "Mahamaon",
+        "level": 70
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 73
+      },
+      {
+        "name": "Megidolaon",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Sumeo-Okami",
+    "arcana": "Priestess",
+    "level": 15,
+    "stats": {
+      "st": 8,
+      "vi": 11,
+      "ma": 15,
+      "ag": 8,
+      "lu": 10
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Ice"
+      ],
+      "resist": [],
+      "null": [
+        "Elec"
+      ],
+      "drain": [
+        "Fire"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 0
+      },
+      {
+        "name": "Me Patra",
+        "level": 0
+      },
+      {
+        "name": "Maragi",
+        "level": 0
+      },
+      {
+        "name": "Media",
+        "level": 16
+      },
+      {
+        "name": "Agilao",
+        "level": 21
+      },
+      {
+        "name": "Recarm",
+        "level": 26
+      },
+      {
+        "name": "Fire Break",
+        "level": 30
+      },
+      {
+        "name": "Diarama",
+        "level": 33
+      },
+      {
+        "name": "Maragion",
+        "level": 39
+      },
+      {
+        "name": "Mediarama",
+        "level": 43
+      },
+      {
+        "name": "Fire Boost",
+        "level": 45
+      },
+      {
+        "name": "Agidyne",
+        "level": 51
+      },
+      {
+        "name": "Diarahan",
+        "level": 55
+      },
+      {
+        "name": "Samarecarm",
+        "level": 59
+      },
+      {
+        "name": "Mediarahan",
+        "level": 65
+      },
+      {
+        "name": "Maragidyne",
+        "level": 68
+      },
+      {
+        "name": "Salvation",
+        "level": 74
+      },
+      {
+        "name": "Fire Amp",
+        "level": 76
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Susano-o",
+    "arcana": "Magician",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 3,
+      "ma": 3,
+      "ag": 5,
+      "lu": 4
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [
+        "Wind"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 6
+      },
+      {
+        "name": "Makajama",
+        "level": 10
+      },
+      {
+        "name": "Sonic Punch",
+        "level": 14
+      },
+      {
+        "name": "Magaru",
+        "level": 18
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 23
+      },
+      {
+        "name": "Garula",
+        "level": 29
+      },
+      {
+        "name": "Power Slash",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 44
+      },
+      {
+        "name": "Wind Break",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 53
+      },
+      {
+        "name": "Masukukaja",
+        "level": 60
+      },
+      {
+        "name": "Magarudyne",
+        "level": 64
+      },
+      {
+        "name": "Brave Blade",
+        "level": 69
+      },
+      {
+        "name": "Wind Amp",
+        "level": 73
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Suzuka Gongen",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 4,
+      "vi": 4,
+      "ma": 4,
+      "ag": 2,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Light"
+      ],
+      "null": [
+        "Ice"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Skewer",
+        "level": 0
+      },
+      {
+        "name": "Tarukaja",
+        "level": 0
+      },
+      {
+        "name": "Bufu",
+        "level": 6
+      },
+      {
+        "name": "Skull Cracker",
+        "level": 11
+      },
+      {
+        "name": "Mabufu",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 20
+      },
+      {
+        "name": "Assault Dive",
+        "level": 22
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 24
+      },
+      {
+        "name": "Gale Slash",
+        "level": 29
+      },
+      {
+        "name": "Apt Pupil",
+        "level": 33
+      },
+      {
+        "name": "Attack Master",
+        "level": 36
+      },
+      {
+        "name": "Black Spot",
+        "level": 38
+      },
+      {
+        "name": "Counterstrike",
+        "level": 43
+      },
+      {
+        "name": "Heat Wave",
+        "level": 46
+      },
+      {
+        "name": "Charge",
+        "level": 52
+      },
+      {
+        "name": "High Counter",
+        "level": 61
+      },
+      {
+        "name": "Rainy Death",
+        "level": 67
+      },
+      {
+        "name": "God's Hand",
+        "level": 70
+      },
+      {
+        "name": "Agneyastra",
+        "level": 74
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Takehaya Susano-o",
+    "arcana": "Magician",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 3,
+      "ma": 3,
+      "ag": 5,
+      "lu": 4
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [],
+      "null": [
+        "Fire"
+      ],
+      "drain": [
+        "Wind"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 6
+      },
+      {
+        "name": "Makajama",
+        "level": 10
+      },
+      {
+        "name": "Sonic Punch",
+        "level": 14
+      },
+      {
+        "name": "Magaru",
+        "level": 18
+      },
+      {
+        "name": "Tentarafoo",
+        "level": 23
+      },
+      {
+        "name": "Garula",
+        "level": 29
+      },
+      {
+        "name": "Power Slash",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 44
+      },
+      {
+        "name": "Wind Break",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 53
+      },
+      {
+        "name": "Masukukaja",
+        "level": 60
+      },
+      {
+        "name": "Magarudyne",
+        "level": 64
+      },
+      {
+        "name": "Brave Blade",
+        "level": 69
+      },
+      {
+        "name": "Wind Amp",
+        "level": 73
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Takeji Zaiten",
+    "arcana": "Emperor",
+    "level": 25,
+    "stats": {
+      "st": 20,
+      "vi": 17,
+      "ma": 11,
+      "ag": 15,
+      "lu": 14
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [],
+      "drain": [
+        "Elec"
+      ],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mazio",
+        "level": 0
+      },
+      {
+        "name": "Zionga",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Kill Rush",
+        "level": 0
+      },
+      {
+        "name": "Regenerate 1",
+        "level": 0
+      },
+      {
+        "name": "Elec Boost",
+        "level": 27
+      },
+      {
+        "name": "Fatal End",
+        "level": 34
+      },
+      {
+        "name": "Cruel Attack",
+        "level": 38
+      },
+      {
+        "name": "Mazionga",
+        "level": 40
+      },
+      {
+        "name": "Torrent Shot",
+        "level": 44
+      },
+      {
+        "name": "Elec Break",
+        "level": 48
+      },
+      {
+        "name": "Ziodyne",
+        "level": 54
+      },
+      {
+        "name": "Vile Assault",
+        "level": 58
+      },
+      {
+        "name": "Matarukaja",
+        "level": 60
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Primal Force",
+        "level": 73
+      },
+      {
+        "name": "Elec Amp",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Take-Mikazuchi",
+    "arcana": "Emperor",
+    "level": 25,
+    "stats": {
+      "st": 20,
+      "vi": 17,
+      "ma": 11,
+      "ag": 15,
+      "lu": 14
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Elec"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Mazio",
+        "level": 0
+      },
+      {
+        "name": "Zionga",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Kill Rush",
+        "level": 0
+      },
+      {
+        "name": "Regenerate 1",
+        "level": 0
+      },
+      {
+        "name": "Elec Boost",
+        "level": 27
+      },
+      {
+        "name": "Fatal End",
+        "level": 34
+      },
+      {
+        "name": "Cruel Attack",
+        "level": 38
+      },
+      {
+        "name": "Mazionga",
+        "level": 40
+      },
+      {
+        "name": "Torrent Shot",
+        "level": 44
+      },
+      {
+        "name": "Elec Break",
+        "level": 48
+      },
+      {
+        "name": "Ziodyne",
+        "level": 54
+      },
+      {
+        "name": "Vile Assault",
+        "level": 58
+      },
+      {
+        "name": "Matarukaja",
+        "level": 60
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Primal Force",
+        "level": 73
+      },
+      {
+        "name": "Elec Amp",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Thanatos",
+    "arcana": "Death",
+    "level": 65,
+    "stats": {
+      "st": 43,
+      "vi": 41,
+      "ma": 49,
+      "ag": 38,
+      "lu": 31
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Light"
+      ],
+      "resist": [
+        "Phys"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": [
+        "Dark"
+      ]
+    },
+    "learnset": [
+      {
+        "name": "Door of Hades",
+        "level": 0
+      },
+      {
+        "name": "Mamudobarion",
+        "level": 0
+      },
+      {
+        "name": "Mamudoon",
+        "level": 0
+      },
+      {
+        "name": "Dark Amp",
+        "level": 66
+      },
+      {
+        "name": "One-shot Kill",
+        "level": 68
+      },
+      {
+        "name": "Fortified Moxy",
+        "level": 69
+      },
+      {
+        "name": "Enduring Soul",
+        "level": 70
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Tomoe",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 4,
+      "vi": 4,
+      "ma": 4,
+      "ag": 2,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Fire"
+      ],
+      "resist": [
+        "Ice"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Skewer",
+        "level": 0
+      },
+      {
+        "name": "Tarukaja",
+        "level": 0
+      },
+      {
+        "name": "Bufu",
+        "level": 6
+      },
+      {
+        "name": "Skull Cracker",
+        "level": 11
+      },
+      {
+        "name": "Mabufu",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 20
+      },
+      {
+        "name": "Assault Dive",
+        "level": 22
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 24
+      },
+      {
+        "name": "Gale Slash",
+        "level": 29
+      },
+      {
+        "name": "Apt Pupil",
+        "level": 33
+      },
+      {
+        "name": "Attack Master",
+        "level": 36
+      },
+      {
+        "name": "Black Spot",
+        "level": 38
+      },
+      {
+        "name": "Counterstrike",
+        "level": 43
+      },
+      {
+        "name": "Heat Wave",
+        "level": 46
+      },
+      {
+        "name": "Charge",
+        "level": 52
+      },
+      {
+        "name": "High Counter",
+        "level": 61
+      },
+      {
+        "name": "Rainy Death",
+        "level": 67
+      },
+      {
+        "name": "God's Hand",
+        "level": 70
+      },
+      {
+        "name": "Agneyastra",
+        "level": 74
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Trismegistus",
+    "arcana": "Magician",
+    "level": 1,
+    "stats": {
+      "st": 3,
+      "vi": 2,
+      "ma": 2,
+      "ag": 2,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Cleave",
+        "level": 0
+      },
+      {
+        "name": "Agi",
+        "level": 5
+      },
+      {
+        "name": "Re Patra",
+        "level": 7
+      },
+      {
+        "name": "Rakukaja",
+        "level": 9
+      },
+      {
+        "name": "Assault Dive",
+        "level": 18
+      },
+      {
+        "name": "Double Fangs",
+        "level": 20
+      },
+      {
+        "name": "Kill Rush",
+        "level": 25
+      },
+      {
+        "name": "Agilao",
+        "level": 32
+      },
+      {
+        "name": "Counter - Persona",
+        "level": 35
+      },
+      {
+        "name": "Torrent Shot",
+        "level": 40
+      },
+      {
+        "name": "Marakukaja",
+        "level": 44
+      },
+      {
+        "name": "Counterstrike",
+        "level": 45
+      },
+      {
+        "name": "Blade of Fury",
+        "level": 50
+      },
+      {
+        "name": "Gigantic Fist",
+        "level": 55
+      },
+      {
+        "name": "High Counter",
+        "level": 58
+      },
+      {
+        "name": "Fire Break",
+        "level": 60
+      },
+      {
+        "name": "Agidyne",
+        "level": 64
+      },
+      {
+        "name": "Brave Blade",
+        "level": 65
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 75
+      }
+    ],
+    "game": "p3"
+  },
+  {
+    "name": "Tsukiyomi",
+    "arcana": "Moon",
+    "level": 50,
+    "stats": {
+      "st": 38,
+      "vi": 33,
+      "ma": 32,
+      "ag": 37,
+      "lu": 17
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Nuke"
+      ],
+      "resist": [
+        "Phys",
+        "Light"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": [
+        "Dark"
+      ]
+    },
+    "learnset": [
+      {
+        "name": "Abyssal Wings",
+        "level": 0
+      },
+      {
+        "name": "Drain Dark",
+        "level": 0
+      },
+      {
+        "name": "Myriad Slashes",
+        "level": 0
+      },
+      {
+        "name": "Life Drain",
+        "level": 0
+      },
+      {
+        "name": "Dark Amp",
+        "level": 53
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 55
+      },
+      {
+        "name": "Arms Master",
+        "level": 56
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Valjean",
+    "arcana": "Apostle",
+    "level": 40,
+    "stats": {
+      "st": 34,
+      "vi": 32,
+      "ma": 26,
+      "ag": 25,
+      "lu": 22
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Tarukaja",
+        "level": 0
+      },
+      {
+        "name": "Rakukaja",
+        "level": 0
+      },
+      {
+        "name": "Sukukaja",
+        "level": 0
+      },
+      {
+        "name": "Megido",
+        "level": 0
+      },
+      {
+        "name": "Triple Down",
+        "level": 0
+      },
+      {
+        "name": "Gun Boost",
+        "level": 0
+      },
+      {
+        "name": "Technical High",
+        "level": 42
+      },
+      {
+        "name": "Dekaja",
+        "level": 45
+      },
+      {
+        "name": "Enduring Soul",
+        "level": 49
+      },
+      {
+        "name": "Heat Riser",
+        "level": 52
+      },
+      {
+        "name": "Tetraja",
+        "level": 55
+      },
+      {
+        "name": "Deathbound",
+        "level": 58
+      },
+      {
+        "name": "Megidola",
+        "level": 60
+      },
+      {
+        "name": "One-shot Kill",
+        "level": 65
+      },
+      {
+        "name": "Debilitate",
+        "level": 68
+      },
+      {
+        "name": "Firm Stance",
+        "level": 72
+      },
+      {
+        "name": "Agneyastra",
+        "level": 76
+      },
+      {
+        "name": "Megidolaon",
+        "level": 80
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Vanadis",
+    "arcana": "Faith",
+    "level": 75,
+    "stats": {
+      "st": 55,
+      "vi": 36,
+      "ma": 46,
+      "ag": 51,
+      "lu": 44
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Dark"
+      ],
+      "resist": [],
+      "null": [
+        "Light"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Apt Pupil",
+        "level": 0
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 0
+      },
+      {
+        "name": "Hamabarion",
+        "level": 0
+      },
+      {
+        "name": "Sword Dance",
+        "level": 0
+      },
+      {
+        "name": "Mahamabarion",
+        "level": 0
+      },
+      {
+        "name": "Diarahan",
+        "level": 0
+      },
+      {
+        "name": "Light Amp",
+        "level": 0
+      },
+      {
+        "name": "Ali Dance",
+        "level": 0
+      },
+      {
+        "name": "Brave Step",
+        "level": 80
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "William",
+    "arcana": "Chariot",
+    "level": 4,
+    "stats": {
+      "st": 5,
+      "vi": 5,
+      "ma": 3,
+      "ag": 3,
+      "lu": 3
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Wind"
+      ],
+      "resist": [
+        "Fire"
+      ],
+      "null": [
+        "Elec"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Zio",
+        "level": 0
+      },
+      {
+        "name": "Lunge",
+        "level": 5
+      },
+      {
+        "name": "Tarukaja",
+        "level": 9
+      },
+      {
+        "name": "Headbutt",
+        "level": 11
+      },
+      {
+        "name": "Adverse Resolve",
+        "level": 14
+      },
+      {
+        "name": "Rampage",
+        "level": 17
+      },
+      {
+        "name": "Mazio",
+        "level": 21
+      },
+      {
+        "name": "Memory Blow",
+        "level": 24
+      },
+      {
+        "name": "Assault Dive",
+        "level": 26
+      },
+      {
+        "name": "Zionga",
+        "level": 28
+      },
+      {
+        "name": "Swift Strike",
+        "level": 32
+      },
+      {
+        "name": "Shock Boost",
+        "level": 35
+      },
+      {
+        "name": "Elec Break",
+        "level": 39
+      },
+      {
+        "name": "Mazionga",
+        "level": 43
+      },
+      {
+        "name": "Deathbound",
+        "level": 47
+      },
+      {
+        "name": "Elec Boost",
+        "level": 49
+      },
+      {
+        "name": "Megaton Raid",
+        "level": 53
+      },
+      {
+        "name": "Ziodyne",
+        "level": 55
+      },
+      {
+        "name": "Matarukaja",
+        "level": 58
+      },
+      {
+        "name": "Charge",
+        "level": 63
+      },
+      {
+        "name": "Maziodyne",
+        "level": 67
+      },
+      {
+        "name": "Agneyastra",
+        "level": 71
+      },
+      {
+        "name": "God's Hand",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  },
+  {
+    "name": "Yamato Sumeragi",
+    "arcana": "Fortune",
+    "level": 55,
+    "stats": {
+      "st": 32,
+      "vi": 32,
+      "ma": 38,
+      "ag": 40,
+      "lu": 31
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [],
+      "null": [
+        "Fire"
+      ],
+      "drain": [],
+      "repel": [
+        "Light",
+        "Dark"
+      ]
+    },
+    "learnset": [
+      {
+        "name": "Tempest Slash",
+        "level": 0
+      },
+      {
+        "name": "Agidyne",
+        "level": 0
+      },
+      {
+        "name": "Garudyne",
+        "level": 0
+      },
+      {
+        "name": "Mudoon",
+        "level": 0
+      },
+      {
+        "name": "Hamaon",
+        "level": 0
+      },
+      {
+        "name": "Megidola",
+        "level": 0
+      },
+      {
+        "name": "Deathbound",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 56
+      },
+      {
+        "name": "Blight",
+        "level": 58
+      },
+      {
+        "name": "Mudo Boost",
+        "level": 60
+      },
+      {
+        "name": "Hama Boost",
+        "level": 62
+      },
+      {
+        "name": "Makarakarn",
+        "level": 64
+      },
+      {
+        "name": "Mamudoon",
+        "level": 68
+      },
+      {
+        "name": "Mahamaon",
+        "level": 70
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 73
+      },
+      {
+        "name": "Megidolaon",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Yamato-Takeru",
+    "arcana": "Fortune",
+    "level": 55,
+    "stats": {
+      "st": 32,
+      "vi": 32,
+      "ma": 38,
+      "ag": 40,
+      "lu": 31
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [],
+      "resist": [
+        "Fire"
+      ],
+      "null": [
+        "Light",
+        "Dark"
+      ],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Tempest Slash",
+        "level": 0
+      },
+      {
+        "name": "Agidyne",
+        "level": 0
+      },
+      {
+        "name": "Garudyne",
+        "level": 0
+      },
+      {
+        "name": "Mudoon",
+        "level": 0
+      },
+      {
+        "name": "Hamaon",
+        "level": 0
+      },
+      {
+        "name": "Megidola",
+        "level": 0
+      },
+      {
+        "name": "Deathbound",
+        "level": 0
+      },
+      {
+        "name": "Tetrakarn",
+        "level": 56
+      },
+      {
+        "name": "Blight",
+        "level": 58
+      },
+      {
+        "name": "Mudo Boost",
+        "level": 60
+      },
+      {
+        "name": "Hama Boost",
+        "level": 62
+      },
+      {
+        "name": "Makarakarn",
+        "level": 64
+      },
+      {
+        "name": "Mamudoon",
+        "level": 68
+      },
+      {
+        "name": "Mahamaon",
+        "level": 70
+      },
+      {
+        "name": "Vorpal Blade",
+        "level": 73
+      },
+      {
+        "name": "Megidolaon",
+        "level": 75
+      }
+    ],
+    "game": "p4"
+  },
+  {
+    "name": "Zorro",
+    "arcana": "Magician",
+    "level": 1,
+    "stats": {
+      "st": 2,
+      "vi": 1,
+      "ma": 3,
+      "ag": 3,
+      "lu": 1
+    },
+    "resistances": {
+      "ailments": null,
+      "weak": [
+        "Elec"
+      ],
+      "resist": [
+        "Wind"
+      ],
+      "null": [],
+      "drain": [],
+      "repel": []
+    },
+    "learnset": [
+      {
+        "name": "Garu",
+        "level": 0
+      },
+      {
+        "name": "Dia",
+        "level": 0
+      },
+      {
+        "name": "Patra",
+        "level": 5
+      },
+      {
+        "name": "Media",
+        "level": 11
+      },
+      {
+        "name": "Lucky Punch",
+        "level": 13
+      },
+      {
+        "name": "Magaru",
+        "level": 16
+      },
+      {
+        "name": "Pulinpa",
+        "level": 19
+      },
+      {
+        "name": "Me Patra",
+        "level": 21
+      },
+      {
+        "name": "Diarama",
+        "level": 24
+      },
+      {
+        "name": "Garula",
+        "level": 26
+      },
+      {
+        "name": "Recarm",
+        "level": 28
+      },
+      {
+        "name": "Wind Break",
+        "level": 32
+      },
+      {
+        "name": "Mediarama",
+        "level": 34
+      },
+      {
+        "name": "Magarula",
+        "level": 37
+      },
+      {
+        "name": "Miracle Punch",
+        "level": 40
+      },
+      {
+        "name": "Wind Boost",
+        "level": 43
+      },
+      {
+        "name": "Samarecarm",
+        "level": 45
+      },
+      {
+        "name": "Diarahan",
+        "level": 49
+      },
+      {
+        "name": "Garudyne",
+        "level": 52
+      },
+      {
+        "name": "Masukunda",
+        "level": 55
+      },
+      {
+        "name": "Mediarahan",
+        "level": 58
+      },
+      {
+        "name": "Magarudyne",
+        "level": 62
+      },
+      {
+        "name": "Wind Amp",
+        "level": 69
+      },
+      {
+        "name": "Salvation",
+        "level": 75
+      }
+    ],
+    "game": "p5"
+  }
+]

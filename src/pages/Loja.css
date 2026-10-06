@@ -1,0 +1,222 @@
+/* ============================
+   LOJA.CSS
+   ID único: #tela-loja
+   ============================ */
+
+#tela-loja {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+/* TEMAS DOS LOJISTAS */
+.tema-tanaka {
+    background-color: #1A1200;
+    color: #FFF3D6;
+}
+.tema-tanaka::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(243, 156, 18, 0.05),
+        rgba(243, 156, 18, 0.05) 20px,
+        rgba(230, 126, 34, 0.05) 20px,
+        rgba(230, 126, 34, 0.05) 40px
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+
+.tema-jose {
+    background-color: #001A24;
+    color: #E0F7FA;
+}
+.tema-jose::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at top right, rgba(255, 213, 79, 0.15) 0%, transparent 60%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.tema-marthym {
+    background-color: #1A000D;
+    color: #F8E6E8;
+}
+.tema-marthym::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(142, 68, 173, 0.1) 0%, transparent 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* HEADER DA LOJA */
+.loja-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.loja-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+}
+
+.loja-btn-voltar {
+    background: transparent;
+    border: 1px solid currentColor;
+    color: currentColor;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.loja-btn-voltar:hover {
+    background: currentColor;
+    color: #000;
+}
+
+/* ÁREA DO LOJISTA */
+.loja-conteudo {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    gap: 3rem;
+}
+
+.loja-painel-esq {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.loja-retrato {
+    width: 100%;
+    aspect-ratio: 1;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border-radius: 4px;
+}
+
+.loja-dialogo {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid currentColor;
+    padding: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+/* CARTEIRA DO JOGADOR */
+.loja-carteira {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px dashed currentColor;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.loja-carteira-titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.loja-carteira-valor {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* GRADE DE PRODUTOS */
+.loja-vitrine {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid currentColor;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.loja-produto-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.loja-produto-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.loja-produto-icone {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.loja-produto-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.loja-produto-desc {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.loja-btn-comprar {
+    width: 100%;
+    margin-top: 1rem;
+    background: transparent;
+    border: 1px solid currentColor;
+    color: currentColor;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.loja-btn-comprar:hover {
+    background: currentColor;
+    color: #000;
+}

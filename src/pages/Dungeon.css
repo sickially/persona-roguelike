@@ -1,0 +1,253 @@
+/* ============================
+   DUNGEON.CSS
+   ID único: #tela-dungeon
+   ============================ */
+
+#tela-dungeon {
+    min-height: 100vh;
+    background-color: #030508;
+    color: #E3EAFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fundo da dungeon */
+#tela-dungeon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(192, 57, 43, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* HEADER DA DUNGEON */
+.dungeon-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(3, 5, 8, 0.9);
+    border-bottom: 1px solid rgba(227, 234, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dungeon-info-segmento {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #C0392B;
+    letter-spacing: 0.1em;
+}
+
+.dungeon-info-caminho {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(227, 234, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.dungeon-aviso {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #E74C3C;
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    background: rgba(231, 76, 60, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    animation: piscar-aviso 2s infinite;
+}
+
+@keyframes piscar-aviso {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; box-shadow: 0 0 10px rgba(231, 76, 60, 0.3); }
+}
+
+/* CORPO DO MAPA */
+.dungeon-mapa-container {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.dungeon-caminhos-grid {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+.dungeon-coluna-caminho {
+    display: flex;
+    flex-direction: column-reverse; /* Os nós sobem de baixo para cima */
+    gap: 2.5rem;
+    align-items: center;
+    position: relative;
+}
+
+/* Linha conectando os nós na vertical */
+.dungeon-coluna-caminho::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: rgba(227, 234, 255, 0.1);
+    z-index: -1;
+}
+
+/* NÓ DE EVENTO */
+.dungeon-no {
+    width: 60px;
+    height: 60px;
+    background: rgba(7, 10, 20, 0.9);
+    border: 2px solid rgba(227, 234, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.dungeon-no:hover:not(.dungeon-no--bloqueado):not(.dungeon-no--concluido) {
+    border-color: #E3EAFF;
+    transform: scale(1.15);
+    background: rgba(227, 234, 255, 0.1);
+}
+
+/* NÓ ATIVO (próximo disponível) */
+.dungeon-no--disponivel {
+    border-color: #C0392B;
+    box-shadow: 0 0 15px rgba(192, 57, 43, 0.6);
+    animation: pulsar-no 1.5s infinite alternate;
+}
+
+@keyframes pulsar-no {
+    from { box-shadow: 0 0 10px rgba(192, 57, 43, 0.4); }
+    to { box-shadow: 0 0 25px rgba(192, 57, 43, 0.8); }
+}
+
+/* NÓ CONCLUÍDO (jogador já passou) */
+.dungeon-no--concluido {
+    border-color: #2ECC71;
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ECC71;
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* NÓ BLOQUEADO (futuro ou linha errada) */
+.dungeon-no--bloqueado {
+    opacity: 0.3;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+
+/* TOOLTIP NO HOVER */
+.dungeon-no-tooltip {
+    position: absolute;
+    top: -35px;
+    background: #E3EAFF;
+    color: #070A14;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.dungeon-no:hover .dungeon-no-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* JOGADOR INDICADOR */
+.dungeon-jogador-marker {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background: #3498DB;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #070A14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    box-shadow: 0 0 10px #3498DB;
+}
+
+/* MODAL DE EVENTO */
+.dungeon-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.dungeon-modal {
+    background: #070A14;
+    border: 1px solid #C0392B;
+    padding: 3rem;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(192, 57, 43, 0.2);
+}
+
+.dungeon-modal h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #E3EAFF;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.dungeon-modal p {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(227, 234, 255, 0.7);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.dungeon-modal-btn {
+    background: rgba(192, 57, 43, 0.1);
+    border: 1px solid #C0392B;
+    color: #E3EAFF;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dungeon-modal-btn:hover {
+    background: #C0392B;
+    box-shadow: 0 0 20px rgba(192, 57, 43, 0.5);
+}

@@ -1,0 +1,6083 @@
+[
+  {
+    "name": "+15% EXP",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "EXP gained in battle increased by 15%."
+  },
+  {
+    "name": "+50% EXP",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "EXP gained in battle increased by 50%."
+  },
+  {
+    "name": "Abysmal Surge",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Despair to all foes."
+  },
+  {
+    "name": "Abyssal Eye",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Almighty attack to all foes."
+  },
+  {
+    "name": "Abyssal Mask",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Greatly decreases chance of instakill and being afflicted with ailments."
+  },
+  {
+    "name": "Abyssal Wings",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Severe Dark attack to all foes."
+  },
+  {
+    "name": "Acrobat Kick",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Weak Phys attack to 1 foe. Always lands Critical hits."
+  },
+  {
+    "name": "Active Support",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Moral Support may now Charge or recover MP."
+  },
+  {
+    "name": "Adverse Resolve",
+    "affinity": "Passive",
+    "type": "CRITBOOST",
+    "description": "Increases Critical Rate when surrounded."
+  },
+  {
+    "name": "Aeon Rain",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Agi",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Fire attack to 1 foe."
+  },
+  {
+    "name": "Agibarion",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Fire attack to 1 foe."
+  },
+  {
+    "name": "Agidyne",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Fire attack to 1 foe."
+  },
+  {
+    "name": "Agilao",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Fire attack to 1 foe."
+  },
+  {
+    "name": "Agneyastra",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 24
+    },
+    "description": "1~3 medium Phys attacks to all foes."
+  },
+  {
+    "name": "Ailment Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting ailments."
+  },
+  {
+    "name": "Akashic Arts",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Alertness",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Decreases chance of being ambushed by foes."
+  },
+  {
+    "name": "Ali Dance",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from All skills."
+  },
+  {
+    "name": "All-out Attack Boost",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases strength of All-Out Attacks."
+  },
+  {
+    "name": "Almighty Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Almighty skills by 50%."
+  },
+  {
+    "name": "Almighty Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Almighty skills by 25%."
+  },
+  {
+    "name": "Almighty Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Almighty attack damage."
+  },
+  {
+    "name": "Ambient Aid",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting ailments during Rain/Snow."
+  },
+  {
+    "name": "Analysis",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Confirm affinities of enemies you have previously attacked."
+  },
+  {
+    "name": "Andalucia",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "3~6 weak Phys attacks to random foes."
+  },
+  {
+    "name": "Angelic Grace",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from all magical attacks except Almighty."
+  },
+  {
+    "name": "Anima Freeze",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Exhaust to all foes."
+  },
+  {
+    "name": "Apt Pupil",
+    "affinity": "Passive",
+    "type": "CRITBOOST",
+    "description": "Increases chance of Critical."
+  },
+  {
+    "name": "Aramasa",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "8 weak Phys attacks to 1 foe."
+  },
+  {
+    "name": "Arm Chopper",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "2 weak Phys attacks to 1 foe. Chance of inflicting Fear."
+  },
+  {
+    "name": "Arms Master",
+    "affinity": "Passive",
+    "type": "MASTER",
+    "description": "Decreases HP cost of skills by 50%."
+  },
+  {
+    "name": "Arrow Rain",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "2 heavy Phys attacks to all foes."
+  },
+  {
+    "name": "Assault Dive",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 13
+    },
+    "description": "Heavy Phys attack to 1 foe."
+  },
+  {
+    "name": "Astral Saintstrike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "15 weak Phys attacks to random foes."
+  },
+  {
+    "name": "Atomic Flare",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Nuke attack to 1 foe."
+  },
+  {
+    "name": "Atom Smasher",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "1~2 medium Phys attacks to all foes. Chance of inflicting Fear."
+  },
+  {
+    "name": "Attack Master",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Tarukaja at the start of battle."
+  },
+  {
+    "name": "Auto-Maraku",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Marakukaja at the start of battle."
+  },
+  {
+    "name": "Auto-Masuku",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Masukukaja at the start of battle."
+  },
+  {
+    "name": "Auto-Mataru",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Matarukaja at the start of battle."
+  },
+  {
+    "name": "Axel Claw",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 24
+    },
+    "description": "2~4 medium Phys attacks to random foes."
+  },
+  {
+    "name": "Ayamur",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "3 medium Phys attacks to 1 foe. High accuracy."
+  },
+  {
+    "name": "Babylon Curse",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Weak Almighty attack to 1 foe. Chance of inflicting Mud."
+  },
+  {
+    "name": "Babylon Goblet",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 80
+    },
+    "description": "Severe Almighty attack to all foes. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Bad Beat",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 21
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Despair."
+  },
+  {
+    "name": "Baisudi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 4,
+    "description": "Cures Burn/Freeze/Shock for one ally."
+  },
+  {
+    "name": "Beast Eye",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases Accuracy."
+  },
+  {
+    "name": "Beast Weaver",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 20
+    },
+    "description": "Colossal Phys attack to 1 foe. Decreases Attack after use."
+  },
+  {
+    "name": "Beatdown",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to 1 foe. The more remaining HP you have, the stronger the attack."
+  },
+  {
+    "name": "Berserker God",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Medium Phys attack to 1 foe."
+  },
+  {
+    "name": "Bestial Bite",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 5
+    },
+    "description": "Weak Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Black Dracostrike",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Strength-based Dark attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Black Spot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to 1 foe."
+  },
+  {
+    "name": "Black Viper",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 48
+    },
+    "description": "Severe Almighty attack to 1 foe."
+  },
+  {
+    "name": "Blade of Fury",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "2~4 medium Phys attacks to all foes."
+  },
+  {
+    "name": "Bleeding Dry Brush",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 22,
+    "description": "Forms a barrier that can absorb one attack (except Almighty)."
+  },
+  {
+    "name": "Blight",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "2~4 weak Phys attacks to random foes. Chance of inflicting Poison."
+  },
+  {
+    "name": "Blinding Strike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to 1 foe. Lowers target's Accuracy/Evasion by 1 rank for 3 turns."
+  },
+  {
+    "name": "Bloodbath",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 22
+    },
+    "description": "Heavy Phys attack to all foes. Chance of inflicting Fear."
+  },
+  {
+    "name": "Bloody Glee",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases Critical Rate."
+  },
+  {
+    "name": "Boon Boost",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Your -kaja/-nda skills last 1 extra turn."
+  },
+  {
+    "name": "Boon Boost EX",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Your -kaja/-nda skills last 2 extra turns."
+  },
+  {
+    "name": "Bouncing Claw",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 12
+    },
+    "description": "2~3 weak Phys attacks to 1 foe."
+  },
+  {
+    "name": "Bowl of Hygieia",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 20,
+    "description": "Greatly increases the effect of the next HP healing skill of self and allows it to heal above MAX HP."
+  },
+  {
+    "name": "Brain Buster",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 22
+    },
+    "description": "Heavy Phys attack to all foes. Chance of inflicting Charm."
+  },
+  {
+    "name": "Brain Shake",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Charm."
+  },
+  {
+    "name": "Brave Blade",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 45
+    },
+    "description": "Heavy Phys attack to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Brave Step",
+    "affinity": "Support",
+    "type": "CRIT",
+    "cost": 16,
+    "description": "Increases chance of Critical for all allies for 3 turns."
+  },
+  {
+    "name": "Bufu",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Ice attack to 1 foe."
+  },
+  {
+    "name": "Bufubarion",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Ice attack to 1 foe."
+  },
+  {
+    "name": "Bufudyne",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Ice attack to 1 foe."
+  },
+  {
+    "name": "Bufula",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Ice attack to 1 foe."
+  },
+  {
+    "name": "Burn Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Burn."
+  },
+  {
+    "name": "Cadenza",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 24,
+    "description": "Half HP recovery to all allies and raises Accuracy/Evasion by 1 rank for 3 turns."
+  },
+  {
+    "name": "Call Allies",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Call Angels",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Call Evil",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Call Soldiers",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Call Souls",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Carnage Fang",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Heavy Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Catastrophe",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Phys attack to 1 foe."
+  },
+  {
+    "name": "Cautious Cheer",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 50,
+    "description": "Raises Defense/Accuracy/Evasion of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Cell Breaker",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Enervate."
+  },
+  {
+    "name": "Certain Escape",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Escape random battles successfully."
+  },
+  {
+    "name": "Champion's Cup",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 10,
+    "description": "Moderate HP recovery to 1 ally and raises Attack by 1 rank for 3 turns."
+  },
+  {
+    "name": "Chaotic Will",
+    "affinity": "Ailment",
+    "type": "MISC",
+    "cost": 150,
+    "description": "Chance of instakill to all foes. Foe's Press Turn Icons will be halved next turn."
+  },
+  {
+    "name": "Charge",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 10,
+    "description": "Greatly increases damage of the next Strength-based attack from self."
+  },
+  {
+    "name": "Charm Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Charm."
+  },
+  {
+    "name": "Charmdi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 5,
+    "description": "Cures Charm for one ally."
+  },
+  {
+    "name": "Checkmate",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 90,
+    "description": "Lowers all stats of all foes by 1 rank for 3 turns."
+  },
+  {
+    "name": "Cleave",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 6
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Climate Decorum",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from all affinities during Rain/Snow."
+  },
+  {
+    "name": "Cold Dark Matter",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 0,
+    "description": "Maximizes Defense for 3 turns."
+  },
+  {
+    "name": "Complete Analysis",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveals all elemental affinities on all enemies."
+  },
+  {
+    "name": "Concealment",
+    "affinity": "Support",
+    "type": "MISC",
+    "cost": 4,
+    "description": "Decreases chance of being targeted by foes."
+  },
+  {
+    "name": "Concentrate",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 10,
+    "description": "Greatly increases damage of the next Magic-based attack from self."
+  },
+  {
+    "name": "Confuse Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Confuse."
+  },
+  {
+    "name": "Contempt of God",
+    "affinity": "Misc",
+    "type": "MISC",
+    "cost": 0,
+    "description": "Adds 2 Press Turn Icons to your next turn."
+  },
+  {
+    "name": "Cool Breeze",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Restores 8% HP and MP after battle."
+  },
+  {
+    "name": "Cornered Fang",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "Medium Phys attack to 1 foe. Powers up when surrounded."
+  },
+  {
+    "name": "Cosmic Flare",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Nuke attack to all foes."
+  },
+  {
+    "name": "Counter",
+    "affinity": "Passive",
+    "type": "SMTCOUNTER",
+    "description": "Chance to counter Strength-based attacks with a weak Phys attack."
+  },
+  {
+    "name": "Counter - Persona",
+    "affinity": "Passive",
+    "type": "PERSONACOUNTER",
+    "description": "10% chance of reflecting physical attacks."
+  },
+  {
+    "name": "Counterstrike",
+    "affinity": "Passive",
+    "type": "PERSONACOUNTER",
+    "description": "15% chance of reflecting physical attacks."
+  },
+  {
+    "name": "Crazy Chain",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Rage."
+  },
+  {
+    "name": "Critical Aura",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 25,
+    "description": "Next Strength-based attack of self will be 100% accurate and guaranteed Critical."
+  },
+  {
+    "name": "Critical Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Critical Wave",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Weak Phys attack to all foes. High chance of Critical."
+  },
+  {
+    "name": "Critical Zealot",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases Critical damage, but normal damage decreases."
+  },
+  {
+    "name": "Cross Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 20
+    },
+    "description": "2 heavy Phys attacks to 1 foe. High accuracy."
+  },
+  {
+    "name": "Cruel Attack",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 12
+    },
+    "description": "Medium Phys attack to 1 foe. Highly effective if foe is Downed."
+  },
+  {
+    "name": "Crusher Onslaught",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Phys attack to all foes. Low accuracy."
+  },
+  {
+    "name": "Curse Siphon",
+    "affinity": "Passive",
+    "type": "SIPHON",
+    "description": "Low MP recovery when inflicting status ailments."
+  },
+  {
+    "name": "Damascus Claw",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 24
+    },
+    "description": "2~3 medium Phys attacks to 1 foe."
+  },
+  {
+    "name": "Dancing Strike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "3 medium Phys attacks to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Dark Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Dark skills by 50%."
+  },
+  {
+    "name": "Dark Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies a Dark Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Dark Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Dark skills by 25%."
+  },
+  {
+    "name": "Dark Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Dark attack damage."
+  },
+  {
+    "name": "Dark Sword",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "2 medium Phys attacks to 1 foe. Chance of inflicting Seal."
+  },
+  {
+    "name": "Dazzler",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Mirage to 1 foe."
+  },
+  {
+    "name": "Deadly Fury",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Medium Phys attack to 1 foe. Always lands Critical hits."
+  },
+  {
+    "name": "Deathbound",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Death Flies",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 120
+    },
+    "description": "Severe Dark attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Death Lust",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 70
+    },
+    "description": "Heavy Almighty attack to all foes. Chance of inflicting Charm."
+  },
+  {
+    "name": "Death Scythe",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 20
+    },
+    "description": "Severe Phys attack to 1 foe. Chance of inflicting Fear."
+  },
+  {
+    "name": "Debilitate",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 150,
+    "description": "Lowers all stats of all foes by 1 rank for 3 turns."
+  },
+  {
+    "name": "Defense Master",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Rakukaja at the start of battle."
+  },
+  {
+    "name": "Dekaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 40,
+    "description": "Negates status buff effects on all foes."
+  },
+  {
+    "name": "Dekunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 40,
+    "description": "Negates status debuff effects on all allies."
+  },
+  {
+    "name": "Demonic Decree",
+    "affinity": "Dark",
+    "type": "SET",
+    "cost": 48,
+    "description": "Dark attack that reduces HP of one foe by 50%."
+  },
+  {
+    "name": "Despair Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Despair."
+  },
+  {
+    "name": "Dia",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 8,
+    "description": "Slight HP recovery to 1 ally."
+  },
+  {
+    "name": "Diamrita",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 30,
+    "description": "Moderate HP recovery and cures status ailments for 1 ally."
+  },
+  {
+    "name": "Diarahan",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 35,
+    "description": "Full HP recovery to 1 ally."
+  },
+  {
+    "name": "Diarama",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 15,
+    "description": "Moderate HP recovery to 1 ally."
+  },
+  {
+    "name": "Die For Me!",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "2~5 medium Dark attacks to random foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Divine Arrowfall",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Almighty attack to all foes."
+  },
+  {
+    "name": "Divine Grace",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases the effect of healing skills by 50%."
+  },
+  {
+    "name": "Divine Judgement",
+    "affinity": "Light",
+    "type": "SET",
+    "cost": 48,
+    "description": "Light attack that reduces HP of one foe by 50%."
+  },
+  {
+    "name": "Dodge Dark",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Dark skills."
+  },
+  {
+    "name": "Dodge Elec",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Elec skills."
+  },
+  {
+    "name": "Dodge Fire",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Fire skills."
+  },
+  {
+    "name": "Dodge Ice",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Ice skills."
+  },
+  {
+    "name": "Dodge Light",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Light skills."
+  },
+  {
+    "name": "Dodge Nuke",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Dark skills."
+  },
+  {
+    "name": "Dodge Phys",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Phys skills."
+  },
+  {
+    "name": "Dodge Psy",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Psy skills."
+  },
+  {
+    "name": "Dodge Wind",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Wind skills."
+  },
+  {
+    "name": "Donum Gladi",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 40,
+    "description": "Greatly increases damage of the next Strength-based attack on 1 ally."
+  },
+  {
+    "name": "Donum Magici",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 40,
+    "description": "Greatly increases damage of the next Magic-based attack on 1 ally."
+  },
+  {
+    "name": "Door of Hades",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 32
+    },
+    "description": "Heavy Almighty attack to all foes. Chance of instakill."
+  },
+  {
+    "name": "Dormina",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Sleep to 1 foe."
+  },
+  {
+    "name": "Dormin Rush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Sleep."
+  },
+  {
+    "name": "Double Fangs",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "2 weak Phys attacks to 1 foe."
+  },
+  {
+    "name": "Double Shot",
+    "affinity": "Gun",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 12
+    },
+    "description": "2 weak Gun attacks to 1 foe."
+  },
+  {
+    "name": "Dragon Eye",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Greatly increases Accuracy."
+  },
+  {
+    "name": "Drain Dark",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Dark skills."
+  },
+  {
+    "name": "Drain Elec",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Elec skills."
+  },
+  {
+    "name": "Drain Fire",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Fire skills."
+  },
+  {
+    "name": "Drain Force",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Force skills."
+  },
+  {
+    "name": "Drain Ice",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Ice skills."
+  },
+  {
+    "name": "Drain Light",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Light skills."
+  },
+  {
+    "name": "Drain Nuke",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Nuke skills."
+  },
+  {
+    "name": "Drain Phys",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Phys skills."
+  },
+  {
+    "name": "Drain Psy",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Psy skills."
+  },
+  {
+    "name": "Drain Wind",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Absorbs damage from Wind skills."
+  },
+  {
+    "name": "Dreadful Gleam",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Heavy Piercing Elec attack to all foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Dream Fist",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Weak Phys attack to 1 foe. Greater effect when target is asleep."
+  },
+  {
+    "name": "Dream Needle",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Sleep."
+  },
+  {
+    "name": "Dustoma",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Mirage to 1 foe."
+  },
+  {
+    "name": "Eat Whole",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Phys HP-draining attack to 1 foe."
+  },
+  {
+    "name": "Electrify",
+    "affinity": "Misc",
+    "type": "MISC",
+    "cost": 0,
+    "description": "Greatly increases the damage of the next Rising Storm Dragon performed by 1 ally."
+  },
+  {
+    "name": "Elec Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Elec skills by 50%."
+  },
+  {
+    "name": "Elec Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies an Elec Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Elec Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Elec skills by 25%."
+  },
+  {
+    "name": "Elec Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Elec resistance of all foes. Cannot negate Elec Wall."
+  },
+  {
+    "name": "Elec Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Elec attack damage."
+  },
+  {
+    "name": "Elec Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Elec resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Eleusinian Harvest",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 150,
+    "description": "Full HP recovery to all allies and heals above MAX HP."
+  },
+  {
+    "name": "Emergency Shift",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to swap current party with backups when 2 or more people are KO'd."
+  },
+  {
+    "name": "Endure",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "Revives with 1 HP when KO'd. Usable once per battle."
+  },
+  {
+    "name": "Endure Dark",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "100% chance to survive Dark skills with 1 HP."
+  },
+  {
+    "name": "Endure Light",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "100% chance to survive Light skills with 1 HP."
+  },
+  {
+    "name": "Enduring Soul",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "Endures lethal attack and fully heals HP once in battle."
+  },
+  {
+    "name": "Enemy Radar",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveal the location of Shadows on each floor over a wide area."
+  },
+  {
+    "name": "Energy Drain",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Almighty HP/MP drain attack to 1 foe."
+  },
+  {
+    "name": "Energy Drop",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 4,
+    "description": "Cures Confuse/Fear/Despair/Rage/Charm for one ally."
+  },
+  {
+    "name": "Energy Shower",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 8,
+    "description": "Cures Confuse/Fear/Despair/Rage/Charm for all allies."
+  },
+  {
+    "name": "Enervate Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Enervate."
+  },
+  {
+    "name": "Enervation",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Enervate to 1 foe."
+  },
+  {
+    "name": "Escape Route",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Return to the entrance of Tartarus or the Desert of Doors."
+  },
+  {
+    "name": "Estoma",
+    "affinity": "Support",
+    "type": "MISC",
+    "cost": 35,
+    "description": "Prevents any enemy encounters until next New Moon."
+  },
+  {
+    "name": "Eternal Blizzard",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "3~6 weak Ice attacks to random foes."
+  },
+  {
+    "name": "Evade Dark",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Dark skills. Does not stack."
+  },
+  {
+    "name": "Evade Elec",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Elec skills. Does not stack."
+  },
+  {
+    "name": "Evade Fire",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Fire skills. Does not stack."
+  },
+  {
+    "name": "Evade Ice",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Ice skills. Does not stack."
+  },
+  {
+    "name": "Evade Light",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Light skills. Does not stack."
+  },
+  {
+    "name": "Evade Nuke",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Nuke skills. Does not stack."
+  },
+  {
+    "name": "Evade Phys",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Phys skills. Does not stack."
+  },
+  {
+    "name": "Evade Psy",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Psy skills. Does not stack."
+  },
+  {
+    "name": "Evade Wind",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly increases Evasion from Wind skills. Does not stack."
+  },
+  {
+    "name": "Evil Gleam",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 0,
+    "description": "Chance of inflicting Charm to all foes."
+  },
+  {
+    "name": "Evil Melody",
+    "affinity": "Ailment",
+    "type": "MISC",
+    "cost": 100,
+    "description": "Chance of instakill to 1 foe."
+  },
+  {
+    "name": "Evil Smile",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Fear to all foes."
+  },
+  {
+    "name": "Evil Touch",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Fear to 1 foe."
+  },
+  {
+    "name": "Exhaust Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Exhaust."
+  },
+  {
+    "name": "Fallen Destroyer",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 70
+    },
+    "description": "Severe Dark attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Falling Star - Fire",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Fire attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Falling Star - Ice",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Ice attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "False Replication",
+    "affinity": "Misc",
+    "type": "MISC",
+    "cost": 0,
+    "description": "Creates a replica."
+  },
+  {
+    "name": "Famine's Scream",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 0,
+    "description": "Chance of inflicting Hunger to all foes."
+  },
+  {
+    "name": "Fang Breaker",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to 1 foe. Lowers target's Attack by 1 rank for 3 turns."
+  },
+  {
+    "name": "Fast Heal",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Decreases recovery time from ailments by half."
+  },
+  {
+    "name": "Fatal End",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Fatal Sword",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Phys attack to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Fear Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Fear."
+  },
+  {
+    "name": "Fierce Roar",
+    "affinity": "Support",
+    "type": "TAUNT",
+    "cost": 30,
+    "description": "Draws enemy hostility, but increases your Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Fighting Spirit",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 80,
+    "description": "Next physical attack deals over double the damage for all allies."
+  },
+  {
+    "name": "Figment Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Phys attack to 1 foe."
+  },
+  {
+    "name": "Final Guard",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to nullify a fatal attack to a current party member."
+  },
+  {
+    "name": "Fire Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Fire skills by 50%."
+  },
+  {
+    "name": "Fire Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies a Fire Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Fire Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Fire skills by 25%."
+  },
+  {
+    "name": "Fire Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Fire resistance of all foes. Cannot negate Fire Wall."
+  },
+  {
+    "name": "Fire Breath",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "2~5 weak Fire attacks to random foes."
+  },
+  {
+    "name": "Fire Dracostrike",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Strength-based Fire attack to 1 foe."
+  },
+  {
+    "name": "Fire of Sinai",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 80
+    },
+    "description": "3~7 medium Almighty attacks to random foes."
+  },
+  {
+    "name": "Fire Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Fire attack damage."
+  },
+  {
+    "name": "Fire Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Fire resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Firm Stance",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Take the blow, but decreases damage by half."
+  },
+  {
+    "name": "Flash Bomb",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 19
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Mirage."
+  },
+  {
+    "name": "Floral Gust",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "2~5 medium Force attacks to random foes."
+  },
+  {
+    "name": "Fogna",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Mirage to all foes."
+  },
+  {
+    "name": "Force Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies a Force Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Force Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Force attack damage."
+  },
+  {
+    "name": "Fortified Moxy",
+    "affinity": "Passive",
+    "type": "CRITBOOST",
+    "description": "Increases Critical rate during an Ambush."
+  },
+  {
+    "name": "Fortify Spirit",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with All."
+  },
+  {
+    "name": "Foul Breath",
+    "affinity": "Almighty",
+    "type": "SUSCEPTIBILITY",
+    "cost": 8,
+    "description": "Increases chance of inflicting ailments to one foe."
+  },
+  {
+    "name": "Freeze Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Freeze."
+  },
+  {
+    "name": "Frei",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Nuke attack to 1 foe."
+  },
+  {
+    "name": "Freidyne",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Nuke attack to 1 foe."
+  },
+  {
+    "name": "Freikugel",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Severe Strength-based Almighty attack to 1 foe."
+  },
+  {
+    "name": "Freila",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Nuke attack to 1 foe."
+  },
+  {
+    "name": "Frenzied Chomp",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Poison/Confuse/Charm."
+  },
+  {
+    "name": "Frenzy",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Frolic",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 80,
+    "description": "Chance of inflicting Charm to all foesand lowers AttackDefense by 2 ranks for 3 turns."
+  },
+  {
+    "name": "Full Analysis",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveal an enemy's stats, weak points, and skills."
+  },
+  {
+    "name": "Gaea Rage",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 170
+    },
+    "description": "Severe Phys attack to all foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Gale Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 12
+    },
+    "description": "Weak Phys attack to all foes."
+  },
+  {
+    "name": "Galgalim Eyes",
+    "affinity": "Almighty",
+    "type": "SET",
+    "cost": null,
+    "description": "Reduces enemy to 1 HP."
+  },
+  {
+    "name": "Galvanic Slash",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Heavy Strength-based Elec attack to 1 foe."
+  },
+  {
+    "name": "Gambler's Foresight",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 20,
+    "description": "Raises Accuracy/Evasion of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Garu",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Wind attack to 1 foe."
+  },
+  {
+    "name": "Garudyne",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Wind attack to 1 foe."
+  },
+  {
+    "name": "Garula",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Wind attack to 1 foe."
+  },
+  {
+    "name": "Gatling Blows",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "3~4 weak Phys attacks to 1 foe."
+  },
+  {
+    "name": "Ghastfire Rain",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Fire attack to all foes."
+  },
+  {
+    "name": "Ghastly Wail",
+    "affinity": "Almighty",
+    "type": "MISC",
+    "cost": 28,
+    "description": "Instakills foes inflicted with Fear."
+  },
+  {
+    "name": "Giant Slice",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Medium Phys attack to 1 foe. Powers up after a Baton Pass."
+  },
+  {
+    "name": "Gigantic Fist",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Heavy Phys attack to 1 foe."
+  },
+  {
+    "name": "Gigantomachia",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "Colossal Phys attack to all foes."
+  },
+  {
+    "name": "Glacial Blast",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "2~5 medium Ice attacks to random foes."
+  },
+  {
+    "name": "God's Bow",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Weak Light attack to 1 foe. Chance of instakill."
+  },
+  {
+    "name": "God's Hand",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 22
+    },
+    "description": "Colossal Phys attack to 1 foe."
+  },
+  {
+    "name": "Golden Apple",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 180,
+    "description": "Moderate HP recovery to all allies and raises all stats by 1 rank for 3 turns."
+  },
+  {
+    "name": "Gram Slice",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Great Curse Siphon",
+    "affinity": "Passive",
+    "type": "SIPHON",
+    "description": " MP recovery when inflicting status ailments."
+  },
+  {
+    "name": "Great Life Spring",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Greatly increases MAX HP."
+  },
+  {
+    "name": "Great Mana Spring",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Greatly increases MAX MP."
+  },
+  {
+    "name": "Growth 1",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Earn 25% EXP even when not participating in battle."
+  },
+  {
+    "name": "Growth 2",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Earn 50% EXP even when not participating in battle."
+  },
+  {
+    "name": "Growth 3",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Earn 100% EXP even when not participating in battle."
+  },
+  {
+    "name": "Guiding Tendril",
+    "affinity": "Almighty",
+    "type": "MISC",
+    "cost": 20,
+    "description": "Knockdown attack on all foes (only usable during an Ambush)."
+  },
+  {
+    "name": "Gun Accuracy +5%",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases Accuracy of Gun attacks by 5%."
+  },
+  {
+    "name": "Gun Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Gun skills by 50%."
+  },
+  {
+    "name": "Gun Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Gun skills by 25%."
+  },
+  {
+    "name": "Gungnir",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Phys attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Hades Blast",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Heavy Phys attack to all foes."
+  },
+  {
+    "name": "Hailstorm of God",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Ice attack to all foes."
+  },
+  {
+    "name": "Hama",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Light attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Hamabarion",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 55
+    },
+    "description": "Severe Light attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Hama Boost",
+    "affinity": "Passive",
+    "type": "INSTAKILLBOOST",
+    "description": "Increases success rate of Hama skills."
+  },
+  {
+    "name": "Hamaon",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Heavy Light attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Harvest Dance",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 30,
+    "description": "Slight HP recovery to 1 ally and raises Double Defense by 2 ranks for 3 turns."
+  },
+  {
+    "name": "Hassou Tobi",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "8 weak Phys attacks to random foes. Always lands Critical hits."
+  },
+  {
+    "name": "Headbutt",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Seal."
+  },
+  {
+    "name": "Headcrush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Healing Wave",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Recover 5% HP after battle (party)."
+  },
+  {
+    "name": "Heal Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Recovery attack damage."
+  },
+  {
+    "name": "Heat Riser",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Raises all stats of 1 ally by 1 rank for 3 turns."
+  },
+  {
+    "name": "Heat Up",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 5% max HP and 10 MP each turn during an Ambush."
+  },
+  {
+    "name": "Heat Wave",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to all foes."
+  },
+  {
+    "name": "Heavenly Counter",
+    "affinity": "Passive",
+    "type": "SMTCOUNTER",
+    "description": "Chance to counter Strength-based attacks with a weak Dark attack. Lowers target's Attack 1 rank for 3 turns."
+  },
+  {
+    "name": "Heaven's Blade",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 19
+    },
+    "description": "Heavy Phys attack to 1 foe."
+  },
+  {
+    "name": "Heavy Blow",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Medium Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Heliopolis Dawn",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Fire attack to all foes."
+  },
+  {
+    "name": "Hell Burner",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Heavy Fire attack to all foes."
+  },
+  {
+    "name": "Hell Exhaust",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Medium Force attack to all foes. Negates target's status buff effects."
+  },
+  {
+    "name": "Hellish Brand",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 70
+    },
+    "description": "Heavy Fire attack to all foes. Negates target's status buff effects."
+  },
+  {
+    "name": "Hellish Mask",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Decreases chance of instakill and being afflicted with ailments."
+  },
+  {
+    "name": "Hellish Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 5
+    },
+    "description": "4 weak Phys attacks to 1 foe. Low accuracy."
+  },
+  {
+    "name": "Hellish Spurt",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Ice attack to all foes."
+  },
+  {
+    "name": "Hell Spin",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Heavy Phys attack to all foes."
+  },
+  {
+    "name": "Hell Thrust",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 45
+    },
+    "description": "Heavy Phys attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Herculean Strike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Hide",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Decreases chance of being targeted by foes."
+  },
+  {
+    "name": "High Almighty Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Almighty attack damage."
+  },
+  {
+    "name": "High Counter",
+    "affinity": "Passive",
+    "type": "PERSONACOUNTER",
+    "description": "20% chance of reflecting physical attacks."
+  },
+  {
+    "name": "High Dark Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Dark attack damage."
+  },
+  {
+    "name": "High Elec Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Elec attack damage."
+  },
+  {
+    "name": "High Energy",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 80,
+    "description": "Next magical attack deals over double the damage for all allies."
+  },
+  {
+    "name": "High Fire Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Fire attack damage."
+  },
+  {
+    "name": "High Force Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Force attack damage."
+  },
+  {
+    "name": "High Heal Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Recovery attack damage."
+  },
+  {
+    "name": "High Ice Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Ice attack damage."
+  },
+  {
+    "name": "High Light Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Light attack damage."
+  },
+  {
+    "name": "High Phys Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Greatly increases Phys attack damage."
+  },
+  {
+    "name": "High Restore",
+    "affinity": "Passive",
+    "type": "SIPHON",
+    "description": " MP recovery when you strike a foe's weakness or land a Critical."
+  },
+  {
+    "name": "Holy Benevolence",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 27,
+    "description": "Revive all allies with full HP."
+  },
+  {
+    "name": "Holy Crucifixion",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 0,
+    "description": "Minimizes Attack/Defense/Accuracy/Evasion of 1 foe for 3 turns."
+  },
+  {
+    "name": "Holy Embrace",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 25% of max HP each turn in battle."
+  },
+  {
+    "name": "Holy Whisper",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 15% HP and 15 MP each turn in battle."
+  },
+  {
+    "name": "Hot Dark Matter",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 0,
+    "description": "Maximizes Attack for 3 turns."
+  },
+  {
+    "name": "Humble Blessing",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 15,
+    "description": "Slight HP recovery to all allies."
+  },
+  {
+    "name": "Hyakka Ryouran",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 90,
+    "description": "Raises all stats of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Hysterical Slap",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "2 weak Phys attacks to 1 foe. Greater effect if target is Charmed."
+  },
+  {
+    "name": "Ice Age",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 65
+    },
+    "description": "Heavy Ice attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Ice Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Ice skills by 50%."
+  },
+  {
+    "name": "Ice Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies an Ice Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Ice Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Ice skills by 25%."
+  },
+  {
+    "name": "Ice Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Ice resistance of all foes. Cannot negate Ice Wall."
+  },
+  {
+    "name": "Ice Breath",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "2~5 weak Ice attacks to random foes."
+  },
+  {
+    "name": "Ice Dracostrike",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Strength-based Ice attack to 1 foe."
+  },
+  {
+    "name": "Ice Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Ice attack damage."
+  },
+  {
+    "name": "Ice Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Ice resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Impaler's Animus",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 50,
+    "description": "Increases the damage of the next attack and adds Pierce effect for self."
+  },
+  {
+    "name": "Impetus",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Phys attack to all foes."
+  },
+  {
+    "name": "Inferno of God",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Fire attack to all foes."
+  },
+  {
+    "name": "Inspiring Leader",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "(Demon) EXP earned increases when the demon's Lv is lower than the Nahobino."
+  },
+  {
+    "name": "Insta-Heal",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Decreases recovery time from ailments to 1 turn."
+  },
+  {
+    "name": "Invigorate 1",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 3 MP each turn in battle."
+  },
+  {
+    "name": "Invigorate 2",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 5 MP each turn in battle."
+  },
+  {
+    "name": "Invigorate 3",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 7 MP each turn in battle."
+  },
+  {
+    "name": "Jack Bufula",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Ice attack to 1 foe. Lowers target's Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Javelin Rain",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 90
+    },
+    "description": "Severe Phys attack to all foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Judgement",
+    "affinity": "Light",
+    "type": "SET",
+    "cost": null,
+    "description": "Reduces enemy to 1 HP."
+  },
+  {
+    "name": "Kamui Miracle",
+    "affinity": "Recovery",
+    "type": "MISC",
+    "cost": 25,
+    "description": "Anything could happen..."
+  },
+  {
+    "name": "Kannabi Veil",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 15,
+    "description": "Decreases damage to all allies until the next turn."
+  },
+  {
+    "name": "Karnak",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Phys attack to all foes. High chance of Critical."
+  },
+  {
+    "name": "Keraunos",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Strength-based Elec attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Killing Wind",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 65
+    },
+    "description": "Heavy Force attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Kill Rush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "1~3 weak Phys attacks to 1 foe."
+  },
+  {
+    "name": "King Bufula",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Medium Ice attack to all foes. Lowers target's Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Kuzunoha Emblem",
+    "affinity": "Passive",
+    "type": "MASTER",
+    "description": "Decreases HP and MP cost of skills by 25%."
+  },
+  {
+    "name": "Laevateinn",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "Colossal Phys attack to 1 foe."
+  },
+  {
+    "name": "Last Stand",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Greatly decreases Accuracy of all foes' attacks except Almighty when surrounded."
+  },
+  {
+    "name": "Life Aid",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Recover HP after a battle."
+  },
+  {
+    "name": "Life Bonus",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases max HP by 10%."
+  },
+  {
+    "name": "Life Boost",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases MAX MP."
+  },
+  {
+    "name": "Life Drain",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Almighty HP drain attack to 1 foe."
+  },
+  {
+    "name": "Life Gain",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases max HP by 20%."
+  },
+  {
+    "name": "Life Leech",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Drains 150 HP from 1 foe."
+  },
+  {
+    "name": "Life Spring",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases MAX HP."
+  },
+  {
+    "name": "Life Surge",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases max HP by 30%."
+  },
+  {
+    "name": "Life Wall",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 95,
+    "description": "Forms a barrier that reflects all attacks for all allies."
+  },
+  {
+    "name": "Lightning Pulse",
+    "affinity": "Passive",
+    "type": "SMTCOUNTER",
+    "description": "Counterattacks with weak Elec attack when a Thunder Bit is defeated."
+  },
+  {
+    "name": "Lightning of God",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Elec attack to all foes."
+  },
+  {
+    "name": "Light Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Light skills by 50%."
+  },
+  {
+    "name": "Light Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 40,
+    "description": "Nullifies a Light Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Light Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Light skills by 25%."
+  },
+  {
+    "name": "Light Life Aid",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Recover a little HP after a battle."
+  },
+  {
+    "name": "Light Mana Aid",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Recover a little MP after a battle."
+  },
+  {
+    "name": "Light of Order",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 150,
+    "description": "Moderate HP recovery to all allies and raises all stats by 1 rank for 3 turns."
+  },
+  {
+    "name": "Light Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Light attack damage."
+  },
+  {
+    "name": "Light's Descent",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Severe Light attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Lucky Punch",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 3
+    },
+    "description": "Minuscule Phys attack to 1 foe."
+  },
+  {
+    "name": "Lullaby",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Sleep to all foes."
+  },
+  {
+    "name": "Lunge",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 5
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Luster Candy",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 150,
+    "description": "Raises all stats of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Mabaisudi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 8,
+    "description": "Cures Burn/Freeze/Shock for all allies."
+  },
+  {
+    "name": "Mabufu",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Ice attack to all foes."
+  },
+  {
+    "name": "Mabufubarion",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Ice attack to all foes."
+  },
+  {
+    "name": "Mabufudyne",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Ice attack to all foes."
+  },
+  {
+    "name": "Mabufula",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Ice attack to all foes."
+  },
+  {
+    "name": "Mac an Luin",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Madness Glint",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "2~5 weak Almighty attacks to random foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Madness Nails",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 36
+    },
+    "description": "2~4 heavy Phys attacks to random foes."
+  },
+  {
+    "name": "Madness Needle",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Mafrei",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Nuke attack to all foes."
+  },
+  {
+    "name": "Mafreidyne",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Nuke attack to all foes."
+  },
+  {
+    "name": "Mafreila",
+    "affinity": "Nuke",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Nuke attack to all foes."
+  },
+  {
+    "name": "Magaru",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Wind attack to all foes."
+  },
+  {
+    "name": "Magarudyne",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Wind attack to all foes."
+  },
+  {
+    "name": "Magarula",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Wind attack to all foes."
+  },
+  {
+    "name": "Magatsu Mandala",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Heavy Dark attack to all foes. Chance of inflicting Confuse/Fear/Despair."
+  },
+  {
+    "name": "Magic Ability",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Magic skills by 25%."
+  },
+  {
+    "name": "Magma Axis",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "3~8 medium Fire attacks to random foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Mahama",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Weak Light attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mahamabarion",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 80
+    },
+    "description": "Severe Light attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mahamaon",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Heavy Light attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Makajama",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Seal to 1 foe."
+  },
+  {
+    "name": "Makajamaon",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Seal to all foes."
+  },
+  {
+    "name": "Makara Break",
+    "affinity": "Support",
+    "type": "BARRIERBREAK",
+    "cost": 18,
+    "description": "Negates Makarakarn on all foes."
+  },
+  {
+    "name": "Makarakarn",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 50,
+    "description": "Reflects a Magic attack once for 1 ally for 1 turn."
+  },
+  {
+    "name": "Mamudo",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Weak Dark attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mamudobarion",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 80
+    },
+    "description": "Severe Dark attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mamudoon",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Heavy Dark attack to all foes. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mana Aid",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Recover MP after a battle."
+  },
+  {
+    "name": "Mana Bonus",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases max MP by 10%."
+  },
+  {
+    "name": "Mana Spring",
+    "affinity": "Passive",
+    "type": "SPRING",
+    "description": "Increases MAX MP."
+  },
+  {
+    "name": "Mapsi",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Psy attack to all foes."
+  },
+  {
+    "name": "Mapsio",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Psy attack to all foes."
+  },
+  {
+    "name": "Mapsiodyne",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Psy attack to all foes."
+  },
+  {
+    "name": "Maragi",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Fire attack to all foes."
+  },
+  {
+    "name": "Maragibarion",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Fire attack to all foes."
+  },
+  {
+    "name": "Maragidyne",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Fire attack to all foes."
+  },
+  {
+    "name": "Maragion",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Fire attack to all foes."
+  },
+  {
+    "name": "Marakukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Raises Defense of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Marakunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Lowers Defense of all foes by 1 rank for 3 turns."
+  },
+  {
+    "name": "Mararagidyne",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 32
+    },
+    "description": "Severe Fire attack to all foes. Chance of inflicting Burn."
+  },
+  {
+    "name": "Marin Karin",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Charm to 1 foe."
+  },
+  {
+    "name": "Masquerade",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "2 severe Phys attacks to 1 foe."
+  },
+  {
+    "name": "Masukukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Raises Accuracy/Evasion of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Masukunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Lowers Accuracy/Evasion of all foes by 1 rank for 3 turns."
+  },
+  {
+    "name": "Matarukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Raises Attack of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Matarunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Lowers Attack of all foes by 1 rank for 3 turns."
+  },
+  {
+    "name": "Matriarch's Love",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 140,
+    "description": "Moderate HP recovery and cures status ailments/debuffs for all allies."
+  },
+  {
+    "name": "Mazan",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Force attack to all foes."
+  },
+  {
+    "name": "Mazanbarion",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Force attack to all foes."
+  },
+  {
+    "name": "Mazandyne",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Force attack to all foes."
+  },
+  {
+    "name": "Mazanma",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Force attack to all foes."
+  },
+  {
+    "name": "Mazio",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Elec attack to all foes."
+  },
+  {
+    "name": "Maziobarion",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Elec attack to all foes."
+  },
+  {
+    "name": "Maziodyne",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Elec attack to all foes."
+  },
+  {
+    "name": "Mazionga",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Elec attack to all foes."
+  },
+  {
+    "name": "Media",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 30,
+    "description": "Slight HP recovery to all allies."
+  },
+  {
+    "name": "Mediarahan",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 150,
+    "description": "Full HP recovery to all allies."
+  },
+  {
+    "name": "Mediarama",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 60,
+    "description": "Moderate HP recovery to all allies."
+  },
+  {
+    "name": "Meditation",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 5
+    },
+    "description": "Weak Almighty HP/MP drain attack to 1 foe."
+  },
+  {
+    "name": "Megaton Press",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Phys attack to all foes. Low accuracy."
+  },
+  {
+    "name": "Megaton Raid",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Severe Phys attack to 1 foe."
+  },
+  {
+    "name": "Megido",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Medium Almighty attack to all foes."
+  },
+  {
+    "name": "Megido Flame",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 130
+    },
+    "description": "Severe Fire attack to all foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Megidola",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 70
+    },
+    "description": "Heavy Almighty attack to all foes."
+  },
+  {
+    "name": "Megidolaon",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 120
+    },
+    "description": "Severe Almighty attack to all foes."
+  },
+  {
+    "name": "Mementos Scan",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to fully map a floor of Mementos when entering that floor."
+  },
+  {
+    "name": "Memory Blow",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to all foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Mesektet's Path",
+    "affinity": "Passive",
+    "type": "SMTCOUNTER",
+    "description": "Counters all attacks with a weak Almighty attack for one turn. Counterattack also inflicts Shroud."
+  },
+  {
+    "name": "Me Patra",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 30,
+    "description": "Cure status ailments on all allies."
+  },
+  {
+    "name": "Mighty Cleave",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Heavy Phys attack to 1 foe."
+  },
+  {
+    "name": "Mighty Swing",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Medium Phys attack to 1 foe."
+  },
+  {
+    "name": "Mind Slice",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 19
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Miracle Punch",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 8
+    },
+    "description": "Medium Phys attack to 1 foe."
+  },
+  {
+    "name": "Miracle Rush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Miracle Water",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 20,
+    "description": "Slight HP recovery to all allies."
+  },
+  {
+    "name": "Mirage Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Mirage."
+  },
+  {
+    "name": "Mirage Shot",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Medium Fire attack to 1 foe. Chance of inflicting Mirage."
+  },
+  {
+    "name": "Mist Rush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "2~4 medium Phys attacks to random foes. Chance of inflicting Mirage."
+  },
+  {
+    "name": "Money Boost",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Increases money gained by 15%."
+  },
+  {
+    "name": "Moonlight Frost",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Ice attack to all foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Moral Support",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to cast Kaja or party-healing magic during battle."
+  },
+  {
+    "name": "Morning Star",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Almighty attack to all foes."
+  },
+  {
+    "name": "Morning Star - Persona",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 52
+    },
+    "description": "Severe Almighty attack to all foes."
+  },
+  {
+    "name": "Mortal Jihad",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Heavy Phys attack to 1 foe."
+  },
+  {
+    "name": "Mudo",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Dark attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mudobarion",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 55
+    },
+    "description": "Severe Dark attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Mudo Boost",
+    "affinity": "Passive",
+    "type": "INSTAKILLBOOST",
+    "description": "Increases success rate of Mudo skills."
+  },
+  {
+    "name": "Mudoon",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Heavy Dark attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Murakumo",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Strength-based Almighty attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Murderous Glee",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Greatly increases Critical Rate."
+  },
+  {
+    "name": "Mustard Bomb",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Enervate."
+  },
+  {
+    "name": "Mutudi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 3,
+    "description": "Cures Seal for one ally."
+  },
+  {
+    "name": "Muzzle Shot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Seal."
+  },
+  {
+    "name": "Myriad Arrows",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 22
+    },
+    "description": "Heavy Phys attack to all foes."
+  },
+  {
+    "name": "Myriad Slashes",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 55
+    },
+    "description": "5 weak Phys attacks to 1 foe. Low accuracy."
+  },
+  {
+    "name": "Myriad Truths",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "3 heavy Almighty attacks to all foes."
+  },
+  {
+    "name": "Narukami",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 65
+    },
+    "description": "Heavy Elec attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Navas Nebula",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Exhaust."
+  },
+  {
+    "name": "Needle Spray",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "1~4 weak Phys attacks to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Negative Pile",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 12
+    },
+    "description": "Heavy Phys attack to 1 foe. Chance of inflicting Despair."
+  },
+  {
+    "name": "Neo Cadenza",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 24,
+    "description": "Half HP recovery to all allies and raises all stats by 1 rank for 3 turns."
+  },
+  {
+    "name": "Nervundi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 3,
+    "description": "Cures Exhaust/Enervate for one ally."
+  },
+  {
+    "name": "Nihil Claw",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 36
+    },
+    "description": "2~3 heavy Phys attacks to 1 foe."
+  },
+  {
+    "name": "Nocturnal Flash",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Mirage to all foes."
+  },
+  {
+    "name": "Nuke Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Nuke skills by 50%."
+  },
+  {
+    "name": "Nuke Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Nuke skills by 25%."
+  },
+  {
+    "name": "Nuke Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Nuke resistance of all foes. Cannot negate Nuke Wall."
+  },
+  {
+    "name": "Nuke Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Nuke resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Null Burn",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Burn."
+  },
+  {
+    "name": "Null Charm",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Charm."
+  },
+  {
+    "name": "Null Confuse",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Confuse."
+  },
+  {
+    "name": "Null Dark",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Dark skills."
+  },
+  {
+    "name": "Null Despair",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Despair."
+  },
+  {
+    "name": "Null Elec",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Elec skills."
+  },
+  {
+    "name": "Null Enervate",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Enervate."
+  },
+  {
+    "name": "Null Exhaust",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Exhaust."
+  },
+  {
+    "name": "Null Fear",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Fear."
+  },
+  {
+    "name": "Null Fire",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Fire skills."
+  },
+  {
+    "name": "Null Force",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Force skills."
+  },
+  {
+    "name": "Null Freeze",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Freeze."
+  },
+  {
+    "name": "Null Hunger",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Hunger."
+  },
+  {
+    "name": "Null Ice",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Ice skills."
+  },
+  {
+    "name": "Null Light",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Light skills."
+  },
+  {
+    "name": "Null Light/Dark",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Light/Dark skills."
+  },
+  {
+    "name": "Null Mirage",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Mirage."
+  },
+  {
+    "name": "Null Nuke",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Nuke skills."
+  },
+  {
+    "name": "Null Phys",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Phys skills."
+  },
+  {
+    "name": "Null Poison",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Poison."
+  },
+  {
+    "name": "Null Psy",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Psy skills."
+  },
+  {
+    "name": "Null Rage",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Rage."
+  },
+  {
+    "name": "Null Seal",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Seal."
+  },
+  {
+    "name": "Null Shock",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Shock."
+  },
+  {
+    "name": "Null Sleep",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Sleep."
+  },
+  {
+    "name": "Null Wind",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Nullifies Wind skills."
+  },
+  {
+    "name": "Old One",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Enervate to all foes."
+  },
+  {
+    "name": "Ominous Words",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Despair to 1 foe."
+  },
+  {
+    "name": "One-shot Kill",
+    "affinity": "Gun",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 17
+    },
+    "description": "Severe Gun attack to 1 foe."
+  },
+  {
+    "name": "Oni-Kagura",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Rage."
+  },
+  {
+    "name": "Oracle",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Ask Fuuka to use Oracle."
+  },
+  {
+    "name": "Oratorio",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 38,
+    "description": "Full HP recovery to all allies."
+  },
+  {
+    "name": "Pandemonic Crush",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 70
+    },
+    "description": "Medium Phys attack to all foes. Lowers target's Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Panta Rhei",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Wind attack to 1 foe."
+  },
+  {
+    "name": "Panta Spane",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 65
+    },
+    "description": "Medium Phys attack to all foes. Lowers target's Attack/Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Patra",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 8,
+    "description": "Cure status ailments on 1 ally."
+  },
+  {
+    "name": "Pestilence",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Phys attack to all foes. Greater effect if target has an ailment."
+  },
+  {
+    "name": "Phantom Show",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 4,
+    "description": "Chance of inflicting Sleep to all foes."
+  },
+  {
+    "name": "Phys Block",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 70,
+    "description": "Nullifies a Phys Block attack against all allies once for 1 turn."
+  },
+  {
+    "name": "Phys Pleroma",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Increases Phys attack damage."
+  },
+  {
+    "name": "Pierce Armor",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to 1 foe. Lowers target's Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Poisma",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Poison to 1 foe."
+  },
+  {
+    "name": "Poison Adept",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases effects of Poison."
+  },
+  {
+    "name": "Poison Arrow",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Poison."
+  },
+  {
+    "name": "Poison Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Poison."
+  },
+  {
+    "name": "Poison Master",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Greatly increases effects of Poison."
+  },
+  {
+    "name": "Poison Mist",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Poison to all foes."
+  },
+  {
+    "name": "Poison Skewer",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Poison."
+  },
+  {
+    "name": "Position Hack",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to instantly Hold Up enemies when starting a battle."
+  },
+  {
+    "name": "Posumudi",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 3,
+    "description": "Cures Poison for one ally."
+  },
+  {
+    "name": "Power Punch",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Medium Phys attack to 1 foe. The more remaining HP you have, the stronger the attack."
+  },
+  {
+    "name": "Power Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "Medium Phys attack to 1 foe."
+  },
+  {
+    "name": "Pralaya",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "Severe Phys attack to all foes. Chance of instakill."
+  },
+  {
+    "name": "Preach",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 35,
+    "description": "Chance of inflicting Confuse and Charm and Sleep to all foes."
+  },
+  {
+    "name": "President's Insight",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 15,
+    "description": "Greatly increases damage of the next Magic-based attack on 1 ally."
+  },
+  {
+    "name": "Primal Force",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 20
+    },
+    "description": "Colossal Phys attack to 1 foe."
+  },
+  {
+    "name": "Profaned Land",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Dark attack to 1 foe. Chance of inflicting Poison."
+  },
+  {
+    "name": "Psi",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Psy attack to 1 foe."
+  },
+  {
+    "name": "Psio",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Psy attack to 1 foe."
+  },
+  {
+    "name": "Psiodyne",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Psy attack to 1 foe."
+  },
+  {
+    "name": "Psy Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Psy skills by 50%."
+  },
+  {
+    "name": "Psy Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Psy skills by 25%."
+  },
+  {
+    "name": "Psy Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Psy resistance of all foes. Cannot negate Psy Wall."
+  },
+  {
+    "name": "Psycho Blast",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Psy attack to all foes."
+  },
+  {
+    "name": "Psycho Force",
+    "affinity": "Psy",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Psy attack to 1 foe."
+  },
+  {
+    "name": "Psy Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Psy resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Pulinpa",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 10,
+    "description": "Chance of inflicting Confuse to 1 foe."
+  },
+  {
+    "name": "Puncture Punch",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Medium Phys attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Purgatorium",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Fire attack to all foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Purple Smoke",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "3 weak Phys attacks to 1 foe. Greater effect when target is Confused."
+  },
+  {
+    "name": "Rage Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Rage."
+  },
+  {
+    "name": "Raging Blizzard",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Severe Ice attack to 1 foe."
+  },
+  {
+    "name": "Raging Hellfire",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Severe Fire attack to 1 foe."
+  },
+  {
+    "name": "Raging Lightning",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Severe Elec attack to 1 foe."
+  },
+  {
+    "name": "Raging Tempest",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Severe Force attack to 1 foe."
+  },
+  {
+    "name": "Ragnarok",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "2~5 medium Fire attacks to random foes."
+  },
+  {
+    "name": "Rainy Death",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 20
+    },
+    "description": "Heavy Phys attack to 1 foe. Increased Critical rate in rainy or snowy weather."
+  },
+  {
+    "name": "Rakukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Raises Defense of 1 ally by 1 rank for 3 turns."
+  },
+  {
+    "name": "Rakunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Lowers Defense of 1 foe by 1 rank for 3 turns."
+  },
+  {
+    "name": "Rampage",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "2~5 medium Phys attacks to random foes. Low accuracy."
+  },
+  {
+    "name": "Rebellion",
+    "affinity": "Support",
+    "type": "CRIT",
+    "cost": 5,
+    "description": "Increases chance of Critical for one ally for 3 turns."
+  },
+  {
+    "name": "Rebellion Blade",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 99
+    },
+    "description": "Colossal Almighty attack to 1 foe. Highly effective if foe is Downed."
+  },
+  {
+    "name": "Rebel Soul",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Showtime guage increases more quickly."
+  },
+  {
+    "name": "Recarm",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 20,
+    "description": "Revive one ally with half HP."
+  },
+  {
+    "name": "Recarmdra",
+    "affinity": "Recovery",
+    "type": "MISC",
+    "cost": null,
+    "description": "Fully revive and recover party but user's HP drops to 1."
+  },
+  {
+    "name": "Red Capote",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Raises Accuracy/Evasion of 1 ally by 2 ranks for 3 turns."
+  },
+  {
+    "name": "Regenerate 1",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 2% of max HP each turn in battle."
+  },
+  {
+    "name": "Regenerate 2",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 4% of max HP each turn in battle."
+  },
+  {
+    "name": "Regenerate 3",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 6% of max HP each turn in battle."
+  },
+  {
+    "name": "Relaxing Wave",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Recover 5% MP after battle (party)."
+  },
+  {
+    "name": "Re Patra",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 5,
+    "description": "Cures Mirage for one ally."
+  },
+  {
+    "name": "Repel Dark",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Dark skills."
+  },
+  {
+    "name": "Repel Elec",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Elec skills."
+  },
+  {
+    "name": "Repel Fire",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Fire skills."
+  },
+  {
+    "name": "Repel Force",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Force skills."
+  },
+  {
+    "name": "Repel Ice",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Ice skills."
+  },
+  {
+    "name": "Repel Light",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Light skills."
+  },
+  {
+    "name": "Repel Nuke",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Nuke skills."
+  },
+  {
+    "name": "Repel Phys",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Phys skills."
+  },
+  {
+    "name": "Repel Psy",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Psy skills."
+  },
+  {
+    "name": "Repel Wind",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Reflects Wind skills."
+  },
+  {
+    "name": "Resist Burn",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Burn."
+  },
+  {
+    "name": "Resist Charm",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Charm."
+  },
+  {
+    "name": "Resist Confuse",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Confuse."
+  },
+  {
+    "name": "Resist Dark",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Dark skills."
+  },
+  {
+    "name": "Resist Despair",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Despair."
+  },
+  {
+    "name": "Resist Elec",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Elec skills."
+  },
+  {
+    "name": "Resist Enervate",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Enervate."
+  },
+  {
+    "name": "Resist Exhaust",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Exhaust."
+  },
+  {
+    "name": "Resist Fear",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Fear."
+  },
+  {
+    "name": "Resist Fire",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Fire skills."
+  },
+  {
+    "name": "Resist Force",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Force skills."
+  },
+  {
+    "name": "Resist Freeze",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Freeze."
+  },
+  {
+    "name": "Resist Hunger",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Hunger."
+  },
+  {
+    "name": "Resist Ice",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Ice skills."
+  },
+  {
+    "name": "Resist Light",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Light skills."
+  },
+  {
+    "name": "Resist Mirage",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Mirage."
+  },
+  {
+    "name": "Resist Nuke",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Nuke skills."
+  },
+  {
+    "name": "Resist Phys",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Phys skills."
+  },
+  {
+    "name": "Resist Poison",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Poison."
+  },
+  {
+    "name": "Resist Psy",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Psy skills."
+  },
+  {
+    "name": "Resist Rage",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Rage."
+  },
+  {
+    "name": "Resist Seal",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Seal."
+  },
+  {
+    "name": "Resist Shock",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Shock."
+  },
+  {
+    "name": "Resist Sleep",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Decreases chance of being inflicted with Sleep."
+  },
+  {
+    "name": "Resist Wind",
+    "affinity": "Passive",
+    "type": "DEFENSIVE",
+    "description": "Strengthens resistance to Wind skills."
+  },
+  {
+    "name": "Restore",
+    "affinity": "Passive",
+    "type": "SIPHON",
+    "description": "Low MP recovery when you strike a foe's weakness or land a Critical."
+  },
+  {
+    "name": "Retaliate",
+    "affinity": "Passive",
+    "type": "SMTCOUNTER",
+    "description": "Chance to counter Strength-based attacks with a medium Phys attack. Does not stack with Counter."
+  },
+  {
+    "name": "Reverse Rub",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 0,
+    "description": "Chance of inflicting Rage to 1 foe."
+  },
+  {
+    "name": "Revival Chant",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 100,
+    "description": "Summons 1 demon at full HP. Effective on dead members as well."
+  },
+  {
+    "name": "Revolution",
+    "affinity": "Support",
+    "type": "CRIT",
+    "cost": 5,
+    "description": "Increases chance of Critical for all for 3 turns."
+  },
+  {
+    "name": "Riot Gun",
+    "affinity": "Gun",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 24
+    },
+    "description": "Severe Gun attack to all foes."
+  },
+  {
+    "name": "Rising Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Heavy Phys attack to 1 foe. Powers up after a Baton Pass."
+  },
+  {
+    "name": "Rising Storm Dragon",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Elec attack to all foes. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "Ruinous Thunder",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Heavy Elec attack to 1 foe."
+  },
+  {
+    "name": "Sacrifice of Clay",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Heavy Force attack to all foes. Lowers target's Attack/Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Safeguard",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Being Evaded/Nulled/Drained/Repelled doesn't consume additional Press Turn Icons."
+  },
+  {
+    "name": "Sakanagi",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Strength-based Almighty attack to 1 foe."
+  },
+  {
+    "name": "Salvation",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 48,
+    "description": "Full HP recovery and cures status ailments for all allies."
+  },
+  {
+    "name": "Samarecarm",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 60,
+    "description": "Revive one ally with full HP."
+  },
+  {
+    "name": "Samurai's Order",
+    "affinity": "Passive",
+    "type": "EVASION",
+    "description": "Increases Evasion from Critical and magical attacks."
+  },
+  {
+    "name": "Sanguine Drain",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Almighty HP drain attack to 1 foe. Lowers target's Attack by 1 rank for 3 turns."
+  },
+  {
+    "name": "Scratch Dance",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 12
+    },
+    "description": "2~4 weak Phys attacks to random foes."
+  },
+  {
+    "name": "Seal Bomb",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 14
+    },
+    "description": "Medium Phys attack to all foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Seal Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Seal."
+  },
+  {
+    "name": "Self-destruct",
+    "affinity": "Almighty",
+    "type": "MISC",
+    "cost": null,
+    "description": "Medium Almighty damage to all. User dies."
+  },
+  {
+    "name": "Severing Bite",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Heavy Phys attack to 1 foe. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Sexy Dance",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Charm to all foes."
+  },
+  {
+    "name": "Shadow of Grief",
+    "affinity": "Passive",
+    "type": "SIPHON",
+    "description": " MP recovery when you strike a foe's weakness or land a Critical."
+  },
+  {
+    "name": "Sharp Student",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Decreases chance of being hit by a Critical."
+  },
+  {
+    "name": "Shield of Justice",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 160,
+    "description": "Shields the party from all damage once."
+  },
+  {
+    "name": "Shining Arrows",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 22
+    },
+    "description": "4~8 weak Light attacks to all foes."
+  },
+  {
+    "name": "Shock Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Shock."
+  },
+  {
+    "name": "Shockbound",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "2~5 weak Elec attacks to random foes."
+  },
+  {
+    "name": "Silt of Ruin",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 45
+    },
+    "description": "Medium Almighty attack to all foes. Lowers target's Accuracy/Evasion by 1 rank for 3 turns."
+  },
+  {
+    "name": "Single Shot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 8
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Skewer",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 5
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Skull Cracker",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Sledgehammer",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Mirage."
+  },
+  {
+    "name": "Sleep Boost",
+    "affinity": "Passive",
+    "type": "AILBOOST",
+    "description": "Increases chance of inflicting Sleep."
+  },
+  {
+    "name": "Slumber Vortex",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 35,
+    "description": "Chance of inflicting Sleep and Mirage to all foes."
+  },
+  {
+    "name": "Snap",
+    "affinity": "Gun",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 9
+    },
+    "description": "Medium Gun attack to 1 foe."
+  },
+  {
+    "name": "Somersault",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Weak Phys attack to 1 foe. Lowers Defense by 2 ranks for 3 turns."
+  },
+  {
+    "name": "Sonic Boom",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Medium Force attack to all foes."
+  },
+  {
+    "name": "Sonic Punch",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 8
+    },
+    "description": "Weak Phys attack to 1 foe."
+  },
+  {
+    "name": "Souffle D'éclair",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 55
+    },
+    "description": "Severe Elec attack to 1 foe."
+  },
+  {
+    "name": "Soul Break",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Exhaust to 1 foe."
+  },
+  {
+    "name": "Soul Chain",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 20 MP after a Baton Pass."
+  },
+  {
+    "name": "Soul Divide",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Almighty attack to all foes. Chance of inflicting Seal. Low accuracy."
+  },
+  {
+    "name": "Soul Touch",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 5 MP after a Baton Pass."
+  },
+  {
+    "name": "Speed Master",
+    "affinity": "Passive",
+    "type": "AUTOBUFF",
+    "description": "Automatic Sukukaja at the start of battle."
+  },
+  {
+    "name": "Spell Master",
+    "affinity": "Passive",
+    "type": "MASTER",
+    "description": "Decreases MP cost of skills by 50%."
+  },
+  {
+    "name": "Spirit Drain",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 5
+    },
+    "description": "Weak Almighty MP drain attack to 1 foe."
+  },
+  {
+    "name": "Spirit Leech",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Drains 150 MP from 1 foe."
+  },
+  {
+    "name": "Spring of Life",
+    "affinity": "Passive",
+    "type": "REGEN",
+    "description": "Restores 8% of max HP each turn in battle."
+  },
+  {
+    "name": "Stagnant Air",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 50,
+    "description": "Chance of inflicting Mirage to all foesand lowers DefenseAccuracy/Evasion by 1 rank for 3 turns."
+  },
+  {
+    "name": "Stagnant Air - Persona",
+    "affinity": "Almighty",
+    "type": "SUSCEPTIBILITY",
+    "cost": 5,
+    "description": "Increases chance of inflicting ailments to all."
+  },
+  {
+    "name": "Stamina Song",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Recover 10% HP after battle (party)."
+  },
+  {
+    "name": "Steel Needle",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "1~4 medium Phys attacks to 1 foe. High chance of Critical."
+  },
+  {
+    "name": "Stomach Blow",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Hunger."
+  },
+  {
+    "name": "Stormcaller Song",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 18
+    },
+    "description": "3~6 weak Ice attacks to random foes."
+  },
+  {
+    "name": "Storm Dracostrike",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Strength-based Elec attack to 1 foe."
+  },
+  {
+    "name": "Subrecover HP",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Restores 10% HP to backup members after battle."
+  },
+  {
+    "name": "Subrecover HP EX",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Restores 20% HP to backup members after battle."
+  },
+  {
+    "name": "Subrecover MP",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Restores 1% MP to backup members after battle."
+  },
+  {
+    "name": "Subrecover MP EX",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Restores 3% MP to backup members after battle."
+  },
+  {
+    "name": "Sukukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Raises Accuracy/Evasion of 1 ally by 1 rank for 3 turns."
+  },
+  {
+    "name": "Sukunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Lowers Accuracy/Evasion of 1 foe by 1 rank for 3 turns."
+  },
+  {
+    "name": "Summon",
+    "affinity": "Misc",
+    "type": "SUMMON",
+    "description": "Summons allies."
+  },
+  {
+    "name": "Sun's Radiance",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 12,
+    "description": "Moderate HP recovery and cures status ailments for 1 ally."
+  },
+  {
+    "name": "Support Plus 1",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Activates Masukunda."
+  },
+  {
+    "name": "Support Plus 2",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Activates Masukunda and Marakunda."
+  },
+  {
+    "name": "Support Plus 3",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Activates Masukunda, Marakunda, and Matarunda."
+  },
+  {
+    "name": "Support Rate Up",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Increases activation of Moral Support."
+  },
+  {
+    "name": "Support Scan",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Displays all buffs and debuffs currently in effect."
+  },
+  {
+    "name": "Survival Trick",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "Survive instakill skills with 1 HP."
+  },
+  {
+    "name": "Survive Dark",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "50% chance to survive Dark skills with 1 HP."
+  },
+  {
+    "name": "Survive Light",
+    "affinity": "Passive",
+    "type": "ENDURE",
+    "description": "50% chance to survive Light skills with 1 HP."
+  },
+  {
+    "name": "Swift Strike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 17
+    },
+    "description": "2~4 minuscule Phys attacks to all foes."
+  },
+  {
+    "name": "Sword Dance",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 25
+    },
+    "description": "Colossal Phys attack to 1 foe."
+  },
+  {
+    "name": "Tandava",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 160
+    },
+    "description": "Severe Almighty attack to all foes. Lowers target's Defense to the minimum for 3 turns."
+  },
+  {
+    "name": "Tarukaja",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Raises Attack of 1 ally by 1 rank for 3 turns."
+  },
+  {
+    "name": "Tarunda",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 8,
+    "description": "Lowers Attack of 1 foe by 1 rank for 3 turns."
+  },
+  {
+    "name": "Taunt",
+    "affinity": "Support",
+    "type": "TAUNT",
+    "cost": 10,
+    "description": "Raises chances of being targeted by foes for 3 turns."
+  },
+  {
+    "name": "Taunting Aura",
+    "affinity": "Support",
+    "type": "TAUNT",
+    "cost": 4,
+    "description": "Raises own chances of being targeted by foes."
+  },
+  {
+    "name": "Taunt - Persona",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 5,
+    "description": "Chance of inflicting Rage to 1 foe."
+  },
+  {
+    "name": "Technical High",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases duration of Kaja-type buff skills when landing a Critical."
+  },
+  {
+    "name": "Tempest Slash",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 17
+    },
+    "description": "3~5 minuscule Phys attacks to 1 foe."
+  },
+  {
+    "name": "Tentarafoo",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Confuse to all foes."
+  },
+  {
+    "name": "Terrorblade",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "1~3 heavy Piercing Phys attacks to random foes. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Terror Claw",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 8
+    },
+    "description": "Medium Phys attack to 1 foe. Chance of inflicting Fear."
+  },
+  {
+    "name": "Tetra Break",
+    "affinity": "Support",
+    "type": "BARRIERBREAK",
+    "cost": 18,
+    "description": "Negates Tetrakarn on all foes."
+  },
+  {
+    "name": "Tetraja",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 24,
+    "description": "A barrier that nullifies an instakill for all allies one time."
+  },
+  {
+    "name": "Tetrakarn",
+    "affinity": "Support",
+    "type": "BARRIER",
+    "cost": 50,
+    "description": "Reflects a Phys attack once for 1 ally for 1 turn."
+  },
+  {
+    "name": "Thalassic Calamity",
+    "affinity": "Ice",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 45
+    },
+    "description": "3~7 weak Ice attacks to random foes."
+  },
+  {
+    "name": "The Man's Way",
+    "affinity": "Ailment",
+    "type": "MISC",
+    "cost": 30,
+    "description": "May inflict Down/Dizzy on all foes."
+  },
+  {
+    "name": "Thermopylae",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 30,
+    "description": "Raises all stats of all allies by 1 rank for 3 turns when surrounded."
+  },
+  {
+    "name": "Third Eye",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveal the effectiveness of an attack."
+  },
+  {
+    "name": "Thunder Reign",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "2~5 medium Elec attacks to random foes."
+  },
+  {
+    "name": "Titanomachia",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Medium Phys attack to all foes. High chance of Critical."
+  },
+  {
+    "name": "Titanomachia - Persona",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 34
+    },
+    "description": "Severe Fire attack to all foes. Chance of inflicting Fear."
+  },
+  {
+    "name": "Tornado of God",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Force attack to all foes."
+  },
+  {
+    "name": "Torrent Shot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 12
+    },
+    "description": "2~4 medium Phys attacks to 1 foe."
+  },
+  {
+    "name": "Touch n' Go",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Automatic Sukukaja after a Baton Pass."
+  },
+  {
+    "name": "Toxic Breath",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Dark attack to all foes. Chance of inflicting Poison."
+  },
+  {
+    "name": "Toxic Cloud",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 25,
+    "description": "Chance of inflicting Poison to all foes."
+  },
+  {
+    "name": "Toxic Spray",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 15,
+    "description": "Chance of inflicting Poison to all foesand lowers Defense by 1 rank for 3 turns."
+  },
+  {
+    "name": "Toxic Sting",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Phys attack to 1 foe. Chance of inflicting Poison."
+  },
+  {
+    "name": "Traesto",
+    "affinity": "Support",
+    "type": "MISC",
+    "cost": 18,
+    "description": "Instantly escape from a dungeon."
+  },
+  {
+    "name": "Trafuri",
+    "affinity": "Misc",
+    "type": "MISC",
+    "cost": 6,
+    "description": "Guarantees escape from escapable battles."
+  },
+  {
+    "name": "Treasure Radar",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveal the location of treasure chests on each floor."
+  },
+  {
+    "name": "Treasure Reboot",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Chance to revive search objects in the area after battle."
+  },
+  {
+    "name": "Treasure Skimmer",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Find out if a foe is carrying a rare item ahead of time."
+  },
+  {
+    "name": "Trigger Happy",
+    "affinity": "Passive",
+    "type": "MISC",
+    "cost": null,
+    "description": "Increases chance of Critical from Gun attacks."
+  },
+  {
+    "name": "Triple Down",
+    "affinity": "Gun",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "3 weak Gun attacks to all foes."
+  },
+  {
+    "name": "Trisagion",
+    "affinity": "Fire",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 65
+    },
+    "description": "Heavy Fire attack to 1 foe. Ignores affinity resistance and pierces through."
+  },
+  {
+    "name": "True Replication",
+    "affinity": "Misc",
+    "type": "MISC",
+    "cost": 0,
+    "description": "Creates a replica."
+  },
+  {
+    "name": "Twin Shot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 10
+    },
+    "description": "2 weak Phys attacks to 1 foe. Chance of inflicting Confuse."
+  },
+  {
+    "name": "Tyrant's Mind",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengtens all attacks. Can stack."
+  },
+  {
+    "name": "Tyrant's Will",
+    "affinity": "Support",
+    "type": "CHARGE",
+    "cost": 15,
+    "description": "Greatly increases damage of the next Strength-based attack on 1 ally."
+  },
+  {
+    "name": "Ultimate Support",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Ultimate support effect of strengthening/healing all allies may activate in battle."
+  },
+  {
+    "name": "Unshaken Will",
+    "affinity": "Passive",
+    "type": "AILDEFENSIVE",
+    "description": "Prevents infliction of Confuse/Fear/Rage/Despair."
+  },
+  {
+    "name": "Vacuum Wave",
+    "affinity": "Wind",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 75
+    },
+    "description": "Severe Wind attack to all foes."
+  },
+  {
+    "name": "Vajra Blast",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 13
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Vault Guardian",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 20,
+    "description": "Raises Defense of all allies by 1 rank for 3 turns."
+  },
+  {
+    "name": "Venom Chaser",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 15
+    },
+    "description": "Weak Phys attack to 1 foe. Greater effect if target is Poisoned."
+  },
+  {
+    "name": "Vicious Strike",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "Medium Phys attack to all foes."
+  },
+  {
+    "name": "Victory Cry",
+    "affinity": "Passive",
+    "type": "POSTBATTLE",
+    "description": "Fully restores HP/MP after battle."
+  },
+  {
+    "name": "Vigor Song",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Recover 10% MP after battle (party)."
+  },
+  {
+    "name": "Vile Assault",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 18
+    },
+    "description": "Heavy Phys attack to 1 foe. Highly effective if foe is Downed."
+  },
+  {
+    "name": "Violent Rage",
+    "affinity": "Almighty",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 60
+    },
+    "description": "Medium Almighty attack to all foes. Chance of inflicting Seal."
+  },
+  {
+    "name": "Virus Wave",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 16
+    },
+    "description": "Heavy Phys attack to all foes. Chance of inflicting Poison."
+  },
+  {
+    "name": "Vorpal Blade",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "HP",
+      "amount": 23
+    },
+    "description": "Severe Phys attack to all foes."
+  },
+  {
+    "name": "Wage War",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 12,
+    "description": "Chance of inflicting Rage to all foes."
+  },
+  {
+    "name": "Walpurgisnacht",
+    "affinity": "Dark",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 40
+    },
+    "description": "Severe Dark attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Weakness Scan",
+    "affinity": "Passive",
+    "type": "NAVI",
+    "description": "Reveal an enemy's affinity at the start of battle."
+  },
+  {
+    "name": "White Dracostrike",
+    "affinity": "Light",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 30
+    },
+    "description": "Medium Strength-based Light attack to 1 foe. Chance of instakill when striking weakness."
+  },
+  {
+    "name": "Wild Dance",
+    "affinity": "Ailment",
+    "type": "AILMENT",
+    "cost": 0,
+    "description": "Chance of inflicting Confuse to all foes."
+  },
+  {
+    "name": "Wind Amp",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Wind skills by 50%."
+  },
+  {
+    "name": "Wind Boost",
+    "affinity": "Passive",
+    "type": "BOOST",
+    "description": "Strengthens Wind skills by 25%."
+  },
+  {
+    "name": "Wind Break",
+    "affinity": "Support",
+    "type": "BREAK",
+    "cost": 15,
+    "description": "Negates Wind resistance of all foes. Cannot negate Wind Wall."
+  },
+  {
+    "name": "Wind Breath",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "2~5 weak Force attacks to random foes."
+  },
+  {
+    "name": "Wind Dracostrike",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 25
+    },
+    "description": "Medium Strength-based Force attack to 1 foe."
+  },
+  {
+    "name": "Wind Wall",
+    "affinity": "Support",
+    "type": "WALL",
+    "cost": 18,
+    "description": "Adds Wind resistance to one ally for 3 turns."
+  },
+  {
+    "name": "Wings of Wisdom",
+    "affinity": "Support",
+    "type": "SUPPORT",
+    "cost": 10,
+    "description": "Cures all non-special ailments for all allies."
+  },
+  {
+    "name": "Witness Me",
+    "affinity": "Support",
+    "type": "TAUNT",
+    "cost": 5,
+    "description": "Draws enemy hostility, but increases your Double Accuracy/Evasion 2 tiers for 3 turns."
+  },
+  {
+    "name": "Wrath Tempest",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "8 weak Phys attacks to random foes. Greater effect when landing a Critical."
+  },
+  {
+    "name": "Xeros Beat",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 0
+    },
+    "description": "Severe Phys attack to all foes. Chance of inflicting Mirage."
+  },
+  {
+    "name": "Yabusame Shot",
+    "affinity": "Phys",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Weak Phys attack to all foes. Ignores resistance, pierces, and always Critical."
+  },
+  {
+    "name": "Youthful Wind",
+    "affinity": "Recovery",
+    "type": "RECOVERY",
+    "cost": 25,
+    "description": "Moderate HP recovery to all allies and raises Accuracy/Evasion by 1 rank for 3 turns."
+  },
+  {
+    "name": "Zan",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Force attack to 1 foe."
+  },
+  {
+    "name": "Zanbarion",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Force attack to 1 foe."
+  },
+  {
+    "name": "Zandyne",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Force attack to 1 foe."
+  },
+  {
+    "name": "Zanma",
+    "affinity": "Force",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Force attack to 1 foe."
+  },
+  {
+    "name": "Zio",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 10
+    },
+    "description": "Weak Elec attack to 1 foe."
+  },
+  {
+    "name": "Ziobarion",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 50
+    },
+    "description": "Severe Elec attack to 1 foe."
+  },
+  {
+    "name": "Ziodyne",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 35
+    },
+    "description": "Heavy Elec attack to 1 foe."
+  },
+  {
+    "name": "Zionga",
+    "affinity": "Elec",
+    "type": "ATTACK",
+    "cost": {
+      "stat": "MP",
+      "amount": 20
+    },
+    "description": "Medium Elec attack to 1 foe."
+  }
+]
