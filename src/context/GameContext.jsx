@@ -201,6 +201,15 @@ export function GameProvider({ children }) {
         p => !personasEquipadas.includes(p.name)
     )
 
+    // ── Progresso da Dungeon ──
+    const [segmentoAtual, setSegmentoAtual] = useState(1)
+    const [dungeonState, setDungeonState] = useState({ andar: -1, coluna: null })
+
+    const avancarSegmento = useCallback(() => {
+        setSegmentoAtual(prev => prev + 1)
+        setDungeonState({ andar: -1, coluna: null }) // reseta a dungeon para o próximo segmento
+    }, [])
+
     // ────────────────────────────────────────────
     //  INICIALIZAR JOGO com as escolhas do jogador
     // ────────────────────────────────────────────
@@ -324,6 +333,10 @@ export function GameProvider({ children }) {
             setYen,
             atualizarHpSp,
             atualizarEquipeAposCombate,
+            segmentoAtual,
+            avancarSegmento,
+            dungeonState,
+            setDungeonState,
         }}>
             {children}
         </GameContext.Provider>

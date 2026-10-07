@@ -59,41 +59,48 @@
     z-index: 1;
     flex: 1;
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 4rem;
+    justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
-/* LADO ESQUERDO - ALIADOS */
-.combate-aliados {
+/* ALIADOS (PARTE INFERIOR) */
+.combate-aliados-horiz {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 250px;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(227, 234, 255, 0.1);
+    z-index: 1;
+    position: relative;
 }
 
-.combate-aliado-card {
+.combate-aliado-card-horiz {
     background: rgba(227, 234, 255, 0.05);
     border: 1px solid rgba(227, 234, 255, 0.2);
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
     position: relative;
     transition: all 0.3s ease;
+    width: 220px;
 }
 
-.combate-aliado-card--ativo {
-    background: rgba(192, 57, 43, 0.1);
+.combate-aliado-card-horiz--ativo {
+    background: rgba(192, 57, 43, 0.15);
     border-color: #C0392B;
-    transform: translateX(20px);
+    transform: translateY(-10px);
     box-shadow: 0 0 20px rgba(192, 57, 43, 0.3);
 }
 
+/* ESTILOS DE ALIADOS (Reutilizando as classes de componentes internos) */
 .combate-aliado-nome {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05em;
     display: flex;
     justify-content: space-between;
@@ -101,7 +108,7 @@
 }
 
 .combate-aliado-icone {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .combate-barras {
@@ -138,22 +145,25 @@
 .combate-barra-fill--hp { background: #2ECC71; }
 .combate-barra-fill--sp { background: #3498DB; }
 
-/* LADO DIREITO - INIMIGOS */
+/* INIMIGOS NO CENTRO */
 .combate-inimigos {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 250px;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
     align-items: flex-end;
 }
 
 .combate-inimigo-card {
-    background: rgba(2, 2, 2, 0.8);
-    border: 1px solid rgba(192, 57, 43, 0.4);
-    padding: 1.5rem;
-    border-radius: 4px;
-    text-align: right;
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     animation: inimigo-flutuar 3s infinite ease-in-out alternate;
 }
 
@@ -166,29 +176,44 @@
     to { transform: translateY(5px); }
 }
 
-.combate-inimigo-card--ativo {
-    border-color: #E3EAFF;
-    box-shadow: 0 0 20px rgba(227, 234, 255, 0.2);
+.combate-inimigo-card--ativo .combate-inimigo-img {
+    filter: drop-shadow(0 0 15px rgba(227, 234, 255, 0.8));
+    transform: scale(1.05);
+}
+
+.combate-inimigo-img {
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.combate-inimigo-info {
+    background: rgba(2, 2, 2, 0.8);
+    border: 1px solid rgba(192, 57, 43, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    width: 180px;
 }
 
 .combate-inimigo-nome {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #C0392B;
     margin-bottom: 0.5rem;
 }
 
 .combate-inimigo-hp {
-    width: 150px;
+    width: 100%;
     height: 4px;
     background: rgba(227, 234, 255, 0.1);
-    margin-left: auto;
 }
 
 .combate-inimigo-hp-fill {
     height: 100%;
     background: #E74C3C;
-    width: 100%; /* Mock */
+    transition: width 0.3s ease;
 }
 
 /* Efeito visual de ataque sobre o inimigo */
@@ -354,7 +379,7 @@
 }
 
 /* ── ALIADO K.O. ── */
-.combate-aliado-card--ko {
+.combate-aliado-card-horiz--ko {
     opacity: 0.4;
     filter: grayscale(1);
     border-color: rgba(227, 234, 255, 0.05) !important;
@@ -376,19 +401,19 @@
 }
 
 /* ── ALIADO ESTADOS ── */
-.combate-aliado-card--clicavel {
+.combate-aliado-card-horiz--clicavel {
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.combate-aliado-card--clicavel:hover {
+.combate-aliado-card-horiz--clicavel:hover {
     background: rgba(227, 234, 255, 0.05);
     border-color: rgba(227, 234, 255, 0.4);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(227, 234, 255, 0.1);
 }
 
-.combate-aliado-card--agiu {
+.combate-aliado-card-horiz--agiu {
     opacity: 0.6;
     filter: brightness(0.8);
     transform: scale(0.98);
@@ -413,14 +438,14 @@
 }
 
 /* ── ALIADO HIT FLASH ── */
-.combate-aliado-card--hit {
+.combate-aliado-card-horiz--hit {
     animation: aliado-hit 0.4s ease-out;
 }
 
 @keyframes aliado-hit {
-    0%  { background: rgba(231, 76, 60, 0.6); transform: translateX(-8px); }
-    50% { background: rgba(231, 76, 60, 0.3); transform: translateX(4px); }
-    100% { background: rgba(192, 57, 43, 0.1); transform: translateX(20px); }
+    0%  { background: rgba(231, 76, 60, 0.6); transform: translateY(-4px); }
+    50% { background: rgba(231, 76, 60, 0.3); transform: translateY(2px); }
+    100% { background: rgba(192, 57, 43, 0.1); transform: translateY(-10px); }
 }
 
 /* ── PERSONA TAG ── */
@@ -463,10 +488,13 @@
     transition: all 0.2s ease;
 }
 
-.combate-inimigo-card--clicavel:hover {
-    background: rgba(227, 234, 255, 0.05);
+.combate-inimigo-card--clicavel:hover .combate-inimigo-img {
+    filter: drop-shadow(0 0 20px rgba(231, 76, 60, 0.8));
+    transform: scale(1.1);
+}
+
+.combate-inimigo-card--clicavel:hover .combate-inimigo-info {
     border-color: #E74C3C;
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
 }
 

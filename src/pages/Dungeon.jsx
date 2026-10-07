@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { useGame } from '../context/GameContext'
 import './Dungeon.css'
 
 // Mapeamento dos tipos de eventos na Dungeon
@@ -30,12 +31,12 @@ const MAPA_MOCK = [
 function Dungeon() {
     const navigate = useNavigate()
     const location = useLocation()
+    const { segmentoAtual, dungeonState, setDungeonState } = useGame()
     const caminho = location.state?.caminho || 'rebellion'
 
-    // Estado do progresso do jogador
-    // O jogador começa no andar -1 (nenhum). Quando clica, vai para o andar 0
-    const [andarAtual, setAndarAtual] = useState(-1)
-    const [colunaAtual, setColunaAtual] = useState(null)
+    // Estado do progresso do jogador vem do GameContext
+    const andarAtual = dungeonState.andar
+    const colunaAtual = dungeonState.coluna
     const [eventoAtivo, setEventoAtivo] = useState(null)
 
     // Lógica ao clicar num nó do mapa
@@ -48,8 +49,7 @@ function Dungeon() {
         // Se quiser bloquear mudança de coluna, adicionar regra aqui. 
         // No momento, permite escolher qualquer nó da próxima linha.
 
-        setAndarAtual(andar)
-        setColunaAtual(coluna)
+        setDungeonState({ andar, coluna })
         setEventoAtivo({ ...noData, andar, coluna })
     }
 
@@ -68,7 +68,7 @@ function Dungeon() {
         <div id="tela-dungeon">
             <header className="dungeon-header">
                 <div>
-                    <h1 className="dungeon-info-segmento">SEGMENTO 01</h1>
+                    <h1 className="dungeon-info-segmento">SEGMENTO {segmentoAtual.toString().padStart(2, '0')}</h1>
                     <p className="dungeon-info-caminho">Caminho Atual: {caminho}</p>
                 </div>
 

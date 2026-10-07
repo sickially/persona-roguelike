@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useGame, getCustoSkill, getStatCustoSkill } from '../context/GameContext'
+import megatenService from '../services/megatenService'
 import './Combate.css'
 
 // Converte qualquer NaN / undefined / null em 0
@@ -8,19 +9,41 @@ const toNum = (v) => (typeof v === 'number' && isFinite(v) ? v : 0)
 
 // ─── Gerador de inimigos baseado no tipo de encontro ───
 function gerarInimigos(tipo) {
-    const pools = {
-        BATALHA: [
-            { id: 'e1', nome: 'Slime A',   hp: 80,  hpMax: 80,  atk: 12, icone: '💧' },
-            { id: 'e2', nome: 'Slime B',   hp: 80,  hpMax: 80,  atk: 12, icone: '💧' },
-        ],
-        RARA: [
-            { id: 'r1', nome: 'Shadow Rara', hp: 200, hpMax: 200, atk: 25, icone: '✨' },
-        ],
-        BOSS: [
-            { id: 'b1', nome: 'Guardião',  hp: 400, hpMax: 400, atk: 40, icone: '👹' },
-        ],
+    const commonPool = [
+        { nome: 'Cowardly Maya',  hp: 60,  hpMax: 60,  atk: 10, icone: '🎭', fraqueza: 'Fire', img: '/enemies/cowardly_maya.png' },
+        { nome: 'Lying Hablerie', hp: 80,  hpMax: 80,  atk: 14, icone: '🗿', fraqueza: 'Ice', img: '/enemies/hablerie.jpg' },
+        { nome: 'Magic Hand',     hp: 120, hpMax: 120, atk: 20, icone: '🖐️', fraqueza: 'Wind', img: '/enemies/magic_hand.png' },
+        { nome: 'Pixie',          hp: 50,  hpMax: 50,  atk: 18, icone: '🧚', fraqueza: 'Gun', img: '/enemies/pixie.png' },
+        { nome: 'Bicorn',         hp: 100, hpMax: 100, atk: 15, icone: '🐴', fraqueza: 'Elec', img: '/enemies/bicorn.png' },
+        { nome: 'Agathion',       hp: 70,  hpMax: 70,  atk: 12, icone: '🏺', fraqueza: 'Wind', img: '/enemies/agathion.png' },
+        { nome: 'Slime',          hp: 90,  hpMax: 90,  atk: 11, icone: '💧', fraqueza: 'Fire', img: '/enemies/slime.png' }
+    ];
+
+    if (tipo === 'RARA') {
+        return [
+            { id: 'r1', nome: 'Golden Hand', hp: 250, hpMax: 250, atk: 25, icone: '✨', fraqueza: 'Phys', isDown: false, img: '/enemies/golden_hand.png' }
+        ];
     }
-    return pools[tipo] ?? pools.BATALHA
+    
+    if (tipo === 'BOSS') {
+        return [
+            { id: 'b1', nome: 'Rampaging Gigas', hp: 500, hpMax: 500, atk: 45, icone: '👹', fraqueza: 'Psy', isDown: false, img: '/enemies/agathion.png' }
+        ];
+    }
+
+    // Default: BATALHA (Batalhas comuns)
+    const qtd = Math.floor(Math.random() * 2) + 2; // 2 ou 3 inimigos por luta
+    const gerados = [];
+    for (let i = 0; i < qtd; i++) {
+        const sorteio = commonPool[Math.floor(Math.random() * commonPool.length)];
+        gerados.push({
+            ...sorteio,
+            id: `e${i + 1}`,
+            nome: `${sorteio.nome} ${String.fromCharCode(65 + i)}`,
+            isDown: false
+        });
+    }
+    return gerados;
 }
 
 // ─── Recompensas por tipo ───
@@ -71,7 +94,7 @@ function parseSkillEffect(skill) {
 function Combate() {
     const navigate = useNavigate()
     const location = useLocation()
-    const { equipe, atualizarEquipeAposCombate, ganharYen } = useGame()
+    const { equipe, atualizarEquipeAposCombate, ganharYen, avancarSegmento } = useGame()
 
     const caminho    = location.state?.caminho    || 'rebellion'
     const tipoInimigo = location.state?.tipoInimigo || 'BATALHA'
@@ -146,6 +169,12 @@ function Combate() {
         vivos.forEach((inimigo) => {
             delay += 700
             setTimeout(() => {
+                if (inimigo.isDown) {
+                    dispararLog(`${inimigo.nome} estava debilitado e se recuperou, perdendo o turno!`)
+                    setInimigos(prev => prev.map(i => i.id === inimigo.id ? { ...i, isDown: false } : i))
+                    return
+                }
+
                 estadoAliados = estadoAliados.map(a => {
                     if (a.hp <= 0) return a
                     const alvosVivos = estadoAliados.filter(x => x.hp > 0)
@@ -196,7 +225,12 @@ function Combate() {
     }
 
     // ── Após uma ação do jogador: marca como agido e decide próximo passo ──
-    function posAcaoJogador(novosAliados, novosInimigos) {
+    function posAcaoJogador(novosAliados, novosInimigos, ganhouOneMore = false) {
+        if (ganhouOneMore) {
+            dispararLog(`1 MORE! ${aliadoAtual.nome} ganhou um turno extra!`)
+            return
+        }
+
         const novoJaAgiu = new Set(jaAgiu)
         novoJaAgiu.add(aliadoAtual.id)
         setJaAgiu(novoJaAgiu)
@@ -312,21 +346,36 @@ function Combate() {
         setFase('inimigo')
         setAcaoPendente(null)
 
-        const dano = Math.max(1, 18 + Math.floor(Math.random() * 12) - 6)
-        dispararLog(`${aliadoAtual.nome} atacou ${alvo.nome} por ${dano} de dano!`)
+        const persona = megatenService.getPersonaByName(aliadoAtual.personaEquipada)
+        const sorte = persona?.stats?.lu || 5
+        const chanceCrit = 0.05 + (Math.min(sorte, 99) / 99) * 0.20
+        const isCrit = Math.random() < chanceCrit
+        const isWeakness = alvo.fraqueza === 'Phys'
+        let hitOneMore = false
+
+        if (isCrit || isWeakness) {
+            if (!alvo.isDown) hitOneMore = true
+        }
+
+        let dano = Math.max(1, 18 + Math.floor(Math.random() * 12) - 6)
+        if (isCrit) dano = Math.floor(dano * 1.5)
+        if (isWeakness) dano = Math.floor(dano * 1.5)
+
+        const critMsg = isCrit ? " CRITICAL HIT!" : (isWeakness ? " WEAKNESS!" : "")
+        dispararLog(`${aliadoAtual.nome} atacou ${alvo.nome} por ${dano} de dano!${critMsg}`)
         setAnimandoId(alvo.id)
 
         setTimeout(() => {
             setAnimandoId(null)
             const novosInimigos = inimigos.map(i =>
-                i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - dano) } : i
+                i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - dano), isDown: i.isDown || isCrit || isWeakness } : i
             )
             setInimigos(novosInimigos)
 
             const fim = verificarFim(aliados, novosInimigos)
             if (!fim) {
                 setFase('jogador')
-                posAcaoJogador(aliados, novosInimigos)
+                posAcaoJogador(aliados, novosInimigos, hitOneMore)
             }
         }, 500)
     }
@@ -380,21 +429,46 @@ function Combate() {
                  }, 800);
              } else {
                  const variacao = 0.85 + (Math.random() * 0.3);
-                 const danoReal = Math.floor(efeito.power * variacao);
+                 let danoReal = Math.floor(efeito.power * variacao);
                  
-                 dispararLog(`${aliadoAtual.nome} usou ${skill.name} em ${alvo.nome} por ${danoReal} de dano!`);
+                 const isFisico = skill.affinity === 'Phys' || skill.affinity === 'Gun';
+                 let critMsg = "";
+                 let isCrit = false;
+                 if (isFisico) {
+                     const persona = megatenService.getPersonaByName(aliadoAtual.personaEquipada);
+                     const sorte = persona?.stats?.lu || 5;
+                     const chanceCrit = 0.05 + (Math.min(sorte, 99) / 99) * 0.20;
+                     if (Math.random() < chanceCrit) {
+                         danoReal = Math.floor(danoReal * 1.5);
+                         critMsg = " CRITICAL HIT!";
+                         isCrit = true;
+                     }
+                 }
+                 
+                 const isWeakness = skill.affinity === alvo.fraqueza;
+                 if (isWeakness) {
+                     danoReal = Math.floor(danoReal * 1.5);
+                     if (!critMsg) critMsg = " WEAKNESS!";
+                 }
+                 
+                 let hitOneMore = false;
+                 if (isCrit || isWeakness) {
+                     if (!alvo.isDown) hitOneMore = true;
+                 }
+                 
+                 dispararLog(`${aliadoAtual.nome} usou ${skill.name} em ${alvo.nome} por ${danoReal} de dano!${critMsg}`);
                  setAnimandoId(alvo.id);
                  
                  setTimeout(() => {
                      setAnimandoId(null);
                      const novosInimigos = inimigos.map(i =>
-                         i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - danoReal) } : i
+                         i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - danoReal), isDown: i.isDown || isCrit || isWeakness } : i
                      );
                      setInimigos(novosInimigos);
                      const fim = verificarFim(aliados, novosInimigos);
                      if (!fim) {
                          setFase('jogador');
-                         posAcaoJogador(aliados, novosInimigos);
+                         posAcaoJogador(aliados, novosInimigos, hitOneMore);
                      }
                  }, 800);
              }
@@ -439,23 +513,49 @@ function Combate() {
             setTimeout(() => {
                 setAnimandoId(null);
                 let novosInimigos = [...inimigos];
+                let hitOneMoreMulti = false;
                 vivos.forEach(alvo => {
                     if (efeito.tipoAcao === 'debuff') {
                         dispararLog(`${skill.name} afetou ${alvo.nome}!`);
                     } else {
                         const variacao = 0.85 + (Math.random() * 0.3);
-                        const danoReal = Math.floor(efeito.power * variacao);
+                        let danoReal = Math.floor(efeito.power * variacao);
+                        
+                        const isFisico = skill.affinity === 'Phys' || skill.affinity === 'Gun';
+                        let critMsg = "";
+                        let isCrit = false;
+                        if (isFisico) {
+                            const persona = megatenService.getPersonaByName(aliadoAtual.personaEquipada);
+                            const sorte = persona?.stats?.lu || 5;
+                            const chanceCrit = 0.05 + (Math.min(sorte, 99) / 99) * 0.20;
+                            if (Math.random() < chanceCrit) {
+                                danoReal = Math.floor(danoReal * 1.5);
+                                critMsg = " CRÍTICO!";
+                                isCrit = true;
+                            }
+                        }
+                        
+                        const isWeakness = skill.affinity === alvo.fraqueza;
+                        if (isWeakness) {
+                            danoReal = Math.floor(danoReal * 1.5);
+                            if (!critMsg) critMsg = " WEAKNESS!";
+                        }
+                        
+                        if (isCrit || isWeakness) {
+                            if (!alvo.isDown) hitOneMoreMulti = true;
+                        }
+                        
                         novosInimigos = novosInimigos.map(i =>
-                            i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - danoReal) } : i
+                            i.id === alvo.id ? { ...i, hp: Math.max(0, i.hp - danoReal), isDown: i.isDown || isCrit || isWeakness } : i
                         );
-                        dispararLog(`${skill.name} causou dano a ${alvo.nome}!`);
+                        dispararLog(`${skill.name} causou ${danoReal} de dano a ${alvo.nome}!${critMsg}`);
                     }
                 });
                 setInimigos(novosInimigos);
                 const fim = verificarFim(aliados, novosInimigos);
                 if (!fim) {
                      setFase('jogador');
-                     posAcaoJogador(aliados, novosInimigos);
+                     posAcaoJogador(aliados, novosInimigos, hitOneMoreMulti);
                 }
             }, 800);
         }
@@ -466,7 +566,7 @@ function Combate() {
         if (fase !== 'jogador') return
         if (Math.random() < 0.5) {
             dispararLog('Fugiu com sucesso!')
-            setTimeout(() => navigate(-1), 1200)
+            setTimeout(() => navigate('/dungeon', { state: { caminho } }), 1200)
         } else {
             dispararLog('Tentou fugir... Mas falhou!')
             turnoInimigo(aliados, inimigos)
@@ -479,8 +579,16 @@ function Combate() {
             // Sincroniza HP/SP de volta ao contexto global
             atualizarEquipeAposCombate(aliados.map(a => ({ id: a.id, hp: a.hp, sp: a.sp })))
             ganharYen(recompensa.yen)
+
+            if (tipoInimigo === 'BOSS') {
+                avancarSegmento()
+                navigate('/hub', { state: { caminho } })
+                return
+            }
         }
-        navigate(-1)
+        
+        // Retorna para a dungeon para continuar (seja fuga ou vitória comum)
+        navigate('/dungeon', { state: { caminho } })
     }
 
     // ─────────────────────────────────────────────
@@ -508,78 +616,7 @@ function Combate() {
 
             {/* CAMPO */}
             <main className="combate-campo">
-
-                {/* ALIADOS */}
-                <div className="combate-aliados">
-                    {aliados.map((aliado, index) => {
-                        const isAtivo   = index === turnoIndex && fase === 'jogador' && !resultado
-                        const isKO      = aliado.hp <= 0
-                        const jaAgiuEle = jaAgiu.has(aliado.id)
-                        const isSelecaoAlvo = fase === 'selecao_alvo'
-                        const isCura = isSelecaoAlvo && acaoPendente?.efeito && (acaoPendente.efeito.tipoAcao === 'cura' || acaoPendente.efeito.tipoAcao === 'suporte')
-                        
-                        // Clicável se for meu turno (fase jogador), ou se for alvo de cura (fase selecao alvo)
-                        const clicavelParaAgir = fase === 'jogador' && !isKO && !jaAgiuEle && !resultado
-                        const clicavelParaCura = isSelecaoAlvo && isCura && !isKO && !resultado
-                        const clicavel = clicavelParaAgir || clicavelParaCura
-
-                        return (
-                            <div
-                                key={aliado.id}
-                                className={[
-                                    'combate-aliado-card',
-                                    isAtivo   ? 'combate-aliado-card--ativo'    : '',
-                                    isKO      ? 'combate-aliado-card--ko'        : '',
-                                    jaAgiuEle ? 'combate-aliado-card--agiu'      : '',
-                                    clicavel  ? 'combate-aliado-card--clicavel'  : '',
-                                    aliado.id === aliadoAtacadoId ? 'combate-aliado-card--hit' : '',
-                                ].join(' ')}
-                                onClick={() => handleSelecionarMembro(index)}
-                                title={isKO ? 'K.O.' : clicavelParaCura ? 'Clique para curar/buffar' : jaAgiuEle ? 'Já agiu nesta rodada' : 'Clique para controlar'}
-                            >
-                                {jaAgiuEle && !isKO && (
-                                    <div className="combate-agiu-badge">✓</div>
-                                )}
-                                <div className="combate-aliado-nome">
-                                    <span>{aliado.nome}</span>
-                                    <span className="combate-aliado-icone">{aliado.icone}</span>
-                                </div>
-                                {isKO && (
-                                    <div className="combate-ko-badge">K.O.</div>
-                                )}
-                                <div className="combate-barras">
-                                    <div className="combate-barra-container">
-                                        <span className="combate-barra-label">HP</span>
-                                        <div className="combate-barra-bg">
-                                            <div
-                                                className="combate-barra-fill combate-barra-fill--hp"
-                                                style={{ width: `${(toNum(aliado.hp) / (toNum(aliado.hpMax) || 1)) * 100}%` }}
-                                            />
-                                        </div>
-                                        <span className="combate-barra-valor">{toNum(aliado.hp)}/{toNum(aliado.hpMax)}</span>
-                                    </div>
-                                    <div className="combate-barra-container">
-                                        <span className="combate-barra-label">SP</span>
-                                        <div className="combate-barra-bg">
-                                            <div
-                                                className="combate-barra-fill combate-barra-fill--sp"
-                                                style={{ width: `${(toNum(aliado.sp) / (toNum(aliado.spMax) || 1)) * 100}%` }}
-                                            />
-                                        </div>
-                                        <span className="combate-barra-valor">{toNum(aliado.sp)}/{toNum(aliado.spMax)}</span>
-                                    </div>
-                                </div>
-                                {aliado.personaEquipada && (
-                                    <div className="combate-persona-tag">
-                                        ♦ {aliado.personaEquipada}
-                                    </div>
-                                )}
-                            </div>
-                        )
-                    })}
-                </div>
-
-                {/* INIMIGOS */}
+                {/* INIMIGOS NO CENTRO */}
                 <div className="combate-inimigos">
                     {inimigos.map((inimigo) => {
                         const isMorto = inimigo.hp <= 0
@@ -594,25 +631,98 @@ function Combate() {
                                 onClick={() => clicavel && handleAlvoClick(inimigo.id, 'inimigo')}
                                 title={clicavel ? 'Clique para selecionar' : ''}
                             >
-                            <div className="combate-inimigo-nome">
-                                {inimigo.icone} {inimigo.nome}
+                                {inimigo.img && (
+                                    <img src={inimigo.img} alt={inimigo.nome} className="combate-inimigo-img" />
+                                )}
+                                <div className="combate-inimigo-info">
+                                    <div className="combate-inimigo-nome">
+                                        {inimigo.icone} {inimigo.nome} {inimigo.isDown && <span style={{color: '#f1c40f', fontSize: '0.8em', marginLeft: '4px'}}>[DOWN]</span>}
+                                    </div>
+                                    <div className="combate-inimigo-hp">
+                                        <div
+                                            className="combate-inimigo-hp-fill"
+                                            style={{ width: `${(inimigo.hp / inimigo.hpMax) * 100}%` }}
+                                        />
+                                    </div>
+                                    <div className="combate-inimigo-hp-texto">
+                                        {inimigo.hp} / {inimigo.hpMax}
+                                    </div>
+                                </div>
+                                <div className={`combate-efeito-ataque ${animandoId === inimigo.id ? 'animar' : ''}`} />
                             </div>
-                            <div className="combate-inimigo-hp">
-                                <div
-                                    className="combate-inimigo-hp-fill"
-                                    style={{ width: `${(inimigo.hp / inimigo.hpMax) * 100}%` }}
-                                />
+                        )
+                    })}
+                </div>
+            </main>
+
+            {/* ALIADOS (BASEADO EM ETRIAN ODYSSEY - ACIMA DOS BOTÕES) */}
+            <div className="combate-aliados-horiz">
+                {aliados.map((aliado, index) => {
+                    const isAtivo   = index === turnoIndex && fase === 'jogador' && !resultado
+                    const isKO      = aliado.hp <= 0
+                    const jaAgiuEle = jaAgiu.has(aliado.id)
+                    const isSelecaoAlvo = fase === 'selecao_alvo'
+                    const isCura = isSelecaoAlvo && acaoPendente?.efeito && (acaoPendente.efeito.tipoAcao === 'cura' || acaoPendente.efeito.tipoAcao === 'suporte')
+                    
+                    const clicavelParaAgir = fase === 'jogador' && !isKO && !jaAgiuEle && !resultado
+                    const clicavelParaCura = isSelecaoAlvo && isCura && !isKO && !resultado
+                    const clicavel = clicavelParaAgir || clicavelParaCura
+
+                    return (
+                        <div
+                            key={aliado.id}
+                            className={[
+                                'combate-aliado-card-horiz',
+                                isAtivo   ? 'combate-aliado-card-horiz--ativo'    : '',
+                                isKO      ? 'combate-aliado-card-horiz--ko'        : '',
+                                jaAgiuEle ? 'combate-aliado-card-horiz--agiu'      : '',
+                                clicavel  ? 'combate-aliado-card-horiz--clicavel'  : '',
+                                aliado.id === aliadoAtacadoId ? 'combate-aliado-card-horiz--hit' : '',
+                            ].join(' ')}
+                            onClick={() => handleSelecionarMembro(index)}
+                            title={isKO ? 'K.O.' : clicavelParaCura ? 'Clique para curar/buffar' : jaAgiuEle ? 'Já agiu nesta rodada' : 'Clique para controlar'}
+                        >
+                            {jaAgiuEle && !isKO && (
+                                <div className="combate-agiu-badge">✓</div>
+                            )}
+                            <div className="combate-aliado-nome">
+                                <span>{aliado.nome}</span>
+                                <span className="combate-aliado-icone">{aliado.icone}</span>
                             </div>
-                            <div className="combate-inimigo-hp-texto">
-                                {inimigo.hp} / {inimigo.hpMax}
+                            {isKO && (
+                                <div className="combate-ko-badge">K.O.</div>
+                            )}
+                            <div className="combate-barras">
+                                <div className="combate-barra-container">
+                                    <span className="combate-barra-label">HP</span>
+                                    <div className="combate-barra-bg">
+                                        <div
+                                            className="combate-barra-fill combate-barra-fill--hp"
+                                            style={{ width: `${(toNum(aliado.hp) / (toNum(aliado.hpMax) || 1)) * 100}%` }}
+                                        />
+                                    </div>
+                                    <span className="combate-barra-valor">{toNum(aliado.hp)}/{toNum(aliado.hpMax)}</span>
+                                </div>
+                                <div className="combate-barra-container">
+                                    <span className="combate-barra-label">SP</span>
+                                    <div className="combate-barra-bg">
+                                        <div
+                                            className="combate-barra-fill combate-barra-fill--sp"
+                                            style={{ width: `${(toNum(aliado.sp) / (toNum(aliado.spMax) || 1)) * 100}%` }}
+                                        />
+                                    </div>
+                                    <span className="combate-barra-valor">{toNum(aliado.sp)}/{toNum(aliado.spMax)}</span>
+                                </div>
                             </div>
-                            <div className={`combate-efeito-ataque ${animandoId === inimigo.id ? 'animar' : ''}`} />
+                            {aliado.personaEquipada && (
+                                <div className="combate-persona-tag">
+                                    ♦ {aliado.personaEquipada}
+                                </div>
+                            )}
                         </div>
                     )
                 })}
-                </div>
-
-            </main>
+            </div>
 
             {/* AÇÕES / SKILLS */}
             <footer className="combate-acoes">

@@ -14,7 +14,7 @@ const DICAS = [
 function Hub() {
     const navigate = useNavigate()
     const location = useLocation()
-    const { equipe, yen, jogoIniciado, inicializarJogo } = useGame()
+    const { equipe, yen, jogoIniciado, inicializarJogo, segmentoAtual, dungeonState } = useGame()
 
     useEffect(() => {
         if (!jogoIniciado) {
@@ -50,7 +50,7 @@ function Hub() {
 
                 <div className="hub-badge-fase">
                     <span className="hub-badge-fase-dot"></span>
-                    SEGMENTO 01 · CAMINHO LIVRE
+                    SEGMENTO {segmentoAtual.toString().padStart(2, '0')} · {dungeonState.andar >= 0 ? 'EM ANDAMENTO' : 'CAMINHO LIVRE'}
                 </div>
             </header>
 
@@ -116,7 +116,7 @@ function Hub() {
                         >
                             <span className="hub-btn-icone">⚔️</span>
                             <span className="hub-btn-texto">
-                                Iniciar Exploração
+                                {dungeonState.andar >= 0 ? 'Retomar Exploração' : 'Iniciar Exploração'}
                                 <span className="hub-btn-desc">Avançar pelos caminhos da dungeon</span>
                             </span>
                             <span className="hub-btn-seta">›</span>
@@ -211,13 +211,13 @@ function Hub() {
                         <p className="hub-painel-titulo">Progresso</p>
                         <p className="hub-segmento-label">Segmento</p>
                         <p className="hub-segmento-contador">
-                            <span>01</span>/10
+                            <span>{segmentoAtual.toString().padStart(2, '0')}</span>/10
                         </p>
                         <div className="hub-segmento-pontos">
                             {Array.from({ length: 10 }).map((_, i) => (
                                 <div
                                     key={i}
-                                    className={`hub-segmento-ponto${i === 0 ? ' hub-segmento-ponto--completo' : ''}`}
+                                    className={`hub-segmento-ponto${i < segmentoAtual ? ' hub-segmento-ponto--completo' : ''}`}
                                 ></div>
                             ))}
                         </div>
